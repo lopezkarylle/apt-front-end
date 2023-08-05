@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Owner Batac Dormitory - view</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/868f1fea46.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="css/view_property.css" rel="stylesheet" />
+
+    <!-- Bootstrap Carousel CSS -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="Bootstrap" width="120" height="50" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="dashboard.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="my_property.html">My Property</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="appointments_view.html">Appointments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reservations.html">Reservations</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <button class="btn btn-outline-secondary me-2" type="button">
+            Sign Out &nbsp;<i class="fa-solid fa-right-from-bracket"></i> 
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar ends -->
+
+
+
+    <!-- Carousel code starts here -->
+    <div class="container-fluid">
+      <h1 class="text-center fw-bold display-1 mt-5 mb-5">Batac <span class="text" style="color:#052069">Dormitory</span></h1>
+      <div class="row">
+          <div class="col-12 m-auto">
+              <div class="owl-carousel owl-theme carousel-container">
+                  <div class="item">
+                      <div class="card border-0 shadow">
+                          <img src="images/house-img-1.webp" alt="" class="card-img-center">
+                          <div class="card-body">
+                            <div class="card-title text-center">
+                                <h4>Hall</h4>
+                            </div>
+                        </div>
+                          
+                      </div>
+                  </div>
+
+                  <div class="item">
+                      <div class="card border-0 shadow">
+                          <img src="images/hall-img-1.webp" alt="" class="card-img-top">
+                          <div class="card-body">
+                            <div class="card-title text-center">
+                                <h4>Room</h4>
+                            </div>
+                        </div>
+                          
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="card border-0 shadow">
+                          <img src="images/bathroom-img-1.webp" alt="" class="card-img-top">
+                          <div class="card-body">
+                              <div class="card-title text-center">
+                                  <h4>Bathroom</h4>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="card border-0 shadow">
+                          <img src="images/hall-img-1.webp" alt="" class="card-img-top">
+                          <div class="card-body">
+                              <div class="card-title text-center">
+                                  <h4>Owl Carousel</h4>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+  
+
+    <!-- Carousel code ends here -->
+<!-- Start of Property Information -->
+
+<div class="container pt-5 pb-5 viewP">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-10">
+          <h3 class="name">Batac Dormitory</h3>
+          <div class="row">
+            <div class="h4 mt-3 col-sm-10 location">
+              <div>
+                <i class="fas fa-map-marker-alt"></i> 452 Cuatro de Julio Street
+                Barangay Salapungan
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2 ps-4 justify-content-end">
+          <button onclick="Toggle1()" id="btnBm" class="btn btnBookmark">
+            <i class="fa-solid fa-bookmark fa-3x"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-11 mt-5 viewpDescription">
+          Description
+          <div class="description">
+            Description about Batac’s Dormitory. Description about Batac’s
+            Dormitory. Description about Batac’s Dormitory. Description about
+            Batac’s Dormitory. Description about Batac’s Dormitory. Description
+            about Batac’s Dormitory. Description about Batac’s Dormitory.
+            Description about Batac’s Dormitory. Description about Batac’s
+            Dormitory. Description about Batac’s Dormitory. Description about
+            Batac’s Dormitory.
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm mb-3">
+          <p class="btnRating">
+            <i class="fa-solid fa-star-half-stroke starRating"></i> 4.8 (73
+            reviews)
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- closing tag of 1st col-md-6 -->
+
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col justify-content-center">
+          <h4 class="aptStarts" style="text-align: center;">
+            Rent starts at
+          </h4>
+          <h3 class="aptPrice">
+            &#8369;5,000<span class="monthly">/Monthly</span>
+          </h3>
+          <!-- <h3 class="aptPrice">
+            &#8369;5,000<span class="monthly">/Monthly</span>
+          </h3> -->
+        </div>
+      </div>
+
+      <div class="row py-3">
+        <div class="col-sm">
+          <a href="#" class="btnViewP">Request a Visit</a>
+        </div>
+        <div class="col-sm">
+          <a href="#" class="btnViewP">Reserve a Room</a>
+        </div>
+      </div>
+
+      <div class="row pt-5">
+        <div class="col-sm availRoom">
+          <div class="room">Available Rooms</div>
+          <span> 3 out of 9 room/s available </span>
+        </div>
+      </div>
+    </div>
+    <!-- closing tag of 1st col-md-6 -->
+  </div>
+  <!-- closing tag of container viewP row -->
+</div>
+<!-- closing tag of container viewP-->
+
+
+    
+
+<!-- Start of Property Amenities under Property Information -->
+<div class="container pt-3 amenities">
+  <div class="row">
+    <div class="col-12">
+      <h3 class="name">Property Amenities</h3>
+    </div>
+    <hr />
+    <div class="row">
+      <!-- <div class="col-12 mt-3 amenitiesTitle">Property Amenities</div> -->
+
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
+            <div class="description">
+              <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
+              <p style="text-decoration: line-through">
+                <i class="fa-solid fa-fan"></i><span> Aircon</span>
+              </p>
+              <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
+              <p>
+                <i class="fa-solid fa-person-running"></i
+                ><span> Emergency Exit</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-bed"></i><span> 1 Small Single Bed</span>
+              </p>
+              <p style="text-decoration: line-through">
+                <i class="fa-solid fa-arrows-left-right"></i
+                ><span> Roof Deck</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
+            <div class="description">
+              <p style="text-decoration: line-through">
+                <i class="fa solid fa-grip"></i><span> Cabinet</span>
+              </p>
+              <p><i class="fa-solid fa-fan"></i><span> Aircon</span></p>
+              <p><i class="fa-solid fa-shower"></i><span> CR</span></p>
+              <p>
+                <i class="fa-solid fa-person-running"></i
+                ><span> Emergency Exit</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-house-lock"></i
+                ><span> 24/7 Security</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- closing tag of nested col-md-6 -->
+    </div>
+    <!-- closing tag of 1st row under col-md-6 -->
+  </div>
+</div>
+<!-- closing tag of container Amenities-->
+
+<!-- End of Property Amenities under Property Information -->
+
+<!-- Start of Room Amenities under Property Information -->
+<div class="container pt-5 amenities">
+  <div class="row">
+    <div class="col-12">
+      <h3 class="name">Room Amenities</h3>
+    </div>
+    <hr />
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-sm-10 mt-3 amenitiesTitle">Single Room</div>
+
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
+              <div class="description">
+                <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-fan"></i><span> Aircon</span>
+                </p>
+                <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
+                <p>
+                  <i class="fa-solid fa-person-running"></i
+                  ><span> Emergency Exit</span>
+                </p>
+                <p>
+                  <i class="fa-solid fa-bed"></i
+                  ><span> 1 Small Single Bed</span>
+                </p>
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-arrows-left-right"></i
+                  ><span> Roof Deck</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
+              <div class="description">
+                <p style="text-decoration: line-through">
+                  <i class="fa solid fa-grip"></i><span> Cabinet</span>
+                </p>
+                <p><i class="fa-solid fa-fan"></i><span> Aircon</span></p>
+                <p><i class="fa-solid fa-shower"></i><span> CR</span></p>
+                <p>
+                  <i class="fa-solid fa-person-running"></i
+                  ><span> Emergency Exit</span>
+                </p>
+                <p>
+                  <i class="fa-solid fa-house-lock"></i
+                  ><span> 24/7 Security</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- closing tag of nested col-md-6 -->
+      </div>
+      <!-- closing tag of 1st row under col-md-6 -->
+
+      <div class="col-md">
+        <div class="row">
+          <div class="col-sm-10 mt-3 amenitiesTitle">Double Room</div>
+
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
+                <div class="description">
+                  <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
+                  <p style="text-decoration: line-through">
+                    <i class="fa-solid fa-fan"></i><span> Aircon</span>
+                  </p>
+                  <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
+                  <p>
+                    <i class="fa-solid fa-person-running"></i
+                    ><span> Emergency Exit</span>
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-bed"></i
+                    ><span> 1 Small Single Bed</span>
+                  </p>
+                  <p style="text-decoration: line-through">
+                    <i class="fa-solid fa-arrows-left-right"></i
+                    ><span> Roof Deck</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
+                <div class="description">
+                  <p style="text-decoration: line-through">
+                    <i class="fa solid fa-grip"></i><span> Cabinet</span>
+                  </p>
+                  <p><i class="fa-solid fa-fan"></i><span> Aircon</span></p>
+                  <p><i class="fa-solid fa-shower"></i><span> CR</span></p>
+                  <p>
+                    <i class="fa-solid fa-person-running"></i
+                    ><span> Emergency Exit</span>
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-house-lock"></i
+                    ><span> 24/7 Security</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- closing tag of nested col-md-6 -->
+        </div>
+        <!-- closing tag of 1st row under col-md-6 -->
+      </div>
+      <!-- closing tag of 1st col-md-6 -->
+    </div>
+    <!-- closing tag of 1st col-md-6 -->
+
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-sm-10 mt-3 amenitiesTitle">Triple Room</div>
+
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
+              <div class="description">
+                <p>
+                  <i class="fa solid fa-wifi"></i><span> High-Speed Wi-Fi</span>
+                </p>
+                <p>
+                  <i class="fa-solid fa-arrows-left-right"></i
+                  ><span> Study area</span>
+                </p>
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-toilets-portable"></i
+                  ><span> Common CR</span>
+                </p>
+                <p><i class="fa-solid fa-video"></i><span> CCTV</span></p>
+                <p>
+                  <i class="fa-solid fa-person-running"></i
+                  ><span> Emergency Exits</span>
+                </p>
+                <p><i class="fa-solid fa-video"></i><span> CCTV</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
+              <div class="description">
+                <p>
+                  <i class="fa-solid fa-arrows-left-right"></i
+                  ><span> Reception Area</span>
+                </p>
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-kitchen-set"></i
+                  ><span> Kitchen Area</span>
+                </p>
+                <p>
+                  <i class="fa-solid fa-fire-extinguisher"></i
+                  ><span> Fire Extinguishers</span>
+                </p>
+                <p><i class="fa-solid fa-video"></i><span> CCTV</span></p>
+                <p>
+                  <i class="fa-solid fa-faucet-drip"></i
+                  ><span> Water and Sewage </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- closing tag of nested col-md-6 -->
+
+        <div class="col-md">
+          <div class="row">
+            <div class="col-sm-10 mt-3 amenitiesTitle">Quadruple Room</div>
+
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
+                  <div class="description">
+                    <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
+                    <p style="text-decoration: line-through">
+                      <i class="fa-solid fa-fan"></i><span> Aircon</span>
+                    </p>
+                    <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
+                    <p>
+                      <i class="fa-solid fa-person-running"></i
+                      ><span> Emergency Exit</span>
+                    </p>
+                    <p>
+                      <i class="fa-solid fa-bed"></i
+                      ><span> 1 Small Single Bed</span>
+                    </p>
+                    <p style="text-decoration: line-through">
+                      <i class="fa-solid fa-arrows-left-right"></i
+                      ><span> Roof Deck</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
+                  <div class="description">
+                    <p style="text-decoration: line-through">
+                      <i class="fa solid fa-grip"></i><span> Cabinet</span>
+                    </p>
+                    <p><i class="fa-solid fa-fan"></i><span> Aircon</span></p>
+                    <p><i class="fa-solid fa-shower"></i><span> CR</span></p>
+                    <p>
+                      <i class="fa-solid fa-person-running"></i
+                      ><span> Emergency Exit</span>
+                    </p>
+                    <p>
+                      <i class="fa-solid fa-house-lock"></i
+                      ><span> 24/7 Security</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- closing tag of 2nd col-md-6 -->
+      </div>
+    </div>
+    <!-- closing tag of container Amenities-->
+  </div>
+
+  <!-- End of Room Amenities under Property Information -->
+</div>
+
+
+
+
+<!-- Start of Google Map under Property Information -->
+
+<div class="container pt-5">
+  <div class="row">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d962.807197098562!2d120.59276596960956!3d15.145774899088007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f313262cc467%3A0xa12b7889c166e418!2sJaeden%20Kent%20Residence%20%2F%20Batac%20-Valencia!5e0!3m2!1sen!2sph!4v1690310871739!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+
+<!-- End of Google Map under Property Information -->
+
+<!-- Start of Reviews under Property Information -->
+
+<!-- Start of Reviews under Property Information -->
+<div class="container-fluid mt-5" style="background-color: #191d28;">
+<div class="container pt-5">
+    <div class="row">
+            <div class="testimonials-section px-5">
+                
+                <!-- Section Header Starts -->
+              <div class="row">
+                <div class="col-10">
+                  <header class="section-header">
+                      <h1>Reviews</h1>
+                  </header>
+                    <div class="row">
+                      <div class="col-sm">
+                        <div class="review-p">
+                          <p>How others rated this apartment</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 section-header-btn">
+                    <a href="#" class="btnReview">Add a review</a>
+                </div>
+              </div>
+              <!-- Section Header Ends -->
+            
+                <!-- Owl Carousel Slider Starts -->
+                <div class="owl-carousel owl-theme testimonials-container">
+                    <!-- Item1 Starts -->
+                    <div class="item testimonial-card">
+                        <main class="test-card-body">
+                          <div class="profile">
+                            <div class="profile-image">
+                                <img src="images/prof1.png">
+                            </div>
+                            <div class="profile-desc">
+                                <span>Micoh Yabut</span>
+                                <span class="ratings">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="num"> 5.0</i>
+                                </span>
+                                <span class="date">Jun-06-23</span>
+                            </div>
+                          </div>
+                            <div class="quote">
+                                <i class="fa fa-quote-left"></i>
+                                <h2>Awesome Coding</h2>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                        </main>
+
+                    </div>
+                    <!-- Item1 Ends -->
+            
+                    <!-- Item2 Starts -->
+                    <div class="item testimonial-card">
+                        <main class="test-card-body">
+                          <div class="profile">
+                            <div class="profile-image">
+                                <img src="images/prof2.png">
+                            </div>
+                            <div class="profile-desc">
+                                <span>Arnold Lim</span>
+                                <span class="ratings">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="num"> 5.0</i>
+                                </span>
+                                <span class="date">Jun-06-23</span>
+                            </div>
+                          </div>
+                            <div class="quote">
+                                <i class="fa fa-quote-left"></i>
+                                <h2>Awesome Coding</h2>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                        </main>
+                    </div>
+                    <!-- Item2 Ends -->
+            
+                    <!-- Item3 Starts -->
+                    <div class="item testimonial-card">
+                        <main class="test-card-body">
+                          <div class="profile">
+                            <div class="profile-image">
+                                <img src="images/prof3.png">
+                            </div>
+                            <div class="profile-desc">
+                                <span>Aaron Echon</span>
+                                <span class="ratings">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="num"> 5.0</i>
+                                </span>
+                                <span class="date">Jun-06-23</span>
+                            </div>
+                          </div>
+                            <div class="quote">
+                                <i class="fa fa-quote-left"></i>
+                                <h2>Awesome Coding</h2>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                        </main>
+                    </div>
+                    <!-- Item3 Ends -->
+            
+                    <!-- Item4 Starts -->
+                    <div class="item testimonial-card">
+                        <main class="test-card-body">
+                          <div class="profile">
+                            <div class="profile-image">
+                                <img src="images/prof1.png">
+                            </div>
+                            <div class="profile-desc">
+                                <span>Micoh Jomarie</span>
+                                <span class="ratings">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="num"> 5.0</i>
+                                </span>
+                                <span class="date">Jun-06-23</span>
+                            </div>
+                          </div>
+                            <div class="quote">
+                                <i class="fa fa-quote-left"></i>
+                                <h2>Awesome Coding</h2>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                        </main>
+                    </div>
+                    <!-- Item4 Ends -->
+            
+                    <!-- Item5 Starts -->
+                    <div class="item testimonial-card">
+                        <main class="test-card-body">
+                          <div class="profile">
+                            <div class="profile-image">
+                                <img src="images/prof2.png">
+                            </div>
+                            <div class="profile-desc">
+                                <span>Arnold Nicholas</span>
+                                <span class="ratings">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="num"> 5.0</i>
+                                </span>
+                                <span class="date">Jun-06-23</span>
+                            </div>
+                          </div>
+                            <div class="quote">
+                                <i class="fa fa-quote-left"></i>
+                                <h2>Awesome Coding</h2>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                        </main>
+                    </div>
+                    <!-- Item5 Ends -->
+            
+                    <!-- Item6 Starts -->
+                    <div class="item testimonial-card">
+                        <main class="test-card-body">
+                          <div class="profile">
+                            <div class="profile-image">
+                                <img src="images/prof3.png">
+                            </div>
+                            <div class="profile-desc">
+                                <span>David Aaron</span>
+                                <span class="ratings">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="num"> 5.0</i>
+                                </span>
+                                <span class="date">Jun-06-23</span>
+                            </div>
+                          </div>
+                            <div class="quote">
+                                <i class="fa fa-quote-left"></i>
+                                <h2>Awesome Coding</h2>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                        </main>
+                    </div>
+                    <!-- Item6 Ends -->
+            
+                </div>
+                <!-- Owl Carousel Slider Ends -->
+            
+            </div>
+
+            
+    </div>
+  </div>
+</div>
+  
+  <!-- End of Reviews under Property Information -->
+
+
+
+  <!-- Start of Similar Apartment Listings -->
+
+    <!-- <div class="container-fluid featuredHtml"> -->
+      <section class="listings">
+        <h1 class="featureHeading p-3">Featured Dormitories and Apartments</h1>
+
+        <!-- <div class="container-md"> -->
+          <div class="box-container">
+            <div class="row gx-5">
+              <div class="col-md">
+                <div class="box">
+                  <div class="thumb">
+                    <p class="total-images">
+                      <i class="far fa-image"></i><span>4</span>
+                    </p>
+                    <p class="type"><span>Apartment</span></p>
+                    <form action="" method="post" class="save">
+                      <button
+                        type="submit"
+                        name="save"
+                        class="fa-solid fa-bookmark fa-3x"
+                      ></button>
+                    </form>
+                    <img src="images/house-img-2.webp" alt="" />
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h3 class="name">Batacs Dormitory</h3>
+                      <div class="row">
+                        <div class="h4 mt-3 col-sm-8">
+                          <div>
+                            <i class="fas fa-map-marker-alt"></i> Brgy. Claro M.
+                            Recto
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 rentName">
+                      Rent starts at
+                      <div class="price">&#8369;5,000</div>
+                    </div>
+                  </div>
+          
+                  <div class="row flex">
+                    <div class="col">
+                      <p><i class="fas fa-bed"></i><span>4</span></p>
+                    </div>
+                    <div class="col">
+                      <p><i class="fas fa-bath"></i><span>2</span></p>
+                    </div>
+                    <div class="col">
+                      <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <p class="btnRating"><i class="fa-solid fa-star starRating"></i> 5.0 (150 reviews)
+                    </div>
+                    <div class="col-lg-6">
+                      <a href="view_property.html" class="btnView">View property</a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+              <div class="col-md">
+                <div class="box">
+                  <div class="thumb">
+                    <p class="total-images">
+                      <i class="far fa-image"></i><span>4</span>
+                    </p>
+                    <p class="type"><span>Apartment</span></p>
+                    <form action="" method="post" class="save">
+                      <button
+                        type="submit"
+                        name="save"
+                        class="fa-solid fa-bookmark fa-3x"
+                      ></button>
+                    </form>
+                    <img src="images/house-img-2.webp" alt="" />
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h3 class="name">Batac Dormitory</h3>
+                      <div class="row">
+                        <div class="h4 mt-3 col-sm-8">
+                          <div>
+                            <i class="fas fa-map-marker-alt"></i> Brgy. Claro M.
+                            Recto
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 rentName">
+                      Rent starts at
+                      <div class="price">&#8369;5,000</div>
+                    </div>
+                  </div>
+          
+                  <div class="row flex">
+                    <div class="col">
+                      <p><i class="fas fa-bed"></i><span>4</span></p>
+                    </div>
+                    <div class="col">
+                      <p><i class="fas fa-bath"></i><span>2</span></p>
+                    </div>
+                    <div class="col">
+                      <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <p class="btnRating"><i class="fa-solid fa-star starRating"></i> 5.0 (150 reviews)
+                    </div>
+                    <div class="col-lg-6">
+                      <a href="view_property.html" class="btnView">View property</a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+              <div class="col-md">
+                <div class="box">
+                  <div class="thumb">
+                    <p class="total-images">
+                      <i class="far fa-image"></i><span>4</span>
+                    </p>
+                    <p class="type"><span>Apartment</span></p>
+                    <form action="" method="post" class="save">
+                      <button
+                        type="submit"
+                        name="save"
+                        class="fa-solid fa-bookmark fa-3x"
+                      ></button>
+                    </form>
+                    <img src="images/house-img-2.webp" alt="" />
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h3 class="name">Batac Dormitory</h3>
+                      <div class="row">
+                        <div class="h4 mt-3 col-sm-8">
+                          <div>
+                            <i class="fas fa-map-marker-alt"></i> Brgy. Claro M.
+                            Recto
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 rentName">
+                      Rent starts at
+                      <div class="price">&#8369;5,000</div>
+                    </div>
+                  </div>
+          
+                  <div class="row flex">
+                    <div class="col">
+                      <p><i class="fas fa-bed"></i><span>4</span></p>
+                    </div>
+                    <div class="col">
+                      <p><i class="fas fa-bath"></i><span>2</span></p>
+                    </div>
+                    <div class="col">
+                      <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <p class="btnRating"><i class="fa-solid fa-star-half-stroke starRating"></i> 4.8 (73 reviews)</p>
+                    </div>
+                    <div class="col-lg-6">
+                      <a href="view_property.html" class="btnView">View property</a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div style="margin-top: 4rem; text-align: center">
+            <a href="accomodations.html" class="inline-btn">View All</a>
+          </div>
+
+        <!-- </div> -->
+      </section>
+    <!-- </div> -->
+
+    <!-- Featured ends -->
+
+
+
+  <!-- End of Similar Apartment Listings -->
+
+
+
+<!-- End of Property Information -->
+ 
+
+    <!-- Footer -->
+
+    
+      <footer class="site-footer">
+        <div class="container-fluid">
+          <div class="container">
+          <div class="row">
+              <div class="col-sm-12 col-md-8">
+              <h2>APT IBA PA</h2>
+                <div class="row">
+                  <div class="col-sm-12 col-md-8">
+                    <p class="text-justify">
+                      Our platform serves as a comprehensive guide, providing a vast database of dormitories and apartments in the area surrounding AUF. Through our interactive map interface, users can easily navigate and explore different locations, allowing them to make informed decisions based on their preferences and requirements.
+                    </p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-xs-6 col-md-2 me-auto pt-4">
+              <h6>Pages</h6>
+              <ul class="footer-links">
+                  <li><a href="http://scanfcode.com/category/c-language/">Accomodations</a><li>
+                  <li>
+                  <a href="http://scanfcode.com/category/front-end-development/">About Us</a>
+                  </li>
+                  <li>
+                  <a href="http://scanfcode.com/category/back-end-development/">Apply My Property</a>
+              </ul>
+              </div>
+  
+              <div class="col-xs-6 col-md-2 pt-4">
+              <h6>Features</h6>
+              <ul class="footer-links">
+                  <li><a href="http://scanfcode.com/about/">Favorites</a></li>
+                  <li><a href="http://scanfcode.com/contact/">Reserve a Room</a></li>
+                  <li>
+                  <a href="http://scanfcode.com/contribute-at-scanfcode/">Schedule a Visit</a>
+              </ul>
+              </div>
+          </div>
+          <hr />
+          </div>
+          <div class="container">
+          <div class="row">
+              <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">
+                  Copyright &copy; 2023 All Rights Reserved by
+                  <a href="#">APT IBA PA</a>.
+              </p>
+              </div>
+  
+              <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                  <li>
+                  <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li>
+                  <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li>
+                  <a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+                  </li>
+                  <li>
+                  <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                  </li>
+              </ul>
+              </div>
+          </div>
+          </div>
+        </div>
+      </footer>
+      
+  
+      <!-- Footer ends -->
+  
+
+
+
+    
+
+
+  </body>
+
+  <!-- javascript -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="js/accommodations.js"></script>
+  
+
+  <!-- JS of Carousel -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"></script>
+  <script>
+      $('.carousel-container').owlCarousel({
+          loop: false,
+          margin: 15,
+          nav: true,
+          navText:["<i class='fa-solid fa-arrow-left leftArrow'></i>",
+                   "<i class='fa-solid fa-arrow-right rightArrow'></i>"],
+          responsive: {
+              0: {
+                  items: 1
+              },
+              600: {
+                  items: 2
+              },
+              1000: {
+                  items: 3
+              }
+          }
+      })
+
+      $('.testimonials-container').owlCarousel({
+        loop:true,
+        autoplay:false,
+        autoplayTimeout:6000,
+        margin:10,
+        nav:true,
+        navText:["<i class='fa-solid fa-arrow-left leftArrow'></i>",
+                "<i class='fa-solid fa-arrow-right rightArrow'></i>"],
+        responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            600:{
+                items:1,
+                nav:true
+            },
+            768:{
+                items:2
+            },
+        }
+        })
+  </script>
+
+              
+            <!--   *****   JQuery Link   *****   -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+            
+            <!--   *****   Owl Carousel js Link  *****  -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</html>
