@@ -26,7 +26,6 @@
 
 html {
    font-size: 62.5%;
-   overflow-x: hidden;
    scroll-behavior: smooth;
    scroll-padding-top: 10rem;
 }
@@ -72,7 +71,18 @@ section {
 
 }
 
-.d-flex .btn {
+.signOutbtn .btn {
+   background-color: #232A3D;
+   color: #FFF;
+   font-size: 1.5rem;
+}
+
+.signOutbtn .btn:hover {
+   background-color: #E4E9F7;
+   color: #232A3D;
+}
+
+/* .d-flex .btn {
    background-color: #232A3D;
    color: #FFF;
    font-size: 1.5rem;
@@ -81,7 +91,7 @@ section {
 .d-flex .btn:hover {
    background-color: #E4E9F7;
    color: #232A3D;
-}
+} */
 
 .jumbotron {
    background: url('../images/header.png') no-repeat center fixed;
@@ -653,6 +663,54 @@ section {
     height: 400px;
 }
 
+
+.carousel-container .item .card:hover img {
+   height: 400px;
+   opacity:0.5;
+}
+
+.carousel-container .item .card:hover i{
+   display: block;
+}
+
+.carousel-container .item .card i{
+   display: none;
+}
+
+.carousel-container .item .card .btnEditG{
+   top: 40%;
+   left: 38%;
+   transition: color 0.5s ease;
+}
+
+.carousel-container .item .card .btnEditG:hover{
+   color: var(--primary-clr) !important;
+   transform: scale(1.3);
+}
+
+.carousel-container .item .card .btnDeleteG{
+   top: 40%;
+   left: 48%;
+   transition: color 0.5s ease;
+}
+
+.carousel-container .item .card .btnDeleteG:hover{
+   color: var(--primary-clr) !important;
+   transform: scale(1.3);
+}
+
+
+.carousel-container .item .card .btnViewG{
+   top: 40%;
+   left: 57%;
+   transition: color 0.5s ease;
+}
+
+.carousel-container .item .card .btnViewG:hover{
+   color: var(--primary-clr) !important;
+   transform: scale(1.3);
+}
+
 .carousel-container body{
     background: #E4E9F7;
 }
@@ -688,7 +746,7 @@ section {
 	background-color: var(--primary-clr) !important;
 	color: #e9e9e9;
 }
-.carousel-container .owl-dots{
+/* .carousel-container .owl-dots{
 	margin-top: 0%;
 }
 .carousel-container .owl-dots .owl-dot span{
@@ -697,7 +755,7 @@ section {
 }
 .carousel-container .owl-dot.active span{
 	background-color: var(--primary-clr) !important;
-}
+} */
 
 
 
@@ -711,6 +769,7 @@ section {
 .viewP .location{
     font-size: 1.5rem;
     color: var(--light-color);
+    padding-right: 0 !important;
  }
 
 .viewP .viewpDescription{
@@ -743,11 +802,33 @@ section {
 
 .viewP .aptPrice{
     font-size: 4rem;
-    margin-bottom: .5rem;
     text-align: center;
+    margin-top: 0.5rem;
+    
 }
 
-.viewP .aptPrice .monthly{
+.viewP .aptPrice:hover{
+   font-size: 4rem;
+   text-align: center;
+   margin-top: 0.5rem;
+}
+
+.btnReview:hover,
+.inline-btn:hover {
+   background-color: var(--primary-clr) !important;
+   color: #e9e9e9;
+
+   background-color: #232A3D;
+   color: var(--primary-clr);
+}
+
+
+.viewP .pesoSign{
+   font-size: 4rem;
+   text-align: center;
+}
+
+.viewP .monthly{
     font-size: 2rem;
     font-weight: 600;
 }
@@ -836,7 +917,7 @@ section {
  }
 
 
-.amenities .amenitiesInfo .description{
+.amenities .description{
     gap: 1.5rem;
     font-size: 1.5rem;
     font-weight: normal;
@@ -1020,6 +1101,17 @@ section {
    height: 4rem;
    width: 6rem;
 }
+
+#faqsAccord button.accordion-button{
+   font-size: 14px;
+   font-weight: 600;
+}
+
+#faqsAccord div.accordion-body{
+   font-size: 12px;
+}
+
+
 
 /* Reviews Section */
 
@@ -1387,21 +1479,166 @@ section {
 
 
 
+.viewAllGallery{
+   font-size: 14px;
+   font-weight: 500;
+}
+
+.modal-title {
+   font-size: 28px;
+   font-weight: 600;
+}
+
+.editCarouselImg .inputImgTitle{
+   font-size: 14px;
+   font-weight: 500;
+}
+
+ .editCarouselImg .inputImgSubtitle{
+   font-size: 10px;
+   font-weight: 500;
+ }
+
+ .editCarouselImg .galleryCaption{
+   font-size: 14px;
+   font-weight: 500;
+ }
+
+ .deleteCarouselImg .deleteDescrip{
+   font-size: 14px;
+   font-weight: 500;
+ }
+
+ .viewGallery .img-container img {
+   border-radius: 2px;
+ }
+
+ .viewGallery .galleryTitle{
+   font-size: 16px;
+   font-weight: 600;
+ }
+
+ .viewGallery .galleryCaption{
+   font-size: 14px;
+   font-weight: 500;
+ }
+
+ .editGallery .img-container img {
+   border-radius: 2px;
+ }
+
+ .editGallery .galleryTitle{
+   font-size: 16px;
+   font-weight: 600;
+ }
+
+ .editGallery .galleryCaption{
+   font-size: 14px;
+   font-weight: 500;
+ }
+
+ .flex-nowrap::-webkit-scrollbar{
+   display: none;
+ }
+
+ /* .viewGallery .container .carouselViewG-container img {
+   height: 400px;
+} */
+
+
+/* .carousel-container .item .card:hover img {
+   height: 400px;
+   opacity:0.5;
+}
+
+.carousel-container .item .card:hover i{
+   display: block;
+}
+
+.carousel-container .item .card i{
+   display: none;
+}
+
+.carousel-container .item .card .btnEditG{
+   top: 40%;
+   left: 38%;
+   transition: color 0.5s ease;
+}
+
+.carousel-container .item .card .btnEditG:hover{
+   color: var(--primary-clr) !important;
+} */
+
+/* .btnMenuGal{
+   border-radius: 70px;
+
+} */
+
+.dropAction{
+   top: 3%;
+   right: 3%;
+}
+
+
+.dropActionMobile{
+   top: 3%;
+   right: 3%;
+}
+
+
+::selection{
+   color: #fff;
+   background: #6990F2;
+ }
+
+form.addImageModal{
+   display: flex;
+   cursor: pointer;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   top: 33%;
+ }
+ 
+form.addImageModal :where(i, p){
+   color: #232A3D;
+ }
+form.addImageModal i{
+   font-size: 25px;
+   text-align: center;
+ }
+form.addImageModal p{
+   margin-top: 10px;
+   font-size: 10px;
+ } 
+
+ form.addImageCarousel{
+   display: flex;
+   cursor: pointer;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   top: 33%;
+ }
+ 
+form.addImageCarousel :where(i, p){
+   color: #232A3D;
+ }
+form.addImageCarousel i{
+   font-size: 80px;
+   text-align: center;
+ }
+form.addImageCarousel p{
+   margin-top: 10px;
+   font-size: 50px;
+ } 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+ 
+.img-fluid{
+   height: 100px;
+}
 
 
 

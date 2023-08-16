@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .edit-btn {
+    margin-right: 10px;
+  }
+  .checkbox {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="item">
+  <button class="edit-btn">Edit</button>
+  <span>Task 1</span>
+  <input type="checkbox" class="checkbox">
+</div>
+
+<div class="item">
+  <button class="edit-btn">Edit</button>
+  <span>Task 2</span>
+  <input type="checkbox" class="checkbox">
+</div>
+
+<script>
+  const editButtons = document.querySelectorAll('.edit-btn');
+  const checkboxes = document.querySelectorAll('.checkbox');
+
+  editButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      checkboxes[index].style.display = 'inline';
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -145,6 +145,7 @@
   
 
     <!-- Carousel code ends here -->
+
 <!-- Start of Property Information -->
 
 <div class="container pt-5 pb-5 viewP">
@@ -156,7 +157,7 @@
           <div class="row">
             <div class="h4 mt-3 col-sm-10 location">
               <div>
-                <i class="fas fa-map-marker-alt"></i> 452 Cuatro de Julio Street
+                <i class="fas fa-map-marker-alt"></i> 452 Cuatro de Julio Street,
                 Barangay Salapungan
               </div>
             </div>
@@ -213,10 +214,10 @@
 
       <div class="row py-3">
         <div class="col-sm">
-          <a href="#" class="btnViewP">Request a Visit</a>
+          <a href="#" class="btnViewP" data-bs-toggle="modal" data-bs-target="#requestVisit">Request a Visit</a>
         </div>
         <div class="col-sm">
-          <a href="#" class="btnViewP">Reserve a Room</a>
+          <a href="#" class="btnViewP" data-bs-toggle="modal" data-bs-target="#reserveRoom">Reserve a Room</a>
         </div>
       </div>
 
@@ -239,303 +240,575 @@
 <!-- Start of Property Amenities under Property Information -->
 <div class="container pt-3 amenities">
   <div class="row">
-    <div class="col-12">
+    <div class="col-md-6">
       <h3 class="name">Property Amenities</h3>
-    </div>
+      
     <hr />
-    <div class="row">
-      <!-- <div class="col-12 mt-3 amenitiesTitle">Property Amenities</div> -->
-
-      <div class="col-md-6">
-        <div class="row">
-          <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
-            <div class="description">
-              <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
-              <p style="text-decoration: line-through">
-                <i class="fa-solid fa-fan"></i><span> Aircon</span>
-              </p>
-              <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
-              <p>
-                <i class="fa-solid fa-person-running"></i
-                ><span> Emergency Exit</span>
-              </p>
-              <p>
-                <i class="fa-solid fa-bed"></i><span> 1 Small Single Bed</span>
-              </p>
-              <p style="text-decoration: line-through">
-                <i class="fa-solid fa-arrows-left-right"></i
-                ><span> Roof Deck</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="row">
-          <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
-            <div class="description">
-              <p style="text-decoration: line-through">
-                <i class="fa solid fa-grip"></i><span> Cabinet</span>
-              </p>
-              <p><i class="fa-solid fa-fan"></i><span> Aircon</span></p>
-              <p><i class="fa-solid fa-shower"></i><span> CR</span></p>
-              <p>
-                <i class="fa-solid fa-person-running"></i
-                ><span> Emergency Exit</span>
-              </p>
-              <p>
-                <i class="fa-solid fa-house-lock"></i
-                ><span> 24/7 Security</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- closing tag of nested col-md-6 -->
     </div>
-    <!-- closing tag of 1st row under col-md-6 -->
+
+    <div class="col-md-6 text-md-end order-2 order-md-0">
+
+        <div class="h5 d-none d-md-block">frequently asked questions 
+          <span class="name h3">FAQs</span>
+        </div>
+
+        <div class="name h3 d-block d-md-none">FAQs<span class="h5">frequently asked questions</span></div>
+
+      <hr />
+    </div>
+
+    <div class="col-md-6">
+
+      <div class="row">
+        
+        <div class="text-center" >
+  
+          <div class="row mt-3">
+            <div class="col-md-6 description">
+              <div class="row">
+                <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
+              </div>
+  
+              <div class="row">
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-fan"></i><span> Aircon</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
+              </div>
+              
+              <div class="row">
+                <p>
+                  <i class="fa-solid fa-person-running"></i>
+                  <span> Emergency Exit</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p>
+                  <i class="fa-solid fa-bed"></i>
+                  <span> 1 Small Single Bed</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-arrows-left-right"></i>
+                  <span> Roof Deck</span>
+                </p>
+              </div>
+  
+            </div>
+  
+            <div class="col-md-6  description">
+              <div class="row">
+                <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
+              </div>
+  
+              <div class="row">
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-fan"></i><span> Aircon</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
+              </div>
+              
+              <div class="row">
+                <p>
+                  <i class="fa-solid fa-person-running"></i>
+                  <span> Emergency Exit</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p>
+                  <i class="fa-solid fa-bed"></i>
+                  <span> 1 Small Single Bed</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-arrows-left-right"></i>
+                  <span> Roof Deck</span>
+                </p>
+              </div>
+  
+            </div>
+  
+            
+          </div>
+          
+        </div>
+  
+      </div>
+  
+      </div>
+
+    <div class="col-md-6 align-items-center order-3 order-md-0">
+
+      <div class="accordion" id="faqsAccord">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Are guests allowed?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqsAccord">
+            <div class="accordion-body">
+              Yes. However, they can only stay your room until 8pm.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Are pets allowed?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqsAccord">
+            <div class="accordion-body">
+              Unfortunately, pets are not allowed at our property.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              How much is the reservation fee?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqsAccord">
+            <div class="accordion-body">
+              It costs ₱500. And a downpayment of ₱3,000 to secure your reserved room.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              How much is the reservation fee?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqsAccord">
+            <div class="accordion-body">
+              It costs ₱500. And a downpayment of ₱3,000 to secure your reserved room.
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+
+
+
   </div>
 </div>
-<!-- closing tag of container Amenities-->
 
 <!-- End of Property Amenities under Property Information -->
+
+
 
 <!-- Start of Room Amenities under Property Information -->
 <div class="container pt-5 amenities">
   <div class="row">
-    <div class="col-12">
+    <div class="col-12 text-center">
       <h3 class="name">Room Amenities</h3>
     </div>
-    <hr />
-    <div class="col-md-6">
-      <div class="row">
-        <div class="col-sm-10 mt-3 amenitiesTitle">Single Room</div>
+  </div>
 
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
-              <div class="description">
+    <hr />
+  <div class="row row-gap-3 ">
+
+    <div class="row column-gap-3 justify-content-center ">
+      
+      <div class="col-md-5 text-center" >
+        
+          <div class="row justify-content-between">
+            <div class="col-6 col-md-6 mt-3 d-flex justify-content-start amenitiesTitle">
+              Single Room
+            </div>
+
+            <div class="col-5 col-md-6 mt-3 d-flex justify-content-end amenitiesTitle" >
+              ₱5000
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-md-6 description">
+              <div class="row">
                 <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
+              </div>
+
+              <div class="row">
                 <p style="text-decoration: line-through">
                   <i class="fa-solid fa-fan"></i><span> Aircon</span>
                 </p>
+              </div>
+              
+              <div class="row">
                 <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
-                <p>
-                  <i class="fa-solid fa-person-running"></i
-                  ><span> Emergency Exit</span>
-                </p>
-                <p>
-                  <i class="fa-solid fa-bed"></i
-                  ><span> 1 Small Single Bed</span>
-                </p>
-                <p style="text-decoration: line-through">
-                  <i class="fa-solid fa-arrows-left-right"></i
-                  ><span> Roof Deck</span>
-                </p>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
-              <div class="description">
-                <p style="text-decoration: line-through">
-                  <i class="fa solid fa-grip"></i><span> Cabinet</span>
-                </p>
-                <p><i class="fa-solid fa-fan"></i><span> Aircon</span></p>
-                <p><i class="fa-solid fa-shower"></i><span> CR</span></p>
-                <p>
-                  <i class="fa-solid fa-person-running"></i
-                  ><span> Emergency Exit</span>
-                </p>
-                <p>
-                  <i class="fa-solid fa-house-lock"></i
-                  ><span> 24/7 Security</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- closing tag of nested col-md-6 -->
-      </div>
-      <!-- closing tag of 1st row under col-md-6 -->
-
-      <div class="col-md">
-        <div class="row">
-          <div class="col-sm-10 mt-3 amenitiesTitle">Double Room</div>
-
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
-                <div class="description">
-                  <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
-                  <p style="text-decoration: line-through">
-                    <i class="fa-solid fa-fan"></i><span> Aircon</span>
-                  </p>
-                  <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
-                  <p>
-                    <i class="fa-solid fa-person-running"></i
-                    ><span> Emergency Exit</span>
-                  </p>
-                  <p>
-                    <i class="fa-solid fa-bed"></i
-                    ><span> 1 Small Single Bed</span>
-                  </p>
-                  <p style="text-decoration: line-through">
-                    <i class="fa-solid fa-arrows-left-right"></i
-                    ><span> Roof Deck</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
-                <div class="description">
-                  <p style="text-decoration: line-through">
-                    <i class="fa solid fa-grip"></i><span> Cabinet</span>
-                  </p>
-                  <p><i class="fa-solid fa-fan"></i><span> Aircon</span></p>
-                  <p><i class="fa-solid fa-shower"></i><span> CR</span></p>
-                  <p>
-                    <i class="fa-solid fa-person-running"></i
-                    ><span> Emergency Exit</span>
-                  </p>
-                  <p>
-                    <i class="fa-solid fa-house-lock"></i
-                    ><span> 24/7 Security</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- closing tag of nested col-md-6 -->
-        </div>
-        <!-- closing tag of 1st row under col-md-6 -->
-      </div>
-      <!-- closing tag of 1st col-md-6 -->
-    </div>
-    <!-- closing tag of 1st col-md-6 -->
-
-    <div class="col-md-6">
-      <div class="row">
-        <div class="col-sm-10 mt-3 amenitiesTitle">Triple Room</div>
-
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
-              <div class="description">
-                <p>
-                  <i class="fa solid fa-wifi"></i><span> High-Speed Wi-Fi</span>
-                </p>
-                <p>
-                  <i class="fa-solid fa-arrows-left-right"></i
-                  ><span> Study area</span>
-                </p>
-                <p style="text-decoration: line-through">
-                  <i class="fa-solid fa-toilets-portable"></i
-                  ><span> Common CR</span>
-                </p>
-                <p><i class="fa-solid fa-video"></i><span> CCTV</span></p>
-                <p>
-                  <i class="fa-solid fa-person-running"></i
-                  ><span> Emergency Exits</span>
-                </p>
-                <p><i class="fa-solid fa-video"></i><span> CCTV</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
-              <div class="description">
-                <p>
-                  <i class="fa-solid fa-arrows-left-right"></i
-                  ><span> Reception Area</span>
-                </p>
-                <p style="text-decoration: line-through">
-                  <i class="fa-solid fa-kitchen-set"></i
-                  ><span> Kitchen Area</span>
-                </p>
-                <p>
-                  <i class="fa-solid fa-fire-extinguisher"></i
-                  ><span> Fire Extinguishers</span>
-                </p>
-                <p><i class="fa-solid fa-video"></i><span> CCTV</span></p>
-                <p>
-                  <i class="fa-solid fa-faucet-drip"></i
-                  ><span> Water and Sewage </span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- closing tag of nested col-md-6 -->
-
-        <div class="col-md">
-          <div class="row">
-            <div class="col-sm-10 mt-3 amenitiesTitle">Quadruple Room</div>
-
-            <div class="col-md-6">
+              
               <div class="row">
-                <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
-                  <div class="description">
-                    <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
-                    <p style="text-decoration: line-through">
-                      <i class="fa-solid fa-fan"></i><span> Aircon</span>
-                    </p>
-                    <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
-                    <p>
-                      <i class="fa-solid fa-person-running"></i
-                      ><span> Emergency Exit</span>
-                    </p>
-                    <p>
-                      <i class="fa-solid fa-bed"></i
-                      ><span> 1 Small Single Bed</span>
-                    </p>
-                    <p style="text-decoration: line-through">
-                      <i class="fa-solid fa-arrows-left-right"></i
-                      ><span> Roof Deck</span>
-                    </p>
-                  </div>
-                </div>
+                <p>
+                  <i class="fa-solid fa-person-running"></i>
+                  <span> Emergency Exit</span>
+                </p>
               </div>
+              
+              <div class="row">
+                <p>
+                  <i class="fa-solid fa-bed"></i>
+                  <span> 1 Small Single Bed</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-arrows-left-right"></i>
+                  <span> Roof Deck</span>
+                </p>
+              </div>
+
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6  description">
               <div class="row">
-                <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
-                  <div class="description">
-                    <p style="text-decoration: line-through">
-                      <i class="fa solid fa-grip"></i><span> Cabinet</span>
-                    </p>
-                    <p><i class="fa-solid fa-fan"></i><span> Aircon</span></p>
-                    <p><i class="fa-solid fa-shower"></i><span> CR</span></p>
-                    <p>
-                      <i class="fa-solid fa-person-running"></i
-                      ><span> Emergency Exit</span>
-                    </p>
-                    <p>
-                      <i class="fa-solid fa-house-lock"></i
-                      ><span> 24/7 Security</span>
-                    </p>
-                  </div>
-                </div>
+                <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
               </div>
+
+              <div class="row">
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-fan"></i><span> Aircon</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
+              </div>
+              
+              <div class="row">
+                <p>
+                  <i class="fa-solid fa-person-running"></i>
+                  <span> Emergency Exit</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p>
+                  <i class="fa-solid fa-bed"></i>
+                  <span> 1 Small Single Bed</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-arrows-left-right"></i>
+                  <span> Roof Deck</span>
+                </p>
+              </div>
+
             </div>
+
+            
+          </div>
+      </div>
+      
+
+      <div class="col-md-5 text-center" >
+        
+        <div class="row justify-content-between">
+          <div class="col-6 col-md-6 mt-3 d-flex justify-content-start amenitiesTitle">
+            Single Room
+          </div>
+
+          <div class="col-5 col-md-6 mt-3 d-flex justify-content-end amenitiesTitle" >
+            ₱5000
           </div>
         </div>
-        <!-- closing tag of 2nd col-md-6 -->
+
+        <div class="row mt-3">
+          <div class="col-md-6 description">
+            <div class="row">
+              <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
+            </div>
+
+            <div class="row">
+              <p style="text-decoration: line-through">
+                <i class="fa-solid fa-fan"></i><span> Aircon</span>
+              </p>
+            </div>
+            
+            <div class="row">
+              <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
+            </div>
+            
+            <div class="row">
+              <p>
+                <i class="fa-solid fa-person-running"></i>
+                <span> Emergency Exit</span>
+              </p>
+            </div>
+            
+            <div class="row">
+              <p>
+                <i class="fa-solid fa-bed"></i>
+                <span> 1 Small Single Bed</span>
+              </p>
+            </div>
+            
+            <div class="row">
+              <p style="text-decoration: line-through">
+                <i class="fa-solid fa-arrows-left-right"></i>
+                <span> Roof Deck</span>
+              </p>
+            </div>
+
+          </div>
+
+          <div class="col-md-6  description">
+            <div class="row">
+              <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
+            </div>
+
+            <div class="row">
+              <p style="text-decoration: line-through">
+                <i class="fa-solid fa-fan"></i><span> Aircon</span>
+              </p>
+            </div>
+            
+            <div class="row">
+              <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
+            </div>
+            
+            <div class="row">
+              <p>
+                <i class="fa-solid fa-person-running"></i>
+                <span> Emergency Exit</span>
+              </p>
+            </div>
+            
+            <div class="row">
+              <p>
+                <i class="fa-solid fa-bed"></i>
+                <span> 1 Small Single Bed</span>
+              </p>
+            </div>
+            
+            <div class="row">
+              <p style="text-decoration: line-through">
+                <i class="fa-solid fa-arrows-left-right"></i>
+                <span> Roof Deck</span>
+              </p>
+            </div>
+
+          </div>
+
+          
+        </div>
       </div>
+
+
     </div>
-    <!-- closing tag of container Amenities-->
+
+    <div class="row column-gap-3 justify-content-center ">
+      
+      <div class="col-md-5 text-center" >
+        
+          <div class="row justify-content-between">
+            <div class="col-6 col-md-6 mt-3 d-flex justify-content-start amenitiesTitle">
+              Single Room
+            </div>
+
+            <div class="col-5 col-md-6 mt-3 d-flex justify-content-end amenitiesTitle" >
+              ₱5000
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-md-6 description">
+              <div class="row">
+                <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
+              </div>
+
+              <div class="row">
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-fan"></i><span> Aircon</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
+              </div>
+              
+              <div class="row">
+                <p>
+                  <i class="fa-solid fa-person-running"></i>
+                  <span> Emergency Exit</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p>
+                  <i class="fa-solid fa-bed"></i>
+                  <span> 1 Small Single Bed</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-arrows-left-right"></i>
+                  <span> Roof Deck</span>
+                </p>
+              </div>
+
+            </div>
+
+            <div class="col-md-6  description">
+              <div class="row">
+                <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
+              </div>
+
+              <div class="row">
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-fan"></i><span> Aircon</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
+              </div>
+              
+              <div class="row">
+                <p>
+                  <i class="fa-solid fa-person-running"></i>
+                  <span> Emergency Exit</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p>
+                  <i class="fa-solid fa-bed"></i>
+                  <span> 1 Small Single Bed</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-arrows-left-right"></i>
+                  <span> Roof Deck</span>
+                </p>
+              </div>
+
+            </div>
+
+            
+          </div>
+      </div>
+      
+
+      <div class="col-md-5 text-center" >
+        
+        <div class="row justify-content-between">
+          <div class="col-6 col-md-6 mt-3 d-flex justify-content-start amenitiesTitle">
+            Single Room
+          </div>
+
+          <div class="col-5 col-md-6 mt-3 d-flex justify-content-end amenitiesTitle" >
+            ₱5000
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-md-6 description">
+            <div class="row">
+              <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
+            </div>
+
+            <div class="row">
+              <p style="text-decoration: line-through">
+                <i class="fa-solid fa-fan"></i><span> Aircon</span>
+              </p>
+            </div>
+            
+            <div class="row">
+              <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
+            </div>
+            
+            <div class="row">
+              <p>
+                <i class="fa-solid fa-person-running"></i>
+                <span> Emergency Exit</span>
+              </p>
+            </div>
+            
+            <div class="row">
+              <p>
+                <i class="fa-solid fa-bed"></i>
+                <span> 1 Small Single Bed</span>
+              </p>
+            </div>
+            
+            <div class="row">
+              <p style="text-decoration: line-through">
+                <i class="fa-solid fa-arrows-left-right"></i>
+                <span> Roof Deck</span>
+              </p>
+            </div>
+
+          </div>
+
+          <div class="col-md-6  description">
+            <div class="row">
+              <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
+            </div>
+
+            <div class="row">
+              <p style="text-decoration: line-through">
+                <i class="fa-solid fa-fan"></i><span> Aircon</span>
+              </p>
+            </div>
+            
+            <div class="row">
+              <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
+            </div>
+            
+            <div class="row">
+              <p>
+                <i class="fa-solid fa-person-running"></i>
+                <span> Emergency Exit</span>
+              </p>
+            </div>
+            
+            <div class="row">
+              <p>
+                <i class="fa-solid fa-bed"></i>
+                <span> 1 Small Single Bed</span>
+              </p>
+            </div>
+            
+            <div class="row">
+              <p style="text-decoration: line-through">
+                <i class="fa-solid fa-arrows-left-right"></i>
+                <span> Roof Deck</span>
+              </p>
+            </div>
+
+          </div>
+
+          
+        </div>
+    </div>
+
+
+    </div>
+
   </div>
 
   <!-- End of Room Amenities under Property Information -->
@@ -1058,6 +1331,276 @@
 
 
 
+  <!-- Request a Visit Modal -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="requestVisit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="requestVisitLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg overflow-x-hidden ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-3" id="requestVisitLabel">Schedule a Visit</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body overflow-x-hidden  modalTimeslots">
+
+          <div class="container">
+
+            <form>
+              <!-- Form start -->
+              <div class="container pt-5 pb-5 bgTimeSlots timeSlots">
+
+                <div class="row">
+                  <h3 class="text-center">View the property on</h3>
+                  <div class="col-md">
+                    <h2 class="ms-3 apptDate">August 04, 2023</h2>
+                  </div>
+                </div>
+
+                <div class="row justify-content-center">
+
+                  
+                  <div class="col-md-4">
+
+                    <form action="#">
+                      <div class="form-group p-3 datePicker">
+                        <input type="date" class="form-control" id="pick-date" placeholder="Pick A Date">
+                      </div>
+                      
+                      <h5 class="text-center">*Click to change date</h5>
+                    </form>
+
+                  </div>
+                </div>
+
+
+                <div class="row ps-4 h3 mt-2">
+                  <h2 class="dayzone">
+                    <img src="images/dayzone1.png" alt=""/>
+                    Morning
+                  </h2>
+                  <h2 class="timezone">8:00 AM to 11:30 AM</h2>
+                </div>
+                
+                  <div class="row pt-5 justify-content-center">
+        
+                      <div class="col-5 col-sm-3 col-lg-2  d-flex justify-content-center"><a class="btn btn-outline-secondary disabled" data-bs-toggle="modal" data-bs-target="#modal" role="button"><i class="fa-regular fa-clock"></i> 8:00 AM </a></div>
+                      
+                      <div class="col-5 col-sm-3 col-lg-2 d-flex justify-content-center"><a class="btn btn-outline-secondary disabled" data-bs-toggle="modal" data-bs-target="#modal" role="button"><i class="fa-regular fa-clock"></i> 8:30 AM </a></div>
+        
+                      <div class="col-5 col-sm-3 col-lg-2 mt-3 mt-sm-0 d-flex justify-content-center"><a class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal" role="button"><i class="fa-regular fa-clock"></i> 9:00 AM </a></div>
+                      
+                      <div class="col-5 col-sm-3 col-lg-2 mt-3 mt-sm-0 d-flex justify-content-center"><a class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal" role="button"><i class="fa-regular fa-clock"></i> 9:30 AM </a></div>
+        
+                  </div>
+                  <div class="row pt-5 pb-5 justify-content-center">
+        
+                    <div class="col-5 col-sm-3 col-lg-2  d-flex justify-content-center"><a class="btn btn-outline-secondary disabled" data-bs-toggle="modal" data-bs-target="#modal" role="button"><i class="fa-regular fa-clock"></i>  10:00 AM </a></div>
+                      
+                    <div class="col-5 col-sm-3 col-lg-2 d-flex justify-content-center"><a class="btn btn-outline-secondary disabled" data-bs-toggle="modal" data-bs-target="#modal" role="button"><i class="fa-regular fa-clock"></i> 10:30 AM </a></div>
+        
+                    <div class="col-5 col-sm-3 col-lg-2 mt-3 mt-sm-0 d-flex justify-content-center"><a class="btn btn-outline-secondary disabled" data-bs-toggle="modal" data-bs-target="#modal" role="button"><i class="fa-regular fa-clock"></i> 11:00 AM </a></div>
+                      
+                    <div class="col-5 col-sm-3 col-lg-2 mt-3 mt-sm-0 d-flex justify-content-center"><a class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal" role="button"><i class="fa-regular fa-clock"></i> 11:30 AM </a></div>
+        
+                  </div>
+                
+                <div class="row ps-4 h3 mt-5">
+                  <hr>
+                  <h2 class="dayzone pt-4">
+                    <img src="images/dayzone2.png" alt=""/>
+                    Afternoon
+                  </h2>
+                  <h2 class="timezone">1:00 PM to 5:30 PM</h2>
+                </div>
+                  <div class="row pt-5 justify-content-center">
+        
+                    <div class="col-5 col-sm-3 col-lg-2  d-flex justify-content-center"><a class="btn btn-outline-secondary disabled" data-bs-toggle="modal" data-bs-target="#modal" role="button"><i class="fa-regular fa-clock"></i> 12:00 PM </a></div>
+                    
+                    <div class="col-5 col-sm-3 col-lg-2 d-flex justify-content-center"><a class="btn btn-outline-secondary disabled" data-bs-toggle="modal" data-bs-target="#modal" role="button"><i class="fa-regular fa-clock"></i> 12:30 PM </a></div>
+        
+                    <div class="col-5 col-sm-3 col-lg-2 mt-3 mt-sm-0 d-flex justify-content-center"><a class="btn btn-outline-secondary disabled" data-bs-toggle="modal" data-bs-target="#modal" role="button"><i class="fa-regular fa-clock"></i> 1:00 PM </a></div>
+                    
+                    <div class="col-5 col-sm-3 col-lg-2 mt-3 mt-sm-0 d-flex justify-content-center"><a class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal" role="button"><i class="fa-regular fa-clock"></i> 1:30 PM </a></div>
+        
+                  </div>
+                  <div class="row pt-5 justify-content-center">
+        
+                    <div class="col-5 col-sm-3 col-lg-2  d-flex justify-content-center"><a class="btn btn-outline-secondary disabled" data-bs-toggle="modal" data-bs-target="#modal" role="button"><i class="fa-regular fa-clock"></i> 2:00 PM </a></div>
+                    
+                    <div class="col-5 col-sm-3 col-lg-2 d-flex justify-content-center"><a class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal" role="button"><i class="fa-regular fa-clock"></i> 2:30 PM </a></div>
+        
+                    <div class="col-5 col-sm-3 col-lg-2 mt-3 mt-sm-0 d-flex justify-content-center"><a class="btn btn-outline-secondary disabled" data-bs-toggle="modal" data-bs-target="#modal" role="button"><i class="fa-regular fa-clock"></i> 3:00 PM </a></div>
+                    
+                    <div class="col-5 col-sm-3 col-lg-2 mt-3 mt-sm-0 d-flex justify-content-center"><a class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal" role="button"><i class="fa-regular fa-clock"></i> 3:30 PM </a></div>
+        
+                  </div>
+                  <div class="row pt-5 justify-content-center">
+        
+                    <div class="col-5 col-sm-3 col-lg-2  d-flex justify-content-center"><a class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal" role="button"><i class="fa-regular fa-clock"></i> 4:00 PM </a></div>
+                    
+                    <div class="col-5 col-sm-3 col-lg-2 d-flex justify-content-center"><a class="btn btn-outline-secondary disabled" data-bs-toggle="modal" data-bs-target="#modal" role="button"><i class="fa-regular fa-clock"></i> 4:30 PM </a></div>
+        
+                    <div class="col-5 col-sm-3 col-lg-2 mt-3 mt-sm-0 d-flex justify-content-center"><a class="btn btn-outline-secondary disabled" data-bs-toggle="modal" data-bs-target="#modal" role="button"><i class="fa-regular fa-clock"></i> 5:00 PM </a></div>
+                    
+                    <div class="col-5 col-sm-3 col-lg-2 mt-3 mt-sm-0 d-flex justify-content-center"><a class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal" role="button"><i class="fa-regular fa-clock"></i> 5:30 PM </a></div>
+        
+                  </div>
+              </div>
+          </form>
+          <!-- form end -->
+
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reserve a Room Modal -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="reserveRoom" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="reserveRoomLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-3" id="reserveRoomLabel">Reservation</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modalReserveroom">
+
+          <div class="container">
+
+            <form>
+              <!-- Form start -->
+              <div class="container pt-5 pb-5 bgReserveroom reserveRoomType">
+
+                <div class="row">
+                  <h3 class="text-center">Reserve a Room</h3>
+                  <div class="col-md">
+                    <h2 class="apptDate">August 04, 2023</h2>
+                  </div>
+                </div>
+
+                <div class="row justify-content-center mt-2">
+                  <div class="col-md-6">
+
+                    <form action="#">
+                      
+                      <div class="row mt-2">
+                        <div class="col-12">
+                          <label class="radio w-100">
+                            <input type="radio" name="add" value="1 bed | ₱5,000" checked />
+                            <div
+                              class="row justify-content-between p-3 radioRoomType" id="pickRoomType">
+                              <div class="col-8">
+                                  <span class="roomTypeName">Single Room</span>
+                                <div class="row">
+                                  <span class="roomTypeDetails">1 bed | ₱5,000</span>
+                                </div>
+                              </div>
+                      
+                              <div class="col-3">
+                                <i class="fa-solid fa-bed fa-4x float-end"></i>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                      
+
+                      <div class="row mt-2">
+                        <div class="col-12">
+                          <label class="radio w-100">
+                            <input type="radio" name="add" value="1 bed | ₱5,000"/>
+                            <div
+                              class="row justify-content-between p-3 radioRoomType" id="pickRoomType">
+                              <div class="col-8">
+                                  <span class="roomTypeName">2-bed Room</span>
+                                <div class="row">
+                                  <span class="roomTypeDetails">2 bed | ₱5,800</span>
+                                </div>
+                              </div>
+                      
+                              <div class="col-3">
+                                <i class="fa-solid fa-bed fa-4x float-end"></i>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="row mt-2">
+                        <div class="col-12">
+                          <label class="radio w-100">
+                            <input type="radio" name="add" value="1 bed | ₱5,000" />
+                            <div
+                              class="row justify-content-between p-3 radioRoomType" id="pickRoomType">
+                              <div class="col-8">
+                                  <span class="roomTypeName">3-bed Room</span>
+                                <div class="row">
+                                  <span class="roomTypeDetails">3 bed | ₱6,000</span>
+                                </div>
+                              </div>
+                      
+                              <div class="col-3">
+                                <i class="fa-solid fa-bed fa-4x float-end"></i>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="row mt-2">
+                        <div class="col-12">
+                          <label class="radio w-100">
+                            <input type="radio" name="add" value="1 bed | ₱5,000" />
+                            <div
+                              class="row justify-content-between p-3 radioRoomType" id="pickRoomType">
+                              <div class="col-8">
+                                  <span class="roomTypeName">4-bed Room</span>
+                                <div class="row">
+                                  <span class="roomTypeDetails">4 bed | ₱7,000</span>
+                                </div>
+                              </div>
+                      
+                              <div class="col-3">
+                                <i class="fa-solid fa-bed fa-4x float-end"></i>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                        
+                      </form>
+
+                  </div>
+                  
+                </div>
+
+
+
+
+
+              </div>
+          </form>
+          <!-- form end -->
+
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
     
 
 
@@ -1106,9 +1649,7 @@
         autoplay:false,
         autoplayTimeout:6000,
         margin:10,
-        nav:true,
-        navText:["<i class='fa-solid fa-arrow-left leftArrow'></i>",
-                "<i class='fa-solid fa-arrow-right rightArrow'></i>"],
+        nav:false,
         responsive:{
             0:{
                 items:1,
@@ -1126,10 +1667,13 @@
   </script>
 
               
-            <!--   *****   JQuery Link   *****   -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-            
-            <!--   *****   Owl Carousel js Link  *****  -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!--   *****   JQuery Link   *****   -->
+    
+    <!--   *****   Owl Carousel js Link  *****  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- modal jquery link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
 
 </html>

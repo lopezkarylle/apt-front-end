@@ -22,8 +22,12 @@
       src="https://kit.fontawesome.com/868f1fea46.js"
       crossorigin="anonymous"
     ></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet" type="text/css" />
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link href="css/view_property.css" rel="stylesheet" />
+    <link href="css/all.css" rel="stylesheet" />
 
     <!-- Bootstrap Carousel CSS -->
 
@@ -74,7 +78,7 @@
               <a class="nav-link" href="reservations_manage.html">Reservations</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
+          <form class="d-flex signOutbtn" role="search">
             <button class="btn btn-outline-secondary me-2" type="button">
             Sign Out &nbsp;<i class="fa-solid fa-right-from-bracket"></i> 
             </button>
@@ -88,14 +92,45 @@
 
 
     <!-- Carousel code starts here -->
-    <div class="container-fluid">
-      <h1 class="text-center fw-bold display-1 mt-5 mb-5">Batac <span class="text" style="color:#052069">Dormitory</span></h1>
+    <div class="container-fluid overflow-y-auto">
+      <h1 class="text-center fw-bold display-1 mt-5 mb-5"><i class="fa-light fa-dog-leashed"></i> Batac <span class="text" style="color:#052069">Dormitory</span></h1>
+      <div class="row">
+        <div class="col mb-3 d-flex justify-content-end ">
+          <a class="btn btn btn-outline-primary viewAllGallery" href="view_gallery_overview.html" role="button">View all photos</a>
+        </div>
+      </div>
       <div class="row">
           <div class="col-12 m-auto">
               <div class="owl-carousel owl-theme carousel-container">
                   <div class="item">
-                      <div class="card border-0 shadow">
+                      <div class="card border-0 shadow position-relative">
                           <img src="images/house-img-1.webp" alt="" class="card-img-center">
+                          
+                          <i class="fa-solid fa-pencil fa-3x btnEditG position-absolute" href="#" role="button" data-bs-toggle="modal" data-bs-target="#editCarouselImg"></i>
+
+                          <i class="fa-solid fa-trash-can fa-3x btnDeleteG position-absolute" href="#" role="button" data-bs-toggle="modal" data-bs-target="#deleteCarouselImg"></i>
+
+                          <i class="fa-solid fa-images fa-3x btnViewG position-absolute" href="#" role="button" data-bs-toggle="modal" data-bs-target="#editGallery"></i>
+
+                          <div class="card-body">
+                            <div class="card-title text-center">
+                                <h4>Property</h4>
+                            </div>
+                        </div>
+                          
+                      </div>
+                  </div>
+
+                  <div class="item">
+                      <div class="card border-0 shadow">
+                          <img src="images/hall-img-1.webp" alt="" class="card-img-top">
+
+                          <i class="fa-solid fa-pencil fa-3x btnEditG position-absolute" href="#" role="button" data-bs-toggle="modal" data-bs-target="#editCarouselImg"></i>
+
+                          <i class="fa-solid fa-trash-can fa-3x btnDeleteG position-absolute" href="#" role="button" data-bs-toggle="modal" data-bs-target="#deleteCarouselImg"></i>
+
+                          <i class="fa-solid fa-images fa-3x btnViewG position-absolute" href="#" role="button" data-bs-toggle="modal" data-bs-target="#editGallery"></i>
+
                           <div class="card-body">
                             <div class="card-title text-center">
                                 <h4>Hall</h4>
@@ -104,21 +139,34 @@
                           
                       </div>
                   </div>
+                  <div class="item">
+                      <div class="card border-0 shadow">
+                          <img src="images/bathroom-img-1.webp" alt="" class="card-img-top">
+                          
+                          <i class="fa-solid fa-pencil fa-3x btnEditG position-absolute" href="#" role="button" data-bs-toggle="modal" data-bs-target="#editCarouselImg"></i>
+
+                          <i class="fa-solid fa-trash-can fa-3x btnDeleteG position-absolute" href="#" role="button" data-bs-toggle="modal" data-bs-target="#deleteCarouselImg"></i>
+
+                          <i class="fa-solid fa-images fa-3x btnViewG position-absolute" href="#" role="button" data-bs-toggle="modal" data-bs-target="#editGallery"></i>
+
+                          <div class="card-body">
+                              <div class="card-title text-center">
+                                  <h4>Rooms</h4>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
 
                   <div class="item">
                       <div class="card border-0 shadow">
                           <img src="images/hall-img-1.webp" alt="" class="card-img-top">
-                          <div class="card-body">
-                            <div class="card-title text-center">
-                                <h4>Room</h4>
-                            </div>
-                        </div>
-                          
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="card border-0 shadow">
-                          <img src="images/bathroom-img-1.webp" alt="" class="card-img-top">
+
+                          <i class="fa-solid fa-pencil fa-3x btnEditG position-absolute" href="#" role="button" data-bs-toggle="modal" data-bs-target="#editCarouselImg"></i>
+
+                          <i class="fa-solid fa-trash-can fa-3x btnDeleteG position-absolute" href="#" role="button" data-bs-toggle="modal" data-bs-target="#deleteCarouselImg"></i>
+
+                          <i class="fa-solid fa-images fa-3x btnViewG position-absolute" href="#" role="button" data-bs-toggle="modal" data-bs-target="#editGallery"></i>
+
                           <div class="card-body">
                               <div class="card-title text-center">
                                   <h4>Bathroom</h4>
@@ -126,25 +174,46 @@
                           </div>
                       </div>
                   </div>
+
                   <div class="item">
-                      <div class="card border-0 shadow">
-                          <img src="images/hall-img-1.webp" alt="" class="card-img-top">
-                          <div class="card-body">
-                              <div class="card-title text-center">
-                                  <h4>Owl Carousel</h4>
-                              </div>
-                          </div>
-                      </div>
+                    <div class="card border-0 shadow">
+                        <img src="images/kitchen-img-1.webp" alt="" class="card-img-top">
+
+                        <i class="fa-solid fa-pencil fa-3x btnEditG position-absolute" href="#" role="button" data-bs-toggle="modal" data-bs-target="#editCarouselImg"></i>
+
+                        <i class="fa-solid fa-trash-can fa-3x btnDeleteG position-absolute" href="#" role="button" data-bs-toggle="modal" data-bs-target="#deleteCarouselImg"></i>
+
+                        <i class="fa-solid fa-images fa-3x btnViewG position-absolute" href="#" role="button" data-bs-toggle="modal" data-bs-target="#editGallery"></i>
+
+                        <div class="card-body">
+                            <div class="card-title text-center">
+                                <h4>Kitchen</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                  <div class="card border-0 shadow">
+                    <img class="img-fluid " width="200" height="500" src="images/white.png" alt="" style="border: 1px solid #232A3D; border-style: dashed;">
+                    <!-- <i class="fa-solid fa-cloud-arrow-up fa-6x"></i> -->
+
+                    <form action="#" class="position-absolute addImageCarousel">
+                      <input class="file-input" type="file" name="file" hidden>
+                      <i class="fa-solid fa-plus"></i>
+                      <p class="text-center">Add more image</p>
+                    </form>
                   </div>
+              </div>
 
               </div>
           </div>
       </div>
-  </div>
-
-  
+    </div>
 
     <!-- Carousel code ends here -->
+
+
 <!-- Start of Property Information -->
 
 <div class="container pt-5 pb-5 viewP">
@@ -152,15 +221,40 @@
     <div class="col-md-6">
       <div class="row">
         <div class="col-10">
-          <h3 class="name">Batac Dormitory</h3>
-          <div class="row">
-            <div class="h4 mt-3 col-sm-10 location">
-              <div>
-                <i class="fas fa-map-marker-alt"></i> 452 Cuatro de Julio Street
-                Barangay Salapungan
+          <form action="#" method="post">
+            <h3 class="name" id="propertyName" contenteditable="true" onfocus="showPnameButtons()" onblur="hidePnameButtons()">Batac Dormitory</h3>
+            <div class="row justify-content-end column-gap-xl-1 saveEditBtn">
+              <div class="col-2 col-xl-1 pe-0 mt-2 d-flex justify-content-end">
+                <button class="btn btn-primary" id="savePnameButton"  type="submit" onclick="saveChanges()" style="display: none;">Save</button>
               </div>
+              <div class="col-2 col-xl-1 pe-0 mt-2 d-flex justify-content-end">
+                <button class="btn btn-warning" id="resetPnameButton"  type="button" onclick="clearStorage()" style="display: none;">Reset</button>
+          </form>
+              </div>
+      </div>
+          <div class="row">
+            <div class="col-1 pe-0 location">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+
+            <div class="col-11 text-start align-middle location">
+              
+              <form action="#" method="post">
+                      <div id="propertyAddress" contenteditable="true" onfocus="showPaddressButtons()" onblur="hidePaddressButtons()">452 Cuatro de Julio Street Barangay Salapungan</div>
+                    
             </div>
           </div>
+
+                <div class="row justify-content-end column-gap-xl-1 saveEditBtn">
+                  <div class="col-2 col-xl-1 pe-0 mt-2 d-flex justify-content-end">
+                    <button class="btn btn-primary" id="savePaddressButton"  type="submit" onclick="saveChanges()" style="display: none;">Save</button>
+                  </div>
+                  <div class="col-2 col-xl-1 pe-0 mt-2 d-flex justify-content-end">
+                    <button class="btn btn-warning" id="resetPaddressButton"  type="button" onclick="clearStorage()" style="display: none;">Reset</button>
+              </form>
+                  </div>
+          </div>
+
         </div>
 
         <div class="col-2 ps-4 justify-content-end">
@@ -173,7 +267,8 @@
       <div class="row">
         <div class="col-sm-11 mt-5 viewpDescription">
           Description
-          <div class="description">
+          <form action="#" method="post">
+          <div class="description" id="propertyDescription" contenteditable="true" onfocus="showPdescriptionButtons()" onblur="hidePdescriptionButtons()">
             Description about Batac’s Dormitory. Description about Batac’s
             Dormitory. Description about Batac’s Dormitory. Description about
             Batac’s Dormitory. Description about Batac’s Dormitory. Description
@@ -182,6 +277,16 @@
             Dormitory. Description about Batac’s Dormitory. Description about
             Batac’s Dormitory.
           </div>
+          <div class="row justify-content-end column-gap-xl-1 saveEditBtn">
+            <div class="col-2 col-xl-1 pe-0 mt-2 d-flex justify-content-end">
+              <button class="btn btn-primary" id="savePdescriptionButton"  type="submit" onclick="saveChanges()" style="display: none;">Save</button>
+            </div>
+            <div class="col-2 col-xl-1 pe-0 mt-2 d-flex justify-content-end">
+              <button class="btn btn-warning" id="resetPdescriptionButton"  type="button" onclick="clearStorage()" style="display: none;">Reset</button>
+            </div>
+        </form>
+            
+    </div>
         </div>
       </div>
 
@@ -202,12 +307,31 @@
           <h4 class="aptStarts" style="text-align: center;">
             Rent starts at
           </h4>
-          <h3 class="aptPrice">
-            &#8369;5,000<span class="monthly">/Monthly</span>
-          </h3>
-          <!-- <h3 class="aptPrice">
-            &#8369;5,000<span class="monthly">/Monthly</span>
-          </h3> -->
+          <div class="row d-flex justify-content-center">
+
+            <div class="col-6 col-md-5 col-lg-3">
+              <form action="#" method="post">
+                <h3 class="aptPrice text-end pe-0" id="propertyPrice" onclick="editPrice()">₱5,000
+                </h3>
+                
+                <input id="inputField" class="form-control hidden" type="number" max="5" placeholder="₱" aria-label="default input example" style="display: none">
+
+                <div class="row justify-content-end column-gap-xl-1 saveEditBtn">
+                  <div class="col-2 col-xl-1 pe-0 mt-2 d-flex justify-content-end">
+                    <button class="btn btn-primary" id="savePpriceButton"  type="submit" onclick="saveChanges()" style="display: none;">Save</button>
+                  </div>
+                  <div class="col-2 col-xl-1 pe-0 mt-2 d-flex justify-content-end">
+                    <button class="btn btn-warning" id="resetPpriceButton"  type="button" onclick="clearStorage()" style="display: none;">Reset</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-4 col-lg-2 d-flex align-items-center ">
+              <span class="monthly">/Monthly</span>
+            </div>
+
+          </div>
         </div>
       </div>
 
@@ -239,303 +363,575 @@
 <!-- Start of Property Amenities under Property Information -->
 <div class="container pt-3 amenities">
   <div class="row">
-    <div class="col-12">
+    <div class="col-md-6">
       <h3 class="name">Property Amenities</h3>
-    </div>
+      
     <hr />
-    <div class="row">
-      <!-- <div class="col-12 mt-3 amenitiesTitle">Property Amenities</div> -->
-
-      <div class="col-md-6">
-        <div class="row">
-          <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
-            <div class="description">
-              <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
-              <p style="text-decoration: line-through">
-                <i class="fa-solid fa-fan"></i><span> Aircon</span>
-              </p>
-              <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
-              <p>
-                <i class="fa-solid fa-person-running"></i
-                ><span> Emergency Exit</span>
-              </p>
-              <p>
-                <i class="fa-solid fa-bed"></i><span> 1 Small Single Bed</span>
-              </p>
-              <p style="text-decoration: line-through">
-                <i class="fa-solid fa-arrows-left-right"></i
-                ><span> Roof Deck</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="row">
-          <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
-            <div class="description">
-              <p style="text-decoration: line-through">
-                <i class="fa solid fa-grip"></i><span> Cabinet</span>
-              </p>
-              <p><i class="fa-solid fa-fan"></i><span> Aircon</span></p>
-              <p><i class="fa-solid fa-shower"></i><span> CR</span></p>
-              <p>
-                <i class="fa-solid fa-person-running"></i
-                ><span> Emergency Exit</span>
-              </p>
-              <p>
-                <i class="fa-solid fa-house-lock"></i
-                ><span> 24/7 Security</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- closing tag of nested col-md-6 -->
     </div>
-    <!-- closing tag of 1st row under col-md-6 -->
+
+    <div class="col-md-6 text-md-end order-2 order-md-0">
+
+        <div class="h5 d-none d-md-block">frequently asked questions 
+          <span class="name h3">FAQs</span>
+        </div>
+
+        <div class="name h3 d-block d-md-none">FAQs<span class="h5">frequently asked questions</span></div>
+
+      <hr />
+    </div>
+
+    <div class="col-md-6">
+
+      <div class="row">
+        
+        <div class="text-center" >
+  
+          <div class="row mt-3">
+            <div class="col-md-6 description">
+              <div class="row">
+                <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
+              </div>
+  
+              <div class="row">
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-fan"></i><span> Aircon</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
+              </div>
+              
+              <div class="row">
+                <p>
+                  <i class="fa-solid fa-person-running"></i>
+                  <span> Emergency Exit</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p>
+                  <i class="fa-solid fa-bed"></i>
+                  <span> 1 Small Single Bed</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-arrows-left-right"></i>
+                  <span> Roof Deck</span>
+                </p>
+              </div>
+  
+            </div>
+  
+            <div class="col-md-6  description">
+              <div class="row">
+                <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
+              </div>
+  
+              <div class="row">
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-fan"></i><span> Aircon</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
+              </div>
+              
+              <div class="row">
+                <p>
+                  <i class="fa-solid fa-person-running"></i>
+                  <span> Emergency Exit</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p>
+                  <i class="fa-solid fa-bed"></i>
+                  <span> 1 Small Single Bed</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-arrows-left-right"></i>
+                  <span> Roof Deck</span>
+                </p>
+              </div>
+  
+            </div>
+  
+            
+          </div>
+          
+        </div>
+  
+      </div>
+  
+      </div>
+
+    <div class="col-md-6 align-items-center order-3 order-md-0">
+
+      <div class="accordion" id="faqsAccord">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Are guests allowed?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqsAccord">
+            <div class="accordion-body">
+              Yes. However, they can only stay your room until 8pm.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Are pets allowed?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqsAccord">
+            <div class="accordion-body">
+              Unfortunately, pets are not allowed at our property.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              How much is the reservation fee?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqsAccord">
+            <div class="accordion-body">
+              It costs ₱500. And a downpayment of ₱3,000 to secure your reserved room.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              How much is the reservation fee?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqsAccord">
+            <div class="accordion-body">
+              It costs ₱500. And a downpayment of ₱3,000 to secure your reserved room.
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+
+
+
   </div>
 </div>
-<!-- closing tag of container Amenities-->
 
 <!-- End of Property Amenities under Property Information -->
+
+
 
 <!-- Start of Room Amenities under Property Information -->
 <div class="container pt-5 amenities">
   <div class="row">
-    <div class="col-12">
+    <div class="col-12 text-center">
       <h3 class="name">Room Amenities</h3>
     </div>
-    <hr />
-    <div class="col-md-6">
-      <div class="row">
-        <div class="col-sm-10 mt-3 amenitiesTitle">Single Room</div>
+  </div>
 
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
-              <div class="description">
+    <hr />
+  <div class="row row-gap-3 ">
+
+    <div class="row column-gap-3 justify-content-center ">
+      
+      <div class="col-md-5 text-center" >
+        
+          <div class="row justify-content-between">
+            <div class="col-6 col-md-6 mt-3 d-flex justify-content-start amenitiesTitle">
+              Single Room
+            </div>
+
+            <div class="col-5 col-md-6 mt-3 d-flex justify-content-end amenitiesTitle" >
+              ₱5000
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-md-6 description">
+              <div class="row">
                 <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
+              </div>
+
+              <div class="row">
                 <p style="text-decoration: line-through">
                   <i class="fa-solid fa-fan"></i><span> Aircon</span>
                 </p>
+              </div>
+              
+              <div class="row">
                 <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
-                <p>
-                  <i class="fa-solid fa-person-running"></i
-                  ><span> Emergency Exit</span>
-                </p>
-                <p>
-                  <i class="fa-solid fa-bed"></i
-                  ><span> 1 Small Single Bed</span>
-                </p>
-                <p style="text-decoration: line-through">
-                  <i class="fa-solid fa-arrows-left-right"></i
-                  ><span> Roof Deck</span>
-                </p>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
-              <div class="description">
-                <p style="text-decoration: line-through">
-                  <i class="fa solid fa-grip"></i><span> Cabinet</span>
-                </p>
-                <p><i class="fa-solid fa-fan"></i><span> Aircon</span></p>
-                <p><i class="fa-solid fa-shower"></i><span> CR</span></p>
-                <p>
-                  <i class="fa-solid fa-person-running"></i
-                  ><span> Emergency Exit</span>
-                </p>
-                <p>
-                  <i class="fa-solid fa-house-lock"></i
-                  ><span> 24/7 Security</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- closing tag of nested col-md-6 -->
-      </div>
-      <!-- closing tag of 1st row under col-md-6 -->
-
-      <div class="col-md">
-        <div class="row">
-          <div class="col-sm-10 mt-3 amenitiesTitle">Double Room</div>
-
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
-                <div class="description">
-                  <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
-                  <p style="text-decoration: line-through">
-                    <i class="fa-solid fa-fan"></i><span> Aircon</span>
-                  </p>
-                  <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
-                  <p>
-                    <i class="fa-solid fa-person-running"></i
-                    ><span> Emergency Exit</span>
-                  </p>
-                  <p>
-                    <i class="fa-solid fa-bed"></i
-                    ><span> 1 Small Single Bed</span>
-                  </p>
-                  <p style="text-decoration: line-through">
-                    <i class="fa-solid fa-arrows-left-right"></i
-                    ><span> Roof Deck</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
-                <div class="description">
-                  <p style="text-decoration: line-through">
-                    <i class="fa solid fa-grip"></i><span> Cabinet</span>
-                  </p>
-                  <p><i class="fa-solid fa-fan"></i><span> Aircon</span></p>
-                  <p><i class="fa-solid fa-shower"></i><span> CR</span></p>
-                  <p>
-                    <i class="fa-solid fa-person-running"></i
-                    ><span> Emergency Exit</span>
-                  </p>
-                  <p>
-                    <i class="fa-solid fa-house-lock"></i
-                    ><span> 24/7 Security</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- closing tag of nested col-md-6 -->
-        </div>
-        <!-- closing tag of 1st row under col-md-6 -->
-      </div>
-      <!-- closing tag of 1st col-md-6 -->
-    </div>
-    <!-- closing tag of 1st col-md-6 -->
-
-    <div class="col-md-6">
-      <div class="row">
-        <div class="col-sm-10 mt-3 amenitiesTitle">Triple Room</div>
-
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
-              <div class="description">
-                <p>
-                  <i class="fa solid fa-wifi"></i><span> High-Speed Wi-Fi</span>
-                </p>
-                <p>
-                  <i class="fa-solid fa-arrows-left-right"></i
-                  ><span> Study area</span>
-                </p>
-                <p style="text-decoration: line-through">
-                  <i class="fa-solid fa-toilets-portable"></i
-                  ><span> Common CR</span>
-                </p>
-                <p><i class="fa-solid fa-video"></i><span> CCTV</span></p>
-                <p>
-                  <i class="fa-solid fa-person-running"></i
-                  ><span> Emergency Exits</span>
-                </p>
-                <p><i class="fa-solid fa-video"></i><span> CCTV</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
-              <div class="description">
-                <p>
-                  <i class="fa-solid fa-arrows-left-right"></i
-                  ><span> Reception Area</span>
-                </p>
-                <p style="text-decoration: line-through">
-                  <i class="fa-solid fa-kitchen-set"></i
-                  ><span> Kitchen Area</span>
-                </p>
-                <p>
-                  <i class="fa-solid fa-fire-extinguisher"></i
-                  ><span> Fire Extinguishers</span>
-                </p>
-                <p><i class="fa-solid fa-video"></i><span> CCTV</span></p>
-                <p>
-                  <i class="fa-solid fa-faucet-drip"></i
-                  ><span> Water and Sewage </span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- closing tag of nested col-md-6 -->
-
-        <div class="col-md">
-          <div class="row">
-            <div class="col-sm-10 mt-3 amenitiesTitle">Quadruple Room</div>
-
-            <div class="col-md-6">
+              
               <div class="row">
-                <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
-                  <div class="description">
-                    <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
-                    <p style="text-decoration: line-through">
-                      <i class="fa-solid fa-fan"></i><span> Aircon</span>
-                    </p>
-                    <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
-                    <p>
-                      <i class="fa-solid fa-person-running"></i
-                      ><span> Emergency Exit</span>
-                    </p>
-                    <p>
-                      <i class="fa-solid fa-bed"></i
-                      ><span> 1 Small Single Bed</span>
-                    </p>
-                    <p style="text-decoration: line-through">
-                      <i class="fa-solid fa-arrows-left-right"></i
-                      ><span> Roof Deck</span>
-                    </p>
-                  </div>
-                </div>
+                <p>
+                  <i class="fa-solid fa-person-running"></i>
+                  <span> Emergency Exit</span>
+                </p>
               </div>
+              
+              <div class="row">
+                <p>
+                  <i class="fa-solid fa-bed"></i>
+                  <span> 1 Small Single Bed</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-arrows-left-right"></i>
+                  <span> Roof Deck</span>
+                </p>
+              </div>
+
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6  description">
               <div class="row">
-                <div class="col-sm-11 ms-2 mt-4 amenitiesInfo">
-                  <div class="description">
-                    <p style="text-decoration: line-through">
-                      <i class="fa solid fa-grip"></i><span> Cabinet</span>
-                    </p>
-                    <p><i class="fa-solid fa-fan"></i><span> Aircon</span></p>
-                    <p><i class="fa-solid fa-shower"></i><span> CR</span></p>
-                    <p>
-                      <i class="fa-solid fa-person-running"></i
-                      ><span> Emergency Exit</span>
-                    </p>
-                    <p>
-                      <i class="fa-solid fa-house-lock"></i
-                      ><span> 24/7 Security</span>
-                    </p>
-                  </div>
-                </div>
+                <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
               </div>
+
+              <div class="row">
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-fan"></i><span> Aircon</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
+              </div>
+              
+              <div class="row">
+                <p>
+                  <i class="fa-solid fa-person-running"></i>
+                  <span> Emergency Exit</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p>
+                  <i class="fa-solid fa-bed"></i>
+                  <span> 1 Small Single Bed</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-arrows-left-right"></i>
+                  <span> Roof Deck</span>
+                </p>
+              </div>
+
             </div>
+
+            
+          </div>
+      </div>
+      
+
+      <div class="col-md-5 text-center" >
+        
+        <div class="row justify-content-between">
+          <div class="col-6 col-md-6 mt-3 d-flex justify-content-start amenitiesTitle">
+            Single Room
+          </div>
+
+          <div class="col-5 col-md-6 mt-3 d-flex justify-content-end amenitiesTitle" >
+            ₱5000
           </div>
         </div>
-        <!-- closing tag of 2nd col-md-6 -->
+
+        <div class="row mt-3">
+          <div class="col-md-6 description">
+            <div class="row">
+              <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
+            </div>
+
+            <div class="row">
+              <p style="text-decoration: line-through">
+                <i class="fa-solid fa-fan"></i><span> Aircon</span>
+              </p>
+            </div>
+            
+            <div class="row">
+              <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
+            </div>
+            
+            <div class="row">
+              <p>
+                <i class="fa-solid fa-person-running"></i>
+                <span> Emergency Exit</span>
+              </p>
+            </div>
+            
+            <div class="row">
+              <p>
+                <i class="fa-solid fa-bed"></i>
+                <span> 1 Small Single Bed</span>
+              </p>
+            </div>
+            
+            <div class="row">
+              <p style="text-decoration: line-through">
+                <i class="fa-solid fa-arrows-left-right"></i>
+                <span> Roof Deck</span>
+              </p>
+            </div>
+
+          </div>
+
+          <div class="col-md-6  description">
+            <div class="row">
+              <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
+            </div>
+
+            <div class="row">
+              <p style="text-decoration: line-through">
+                <i class="fa-solid fa-fan"></i><span> Aircon</span>
+              </p>
+            </div>
+            
+            <div class="row">
+              <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
+            </div>
+            
+            <div class="row">
+              <p>
+                <i class="fa-solid fa-person-running"></i>
+                <span> Emergency Exit</span>
+              </p>
+            </div>
+            
+            <div class="row">
+              <p>
+                <i class="fa-solid fa-bed"></i>
+                <span> 1 Small Single Bed</span>
+              </p>
+            </div>
+            
+            <div class="row">
+              <p style="text-decoration: line-through">
+                <i class="fa-solid fa-arrows-left-right"></i>
+                <span> Roof Deck</span>
+              </p>
+            </div>
+
+          </div>
+
+          
+        </div>
       </div>
+
+
     </div>
-    <!-- closing tag of container Amenities-->
+
+    <div class="row column-gap-3 justify-content-center ">
+      
+      <div class="col-md-5 text-center" >
+        
+          <div class="row justify-content-between">
+            <div class="col-6 col-md-6 mt-3 d-flex justify-content-start amenitiesTitle">
+              Single Room
+            </div>
+
+            <div class="col-5 col-md-6 mt-3 d-flex justify-content-end amenitiesTitle" >
+              ₱5000
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-md-6 description">
+              <div class="row">
+                <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
+              </div>
+
+              <div class="row">
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-fan"></i><span> Aircon</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
+              </div>
+              
+              <div class="row">
+                <p>
+                  <i class="fa-solid fa-person-running"></i>
+                  <span> Emergency Exit</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p>
+                  <i class="fa-solid fa-bed"></i>
+                  <span> 1 Small Single Bed</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-arrows-left-right"></i>
+                  <span> Roof Deck</span>
+                </p>
+              </div>
+
+            </div>
+
+            <div class="col-md-6  description">
+              <div class="row">
+                <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
+              </div>
+
+              <div class="row">
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-fan"></i><span> Aircon</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
+              </div>
+              
+              <div class="row">
+                <p>
+                  <i class="fa-solid fa-person-running"></i>
+                  <span> Emergency Exit</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p>
+                  <i class="fa-solid fa-bed"></i>
+                  <span> 1 Small Single Bed</span>
+                </p>
+              </div>
+              
+              <div class="row">
+                <p style="text-decoration: line-through">
+                  <i class="fa-solid fa-arrows-left-right"></i>
+                  <span> Roof Deck</span>
+                </p>
+              </div>
+
+            </div>
+
+            
+          </div>
+      </div>
+      
+
+      <div class="col-md-5 text-center" >
+        
+        <div class="row justify-content-between">
+          <div class="col-6 col-md-6 mt-3 d-flex justify-content-start amenitiesTitle">
+            Single Room
+          </div>
+
+          <div class="col-5 col-md-6 mt-3 d-flex justify-content-end amenitiesTitle" >
+            ₱5000
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-md-6 description">
+            <div class="row">
+              <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
+            </div>
+
+            <div class="row">
+              <p style="text-decoration: line-through">
+                <i class="fa-solid fa-fan"></i><span> Aircon</span>
+              </p>
+            </div>
+            
+            <div class="row">
+              <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
+            </div>
+            
+            <div class="row">
+              <p>
+                <i class="fa-solid fa-person-running"></i>
+                <span> Emergency Exit</span>
+              </p>
+            </div>
+            
+            <div class="row">
+              <p>
+                <i class="fa-solid fa-bed"></i>
+                <span> 1 Small Single Bed</span>
+              </p>
+            </div>
+            
+            <div class="row">
+              <p style="text-decoration: line-through">
+                <i class="fa-solid fa-arrows-left-right"></i>
+                <span> Roof Deck</span>
+              </p>
+            </div>
+
+          </div>
+
+          <div class="col-md-6  description">
+            <div class="row">
+              <p><i class="fa solid fa-grip"></i><span> Cabinet</span></p>
+            </div>
+
+            <div class="row">
+              <p style="text-decoration: line-through">
+                <i class="fa-solid fa-fan"></i><span> Aircon</span>
+              </p>
+            </div>
+            
+            <div class="row">
+              <p><i class="fa-solid fa-bath"></i><span> CR</span></p>
+            </div>
+            
+            <div class="row">
+              <p>
+                <i class="fa-solid fa-person-running"></i>
+                <span> Emergency Exit</span>
+              </p>
+            </div>
+            
+            <div class="row">
+              <p>
+                <i class="fa-solid fa-bed"></i>
+                <span> 1 Small Single Bed</span>
+              </p>
+            </div>
+            
+            <div class="row">
+              <p style="text-decoration: line-through">
+                <i class="fa-solid fa-arrows-left-right"></i>
+                <span> Roof Deck</span>
+              </p>
+            </div>
+
+          </div>
+
+          
+        </div>
+    </div>
+
+
+    </div>
+
   </div>
 
   <!-- End of Room Amenities under Property Information -->
@@ -775,7 +1171,6 @@
 
   <!-- Start of Similar Apartment Listings -->
 
-    <!-- <div class="container-fluid featuredHtml"> -->
       <section class="listings">
         <h1 class="featureHeading p-3">Featured Dormitories and Apartments</h1>
 
@@ -967,10 +1362,6 @@
 
         <!-- </div> -->
       </section>
-    <!-- </div> -->
-
-    <!-- Featured ends -->
-
 
 
   <!-- End of Similar Apartment Listings -->
@@ -1057,6 +1448,1285 @@
   
 
 
+<!-- Modals -->
+
+<!-- Gallery Modal [User] -->
+
+<div class="modal fade" id="viewGallery" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="viewGalleryLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen overflow-y-auto">
+    <div class="modal-content p-0 ">
+      <div class="modal-header">
+        <h1 class="modal-title fs-2" id="viewGalleryLabel">Gallery</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body viewGallery">
+          <div class="container">
+            <div class="row g-3 align-items-center">
+              <div class="col-auto">
+                <label for="galleryTitle" class="col-form-label galleryTitle">Property Overview</label> 
+              </div>
+            </div>
+
+            <!-- <div class="d-flex flex-nowrap d-block d-md-none"> -->
+              <div class="row d-flex flex-nowrap d-block d-md-none overflow-x-auto ">
+
+                <div class="col-8">
+                  <div class="img-container">
+                    <a href="#link1"><img class="img-fluid d-block w-100" width="200" src="images/hall-img-1.webp" alt=""></a>
+                    <label class="galleryCaption mt-2">Living Room</label>
+                  </div>
+                </div>
+
+                <div class="col-8">
+                  <div class="img-container">
+                    <a href="#link2"><img class="img-fluid d-block w-100" width="200" src="images/hall-img-1.webp" alt=""></a>
+                    <label class="galleryCaption mt-2">Kitchen</label>
+                  </div>
+                </div>
+
+                <div class="col-8">
+                  <div class="img-container">
+                    <img class="img-fluid d-block w-100" width="200" src="images/hall-img-1.webp" alt="">
+                    <label class="galleryCaption mt-2">Bedroom 1</label>
+                  </div>
+                </div>
+
+                <div class="col-8">
+                  <div class="img-container">
+                    <img class="img-fluid d-block w-100" width="200" src="images/hall-img-1.webp" alt="">
+                    <label class="galleryCaption mt-2">Bedroom 2</label>
+                  </div>
+                </div>
+
+                <div class="col-8">
+                  <div class="img-container">
+                    <img class="img-fluid d-block w-100" width="200" src="images/hall-img-1.webp" alt="">
+                    <label class="galleryCaption mt-2">Bedroom 3</label>
+                  </div>
+                </div>
+
+                <div class="col-8">
+                  <div class="img-container">
+                    <img class="img-fluid d-block w-100" width="200" src="images/hall-img-1.webp" alt="">
+                    <label class="galleryCaption mt-2">Bedroom 4</label>
+                  </div>
+                </div>
+
+                <div class="col-8">
+                  <div class="img-container">
+                    <img class="img-fluid d-block w-100" width="200" src="images/hall-img-1.webp" alt="">
+                    <label class="galleryCaption mt-2">Bathroom 1</label>
+                  </div>
+                </div>
+
+                <div class="col-8">
+                  <div class="img-container">
+                    <img class="img-fluid d-block w-100" width="200" src="images/hall-img-1.webp" alt="">
+                    <label class="galleryCaption mt-2">Bathroom 2</label>
+                  </div>
+                </div>
+
+              </div>
+
+
+            <!-- </div> -->
+          <div class="container d-none d-md-block">
+            <div class="row row-cols-6">
+              <div class="col mt-2">
+                <div class="img-container">
+                  <a href="#link1"><img class="img-fluid" width="200" src="images/hall-img-1.webp" alt=""></a>
+                  <label class="galleryCaption mt-2">Living Room</label>
+                </div>
+              </div>
+
+              <div class="col mt-2">
+                <div class="img-container">
+                  <a href="#link2"><img class="img-fluid" width="200" src="images/hall-img-1.webp" alt=""></a>
+                  <label class="galleryCaption mt-2">Kitchen</label>
+                </div>
+              </div>
+
+              <div class="col mt-2">
+                <div class="img-container">
+                  <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+                  <label class="galleryCaption mt-2">Bedroom 1</label>
+                </div>
+              </div>
+
+              <div class="col mt-2">
+                <div class="img-container">
+                  <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+                  <label class="galleryCaption mt-2">Bedroom 2</label>
+                </div>
+              </div>
+
+              <div class="col mt-2">
+                <div class="img-container">
+                  <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+                  <label class="galleryCaption mt-2">Bedroom 3</label>
+                </div>
+              </div>
+
+              <div class="col mt-2">
+                <div class="img-container">
+                  <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+                  <label class="galleryCaption mt-2">Bedroom 4</label>
+                </div>
+              </div>
+
+              <div class="col mt-2">
+                <div class="img-container">
+                  <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+                  <label class="galleryCaption mt-2">Bathroom 1</label>
+                </div>
+              </div>
+
+              <div class="col mt-2">
+                <div class="img-container">
+                  <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+                  <label class="galleryCaption mt-2">Bathroom 2</label>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <hr class="w-100 mt-5">
+
+          <div class="row g-3 align-items-center mt-sm-3 mt-md-0">
+            <div class="col-auto">
+              <label for="galleryTitle" class="col-form-label galleryTitle">Living Room</label>
+            </div>
+          </div>
+
+          <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 ">
+            <div class="col py-0 px-1 mt-1 d-flex justify-content-center">
+              <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            </div>
+
+            <div class="col py-0 px-1 mt-1 d-flex justify-content-center">
+              <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            </div>
+
+            <div class="col py-0 px-1 mt-1 d-flex justify-content-center">
+              <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            </div>
+
+          </div>
+
+          <div class="row g-3 align-items-center mt-sm-3 mt-md-0">
+            <div class="col-auto">
+              <label for="galleryTitle" class="col-form-label galleryTitle">Kitchen</label>
+            </div>
+          </div>
+
+          <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 ">
+            <div class="col py-0 px-1 mt-1 d-flex justify-content-center">
+              <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            </div>
+
+            <div class="col py-0 px-1 mt-1 d-flex justify-content-center">
+              <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            </div>
+          </div>
+
+          <div class="row g-3 align-items-center mt-sm-3 mt-md-0">
+            <div class="col-auto">
+              <label for="galleryTitle" class="col-form-label galleryTitle">Bedroom 1</label>
+            </div>
+          </div>
+
+          <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 ">
+            <div class="col py-0 px-1 mt-1 d-flex justify-content-center">
+              <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            </div>
+
+            <div class="col py-0 px-1 mt-1 d-flex justify-content-center">
+              <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            </div>
+
+            <div class="col py-0 px-1 mt-1 d-flex justify-content-center">
+              <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            </div>
+
+          </div>
+
+          <div class="row g-3 align-items-center mt-sm-3 mt-md-0">
+            <div class="col-auto">
+              <label for="galleryTitle" class="col-form-label galleryTitle">Bedroom 2</label>
+            </div>
+          </div>
+
+          <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 ">
+            <div class="col py-0 px-1 mt-1 d-flex justify-content-center">
+              <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            </div>
+
+            <div class="col py-0 px-1 mt-1 d-flex justify-content-center">
+              <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            </div>
+
+            <div class="col py-0 px-1 mt-1 d-flex justify-content-center">
+              <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            </div>
+
+            
+          </div>
+
+          <div class="row g-3 align-items-center mt-sm-3 mt-md-0">
+            <div class="col-auto">
+              <label for="galleryTitle" class="col-form-label galleryTitle">Bedroom 3</label>
+            </div>
+          </div>
+
+          <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 ">
+            <div class="col py-0 px-1 mt-1 d-flex justify-content-center">
+              <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            </div>
+
+            <div class="col py-0 px-1 mt-1 d-flex justify-content-center">
+              <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            </div>
+          </div>
+
+          <div class="row g-3 align-items-center mt-sm-3 mt-md-0">
+            <div class="col-auto">
+              <label for="galleryTitle" class="col-form-label galleryTitle">Bedroom 4</label>
+            </div>
+          </div>
+
+          <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 ">
+            <div class="col py-0 px-1 mt-1 d-flex justify-content-center">
+              <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            </div>
+
+            <div class="col py-0 px-1 mt-1 d-flex justify-content-center">
+              <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            </div>
+          </div>
+
+          <div class="row g-3 align-items-center mt-sm-3 mt-md-0">
+            <div class="col-auto" id="link1">
+              <label for="galleryTitle" class="col-form-label galleryTitle">Bathroom 1</label>
+            </div>
+          </div>
+
+          <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 ">
+            <div class="col py-0 px-1 mt-1 d-flex justify-content-center">
+              <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            </div>
+
+            <div class="col py-0 px-1 mt-1 d-flex justify-content-center">
+              <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            </div>
+
+          </div>
+
+          <div class="row g-3 align-items-center mt-sm-3 mt-md-0">
+            <div class="col-auto" id="link2">
+              <label for="galleryTitle" class="col-form-label galleryTitle">Bathroom 2</label>
+            </div>
+          </div>
+
+          <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 ">
+            <div class="col py-0 px-1 mt-1 d-flex justify-content-center">
+              <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            </div>
+
+            <div class="col py-0 px-1 mt-1 d-flex justify-content-center">
+              <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            </div>
+
+          </div>
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary fs-3" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Edit Carousel Image Modal -->
+
+<div class="modal fade" id="editCarouselImg" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editCarouselImgLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered editCarouselImg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-3 imgCarouselTitle" id="editCarouselLabel">Update image and title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body editCarouselImg">
+          <div class="container">
+            <div class="row">
+              <div class="col-auto">
+                <label class="form-label" for="inputPicsTitle">Update title</label>
+              </div>
+            </div>
+            <div class="row g-3 align-items-center">
+              <div class="col-auto">
+                <label for="inputPicsTitle" class="col-form-label inputImgTitle">Title</label>
+              </div>
+              <div class="col-auto">
+                <input class="form-control form-control-md" type="text" id="inputPicsTitle" placeholder="Update title" aria-label=".form-control-md example"aria-describedby="titleHelpInline">
+              </div>
+              <div class="col-auto">
+                <span id="titleHelpInline" class="form-text inputImgSubtitle">
+                  Must be 8-20 characters long.
+                </span>
+              </div>
+            </div>
+            <label class="form-label mt-5" for="customFile">Update image</label>
+            <input type="file" class="form-control" id="customFile" />
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Delete Carousel Image -->
+
+<div class="modal fade" id="deleteCarouselImg" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleteCarouselImgLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered deleteCarouselImg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-3 imgCarouselTitle" id="editCarouselLabel">Delete Hall container</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body deleteCarouselImg">
+          <div class="container">
+            <div class="row g-3 align-items-center">
+              <div class="col-auto">
+                <div class="deleteDescrip">Are you sure you want to delete Hall container?</div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button id="declineButton" type="button" class="btn btn-primary" data-bs-dismiss="modal">Yes</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Edit Gallery Modal -->
+<div class="modal fade" id="editGallery" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editGalleryLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen overflow-y-auto">
+    <div class="modal-content p-0 ">
+      <div class="modal-header">
+        <h1 class="modal-title fs-2" id="editGalleryLabel">Gallery</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body editGallery">
+        <div class="container">
+          <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="galleryTitle" class="col-form-label galleryTitle">Property Overview</label> 
+            </div>
+          </div>
+
+          <!-- Mobile ver -->
+            <div class="row row-cols-auto d-flex flex-nowrap d-block d-md-none overflow-x-auto ">
+
+              <div class="col">
+                <div class="position-relative">
+                  <a href="#link1"><img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+
+
+                    <div class="dropdown position-absolute dropActionMobile">
+                      <a class="btn btn-light fa-solid fa-ellipsis fa-lg btnMenuGal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      </a>
+                        
+                      <ul class="dropdown-menu dropdown-menu-end ">
+                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#editGalleryOverview">Edit</a></li>
+                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteGalleryOverview">Delete</a></li>
+                      </ul>
+                    </div>
+                  
+                  </a>
+                </div>
+                <div class="row">
+                  <label class="galleryCaption mt-2">Living Room</label>
+                </div>
+                
+
+              </div>
+
+              <div class="col">
+                <div class="position-relative">
+                  <a href="#link1"><img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+
+
+                    <div class="dropdown position-absolute dropActionMobile">
+                      <a class="btn btn-light fa-solid fa-ellipsis fa-lg btnMenuGal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      </a>
+                        
+                      <ul class="dropdown-menu dropdown-menu-end ">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  
+                  </a>
+                </div>
+                <div class="row">
+                  <label class="galleryCaption mt-2">Kitchen</label>
+                </div>
+                
+
+              </div>
+
+              <div class="col">
+                <div class="position-relative">
+                  <a href="#link1"><img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+
+
+                    <div class="dropdown position-absolute dropActionMobile">
+                      <a class="btn btn-light fa-solid fa-ellipsis fa-lg btnMenuGal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      </a>
+                        
+                      <ul class="dropdown-menu dropdown-menu-end ">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  
+                  </a>
+                </div>
+                <div class="row">
+                  <label class="galleryCaption mt-2">Bedroom 1</label>
+                </div>
+                
+
+              </div>
+
+              <div class="col">
+                <div class="position-relative">
+                  <a href="#link1"><img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+
+
+                    <div class="dropdown position-absolute dropActionMobile">
+                      <a class="btn btn-light fa-solid fa-ellipsis fa-lg btnMenuGal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      </a>
+                        
+                      <ul class="dropdown-menu dropdown-menu-end ">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  
+                  </a>
+                </div>
+                <div class="row">
+                  <label class="galleryCaption mt-2">Bedroom 2</label>
+                </div>
+                
+
+              </div>
+
+              <div class="col">
+                <div class="position-relative">
+                  <a href="#link1"><img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+
+
+                    <div class="dropdown position-absolute dropActionMobile">
+                      <a class="btn btn-light fa-solid fa-ellipsis fa-lg btnMenuGal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      </a>
+                        
+                      <ul class="dropdown-menu dropdown-menu-end ">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  
+                  </a>
+                </div>
+                <div class="row">
+                  <label class="galleryCaption mt-2">Bedroom 3</label>
+                </div>
+                
+
+              </div>
+
+              <div class="col">
+                <div class="position-relative">
+                  <a href="#link1"><img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+
+
+                    <div class="dropdown position-absolute dropActionMobile">
+                      <a class="btn btn-light fa-solid fa-ellipsis fa-lg btnMenuGal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      </a>
+                        
+                      <ul class="dropdown-menu dropdown-menu-end ">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  
+                  </a>
+                </div>
+                <div class="row">
+                  <label class="galleryCaption mt-2">Bedroom 4</label>
+                </div>
+                
+
+              </div>
+
+              <div class="col">
+                <div class="position-relative">
+                  <a href="#link1"><img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+
+
+                    <div class="dropdown position-absolute dropActionMobile">
+                      <a class="btn btn-light fa-solid fa-ellipsis fa-lg btnMenuGal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      </a>
+                        
+                      <ul class="dropdown-menu dropdown-menu-end ">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  
+                  </a>
+                </div>
+                <div class="row">
+                  <label class="galleryCaption mt-2">Bathroom 1</label>
+                </div>
+                
+
+              </div>
+
+              <div class="col">
+                <div class="position-relative">
+                  <a href="#link1"><img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+
+
+                    <div class="dropdown position-absolute dropActionMobile">
+                      <a class="btn btn-light fa-solid fa-ellipsis fa-lg btnMenuGal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      </a>
+                        
+                      <ul class="dropdown-menu dropdown-menu-end ">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  
+                  </a>
+                </div>
+                <div class="row">
+                  <label class="galleryCaption mt-2">Bathroom 2</label>
+                </div>
+                
+
+              </div>
+
+            </div>
+
+
+          <!-- Desktop ver -->
+        <div class="container d-none d-md-block">
+          <div class="row row-cols-6">
+            <div class="col mt-2">
+              <div class="img-container position-relative">
+                <a href="#link1"><img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+                
+                    <div class="dropdown position-absolute dropAction">
+                        <a class="btn btn-light fa-solid fa-ellipsis fa-lg btnMenuGal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        </a>
+                      
+                        <ul class="dropdown-menu dropdown-menu-end ">
+                          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#editGalleryOverview">Edit</a></li>
+                          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteGalleryOverview">Delete</a></li>
+                        </ul>
+                    </div>
+                </a>
+
+                <label class="galleryCaption mt-2">Living Rooma</label>
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="img-container position-relative">
+                <a href="#link1"><img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+                
+                    <div class="dropdown position-absolute dropAction">
+                        <a class="btn btn-light fa-solid fa-ellipsis fa-lg btnMenuGal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        </a>
+                      
+                        <ul class="dropdown-menu dropdown-menu-end ">
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
+                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                        </ul>
+                    </div>
+                </a>
+
+                <label class="galleryCaption mt-2">Kitchen</label>
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="img-container position-relative">
+                <a href="#link1"><img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+                
+                    <div class="dropdown position-absolute dropAction">
+                        <a class="btn btn-light fa-solid fa-ellipsis fa-lg btnMenuGal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        </a>
+                      
+                        <ul class="dropdown-menu dropdown-menu-end ">
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
+                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                        </ul>
+                    </div>
+                </a>
+
+                <label class="galleryCaption mt-2">Bedroom 1</label>
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="img-container position-relative">
+                <a href="#link1"><img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+                
+                    <div class="dropdown position-absolute dropAction">
+                        <a class="btn btn-light fa-solid fa-ellipsis fa-lg btnMenuGal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        </a>
+                      
+                        <ul class="dropdown-menu dropdown-menu-end ">
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
+                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                        </ul>
+                    </div>
+                </a>
+
+                <label class="galleryCaption mt-2">Bedroom 2</label>
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="img-container position-relative">
+                <a href="#link1"><img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+                
+                    <div class="dropdown position-absolute dropAction">
+                        <a class="btn btn-light fa-solid fa-ellipsis fa-lg btnMenuGal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        </a>
+                      
+                        <ul class="dropdown-menu dropdown-menu-end ">
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
+                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                        </ul>
+                    </div>
+                </a>
+                
+                <label class="galleryCaption mt-2">Bedroom 3</label>
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="img-container position-relative">
+                <a href="#link2"><img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+                
+                    <div class="dropdown position-absolute dropAction">
+                        <a class="btn btn-light fa-solid fa-ellipsis fa-lg btnMenuGal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        </a>
+                      
+                        <ul class="dropdown-menu dropdown-menu-end ">
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
+                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                        </ul>
+                    </div>
+                </a>
+                
+                <label class="galleryCaption mt-2">Bedroom 4</label>
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="img-container position-relative">
+                <a href="#link1"><img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+                
+                    <div class="dropdown position-absolute dropAction">
+                        <a class="btn btn-light fa-solid fa-ellipsis fa-lg btnMenuGal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        </a>
+                      
+                        <ul class="dropdown-menu dropdown-menu-end ">
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
+                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                        </ul>
+                    </div>
+                </a>
+                
+                <label class="galleryCaption mt-2">Bathroom 1</label>
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="img-container position-relative">
+                <a href="#link1"><img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+                
+                    <div class="dropdown position-absolute dropAction">
+                        <a class="btn btn-light fa-solid fa-ellipsis fa-lg btnMenuGal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        </a>
+                      
+                        <ul class="dropdown-menu dropdown-menu-end ">
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
+                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                        </ul>
+                    </div>
+                </a>
+                
+                <label class="galleryCaption mt-2">Bathroom 2</label>
+              </div>
+            </div>
+
+          <!-- Everytime you add more image, this div should be displayed at the last container -->
+          <div class="col py-0 px-1 mt-2 d-flex justify-content-center position-relative"
+          >
+          <img class="img-fluid " width="200" height="500" src="images/white.png" alt="" style="border: 1px solid #232A3D; border-style: dashed;">
+              <!-- <i class="fa-solid fa-cloud-arrow-up fa-6x"></i> -->
+
+              <form action="#" class="position-absolute addImageModal">
+                <input class="file-input" type="file" name="file" hidden>
+                <i class="fa-solid fa-plus"></i>
+                <p class="text-center">Add more image</p>
+              </form>
+
+          </div>
+
+          </div>
+
+        </div>
+
+
+        <hr class="w-100 mt-5">
+
+
+        <!-- Edit Gallery section -- mob and desktop -->
+
+        <div class="row g-3 align-items-center mt-sm-3 mt-md-0">
+          <div class="col-auto">
+            <label for="galleryTitle" class="col-form-label galleryTitle">Living Room</label>
+          </div>
+        </div>
+
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 ">
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative">
+            <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            <div class="dropdown position-absolute dropActionMobile">
+              <a class="btn btn-light fa-solid fa-ellipsis fa-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              </a>
+            
+              <ul class="dropdown-menu dropdown-menu-end ">
+                <li><a class="dropdown-item" href="#">Edit</a></li>
+                <li><a class="dropdown-item" href="#">Delete</a></li>
+              </ul>
+            </div>
+          </div>
+          
+
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative">
+            <img class="img-fluid" width="200" src="images/header2.png" alt="">
+            <div class="dropdown position-absolute dropActionMobile">
+              <a class="btn btn-light fa-solid fa-ellipsis fa-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              </a>
+            
+              <ul class="dropdown-menu dropdown-menu-end ">
+                <li><a class="dropdown-item" href="#">Edit</a></li>
+                <li><a class="dropdown-item" href="#">Delete</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative">
+            <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            <div class="dropdown position-absolute dropActionMobile">
+              <a class="btn btn-light fa-solid fa-ellipsis fa-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              </a>
+            
+              <ul class="dropdown-menu dropdown-menu-end ">
+                <li><a class="dropdown-item" href="#">Edit</a></li>
+                <li><a class="dropdown-item" href="#">Delete</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Everytime you add more image, this div should be displayed at the last container -->
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative"
+        >
+          <img class="img-fluid " width="200" height="500" src="images/white.png" alt="" style="border: 1px solid #232A3D; border-style: dashed;">
+            <!-- <i class="fa-solid fa-cloud-arrow-up fa-6x"></i> -->
+
+            <form action="#" class="position-absolute addImageModal">
+              <input class="file-input" type="file" name="file" hidden>
+              <i class="fa-solid fa-plus"></i>
+              <p class="text-center">Add more image</p>
+            </form>
+
+          </div>
+
+        </div>
+
+        <div class="row g-3 align-items-center mt-sm-3 mt-md-0">
+          <div class="col-auto">
+            <label for="galleryTitle" class="col-form-label galleryTitle">Kitchen</label>
+          </div>
+        </div>
+
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 ">
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative">
+            <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            <div class="dropdown position-absolute dropActionMobile">
+              <a class="btn btn-light fa-solid fa-ellipsis fa-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              </a>
+            
+              <ul class="dropdown-menu dropdown-menu-end ">
+                <li><a class="dropdown-item" href="#">Edit</a></li>
+                <li><a class="dropdown-item" href="#">Delete</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative">
+            <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            <div class="dropdown position-absolute dropActionMobile">
+              <a class="btn btn-light fa-solid fa-ellipsis fa-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              </a>
+            
+              <ul class="dropdown-menu dropdown-menu-end ">
+                <li><a class="dropdown-item" href="#">Edit</a></li>
+                <li><a class="dropdown-item" href="#">Delete</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Everytime you add more image, this div should be displayed at the last container -->
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative"
+        >
+          <img class="img-fluid " width="200" height="500" src="images/white.png" alt="" style="border: 1px solid #232A3D; border-style: dashed;">
+            <!-- <i class="fa-solid fa-cloud-arrow-up fa-6x"></i> -->
+
+            <form action="#" class="position-absolute addImageModal">
+              <input class="file-input" type="file" name="file" hidden>
+              <i class="fa-solid fa-plus"></i>
+              <p class="text-center">Add more image</p>
+            </form>
+
+          </div>
+        </div>
+
+        <div class="row g-3 align-items-center mt-sm-3 mt-md-0">
+          <div class="col-auto">
+            <label for="galleryTitle" class="col-form-label galleryTitle">Bedroom 1</label>
+          </div>
+        </div>
+
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 ">
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative">
+            <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            <div class="dropdown position-absolute dropActionMobile">
+              <a class="btn btn-light fa-solid fa-ellipsis fa-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              </a>
+            
+              <ul class="dropdown-menu dropdown-menu-end ">
+                <li><a class="dropdown-item" href="#">Edit</a></li>
+                <li><a class="dropdown-item" href="#">Delete</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative">
+            <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            <div class="dropdown position-absolute dropActionMobile">
+              <a class="btn btn-light fa-solid fa-ellipsis fa-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              </a>
+            
+              <ul class="dropdown-menu dropdown-menu-end ">
+                <li><a class="dropdown-item" href="#">Edit</a></li>
+                <li><a class="dropdown-item" href="#">Delete</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative">
+            <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            <div class="dropdown position-absolute dropActionMobile">
+              <a class="btn btn-light fa-solid fa-ellipsis fa-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              </a>
+            
+              <ul class="dropdown-menu dropdown-menu-end ">
+                <li><a class="dropdown-item" href="#">Edit</a></li>
+                <li><a class="dropdown-item" href="#">Delete</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Everytime you add more image, this div should be displayed at the last container -->
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative"
+        >
+          <img class="img-fluid " width="200" height="500" src="images/white.png" alt="" style="border: 1px solid #232A3D; border-style: dashed;">
+            <!-- <i class="fa-solid fa-cloud-arrow-up fa-6x"></i> -->
+
+              <form action="#" class="position-absolute addImageModal">
+                <input class="file-input" type="file" name="file" hidden>
+                <i class="fa-solid fa-plus"></i>
+                <p class="text-center">Add more image</p>
+              </form>
+
+          </div>
+
+        </div>
+
+        <div class="row g-3 align-items-center mt-sm-3 mt-md-0">
+          <div class="col-auto">
+            <label for="galleryTitle" class="col-form-label galleryTitle">Bedroom 2</label>
+          </div>
+        </div>
+
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 ">
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative">
+            <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            <div class="dropdown position-absolute dropActionMobile">
+              <a class="btn btn-light fa-solid fa-ellipsis fa-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              </a>
+            
+              <ul class="dropdown-menu dropdown-menu-end ">
+                <li><a class="dropdown-item" href="#">Edit</a></li>
+                <li><a class="dropdown-item" href="#">Delete</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative">
+            <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            <div class="dropdown position-absolute dropActionMobile">
+              <a class="btn btn-light fa-solid fa-ellipsis fa-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              </a>
+            
+              <ul class="dropdown-menu dropdown-menu-end ">
+                <li><a class="dropdown-item" href="#">Edit</a></li>
+                <li><a class="dropdown-item" href="#">Delete</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative">
+            <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            <div class="dropdown position-absolute dropActionMobile">
+              <a class="btn btn-light fa-solid fa-ellipsis fa-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              </a>
+            
+              <ul class="dropdown-menu dropdown-menu-end ">
+                <li><a class="dropdown-item" href="#">Edit</a></li>
+                <li><a class="dropdown-item" href="#">Delete</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Everytime you add more image, this div should be displayed at the last container -->
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative"
+        >
+          <img class="img-fluid " width="200" height="500" src="images/white.png" alt="" style="border: 1px solid #232A3D; border-style: dashed;">
+            <!-- <i class="fa-solid fa-cloud-arrow-up fa-6x"></i> -->
+
+              <form action="#" class="position-absolute addImageModal">
+                <input class="file-input" type="file" name="file" hidden>
+                <i class="fa-solid fa-plus"></i>
+                <p class="text-center">Add more image</p>
+              </form>
+
+          </div>
+
+          
+        </div>
+
+        <div class="row g-3 align-items-center mt-sm-3 mt-md-0">
+          <div class="col-auto">
+            <label for="galleryTitle" class="col-form-label galleryTitle">Bedroom 3</label>
+          </div>
+        </div>
+
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 ">
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative">
+            <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            <div class="dropdown position-absolute dropActionMobile">
+              <a class="btn btn-light fa-solid fa-ellipsis fa-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              </a>
+            
+              <ul class="dropdown-menu dropdown-menu-end ">
+                <li><a class="dropdown-item" href="#">Edit</a></li>
+                <li><a class="dropdown-item" href="#">Delete</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative">
+            <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            <div class="dropdown position-absolute dropActionMobile">
+              <a class="btn btn-light fa-solid fa-ellipsis fa-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              </a>
+            
+              <ul class="dropdown-menu dropdown-menu-end ">
+                <li><a class="dropdown-item" href="#">Edit</a></li>
+                <li><a class="dropdown-item" href="#">Delete</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Everytime you add more image, this div should be displayed at the last container -->
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative"
+          >
+          <img class="img-fluid " width="200" height="500" src="images/white.png" alt="" style="border: 1px solid #232A3D; border-style: dashed;">
+              <!-- <i class="fa-solid fa-cloud-arrow-up fa-6x"></i> -->
+
+              <form action="#" class="position-absolute addImageModal">
+                <input class="file-input" type="file" name="file" hidden>
+                <i class="fa-solid fa-plus"></i>
+                <p class="text-center">Add more image</p>
+              </form>
+
+          </div>
+
+        </div>
+
+        <div class="row g-3 align-items-center mt-sm-3 mt-md-0">
+          <div class="col-auto" id="link2">
+            <label for="galleryTitle" class="col-form-label galleryTitle">Bedroom 4</label>
+          </div>
+        </div>
+
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 ">
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative">
+            <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            <div class="dropdown position-absolute dropActionMobile">
+              <a class="btn btn-light fa-solid fa-ellipsis fa-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              </a>
+            
+              <ul class="dropdown-menu dropdown-menu-end ">
+                <li><a class="dropdown-item" href="#">Edit</a></li>
+                <li><a class="dropdown-item" href="#">Delete</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative">
+            <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            <div class="dropdown position-absolute dropActionMobile">
+              <a class="btn btn-light fa-solid fa-ellipsis fa-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              </a>
+            
+              <ul class="dropdown-menu dropdown-menu-end ">
+                <li><a class="dropdown-item" href="#">Edit</a></li>
+                <li><a class="dropdown-item" href="#">Delete</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Everytime you add more image, this div should be displayed at the last container -->
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative"
+          >
+          <img class="img-fluid " width="200" height="500" src="images/white.png" alt="" style="border: 1px solid #232A3D; border-style: dashed;">
+              <!-- <i class="fa-solid fa-cloud-arrow-up fa-6x"></i> -->
+
+              <form action="#" class="position-absolute addImageModal">
+                <input class="file-input" type="file" name="file" hidden>
+                <i class="fa-solid fa-plus"></i>
+                <p class="text-center">Add more image</p>
+              </form>
+
+          </div>
+        </div>
+
+        <div class="row g-3 align-items-center mt-sm-3 mt-md-0">
+          <div class="col-auto" id="link1">
+            <label for="galleryTitle" class="col-form-label galleryTitle">Bathroom 1</label>
+          </div>
+        </div>
+
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 ">
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative">
+            <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            <div class="dropdown position-absolute dropActionMobile">
+              <a class="btn btn-light fa-solid fa-ellipsis fa-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              </a>
+            
+              <ul class="dropdown-menu dropdown-menu-end ">
+                <li><a class="dropdown-item" href="#">Edit</a></li>
+                <li><a class="dropdown-item" href="#">Delete</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative">
+            <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            <div class="dropdown position-absolute dropActionMobile">
+              <a class="btn btn-light fa-solid fa-ellipsis fa-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              </a>
+            
+              <ul class="dropdown-menu dropdown-menu-end ">
+                <li><a class="dropdown-item" href="#">Edit</a></li>
+                <li><a class="dropdown-item" href="#">Delete</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Everytime you add more image, this div should be displayed at the last container -->
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative"
+          >
+          <img class="img-fluid " width="200" height="500" src="images/white.png" alt="" style="border: 1px solid #232A3D; border-style: dashed;">
+              <!-- <i class="fa-solid fa-cloud-arrow-up fa-6x"></i> -->
+
+              <form action="#" class="position-absolute addImageModal">
+                <input class="file-input" type="file" name="file" hidden>
+                <i class="fa-solid fa-plus"></i>
+                <p class="text-center">Add more image</p>
+              </form>
+
+          </div>
+
+        </div>
+
+        <div class="row g-3 align-items-center mt-sm-3 mt-md-0">
+          <div class="col-auto" id="link2">
+            <label for="galleryTitle" class="col-form-label galleryTitle">Bathroom 2</label>
+          </div>
+        </div>
+
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 ">
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative">
+            <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            <div class="dropdown position-absolute dropActionMobile">
+              <a class="btn btn-light fa-solid fa-ellipsis fa-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              </a>
+            
+              <ul class="dropdown-menu dropdown-menu-end ">
+                <li><a class="dropdown-item" href="#">Edit</a></li>
+                <li><a class="dropdown-item" href="#">Delete</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative">
+            <img class="img-fluid" width="200" src="images/hall-img-1.webp" alt="">
+            <div class="dropdown position-absolute dropActionMobile">
+              <a class="btn btn-light fa-solid fa-ellipsis fa-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              </a>
+            
+              <ul class="dropdown-menu dropdown-menu-end ">
+                <li><a class="dropdown-item" href="#">Edit</a></li>
+                <li><a class="dropdown-item" href="#">Delete</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Everytime you add more image, this div should be displayed at the last container -->
+          <div class="col py-0 px-1 mt-1 d-flex justify-content-center position-relative"
+          >
+          <img class="img-fluid " width="200" height="500" src="images/white.png" alt="" style="border: 1px solid #232A3D; border-style: dashed;">
+              <!-- <i class="fa-solid fa-cloud-arrow-up fa-6x"></i> -->
+
+              <form action="#" class="position-absolute addImageModal">
+                <input class="file-input" type="file" name="file" hidden>
+                <i class="fa-solid fa-plus"></i>
+                <p class="text-center">Add more image</p>
+              </form>
+
+          </div>
+
+        </div>
+
+
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary fs-3" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Edit Modal under Edit Gallery Modal -->
+
+<div class="modal fade" id="editGalleryOverview" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editGalleryOverviewLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered editGalleryOverview">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-3 imgCarouselTitle" id="editCarouselLabel">Update image and title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body editGalleryOverview">
+          <div class="container">
+            <div class="row">
+              <div class="col-auto">
+                <label class="form-label" for="inputPicsTitle">Update title</label>
+              </div>
+            </div>
+            <div class="row g-3 align-items-center">
+              <div class="col-auto">
+                <label for="inputPicsTitle" class="col-form-label inputImgTitle">Title</label>
+              </div>
+              <div class="col-auto">
+                <input class="form-control form-control-md" type="text" id="inputPicsTitle" placeholder="Update title" aria-label=".form-control-md example"aria-describedby="titleHelpInline">
+              </div>
+              <div class="col-auto">
+                <span id="titleHelpInline" class="form-text inputImgSubtitle">
+                  Must be 8-20 characters long.
+                </span>
+              </div>
+            </div>
+            <label class="form-label mt-5" for="customFile">Update image</label>
+            <input type="file" class="form-control" id="customFile" />
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Update</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- Delete Modal under Edit Gallery Modal -->
+
+<div class="modal fade" id="deleteGalleryOverview" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleteGalleryOverviewLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered deleteGalleryOverview">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-3 imgCarouselTitle" id="deleteCarouselLabel">Delete</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body deleteGalleryOverview">
+          <div class="container">
+            <div class="row g-3 align-items-center">
+              <div class="col-auto">
+                <div class="deleteDescrip">Are you sure you want to delete this?</div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button id="declineButton" type="button" class="btn btn-primary" data-bs-dismiss="modal">Yes</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
 
     
 
@@ -1109,9 +2779,7 @@
         autoplay:false,
         autoplayTimeout:6000,
         margin:10,
-        nav:true,
-        navText:["<i class='fa-solid fa-arrow-left leftArrow'></i>",
-                "<i class='fa-solid fa-arrow-right rightArrow'></i>"],
+        nav:false,
         responsive:{
             0:{
                 items:1,
@@ -1129,10 +2797,16 @@
   </script>
 
               
-            <!--   *****   JQuery Link   *****   -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-            
-            <!--   *****   Owl Carousel js Link  *****  -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!--   *****   JQuery Link   *****   -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  
+  <!--   *****   Owl Carousel js Link  *****  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- Gallery Modal JS -->
+  <script src="js/upload-image.js"></script>
+
+  <!--View Property edit JS -->
+  <script src="js/edit-view.js"></script>
 
 </html>

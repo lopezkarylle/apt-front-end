@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="border: 1px solid red;">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,7 +20,7 @@
     <link href="css/property_enlist.css" rel="stylesheet" />
 
   </head>
-  <body>
+  <body style="border: 1px solid green;">
     <!-- Navbar -->
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -68,561 +68,579 @@
 
 
 <!-- Enlist starts -->
-  <div class="container ps-md-0 enlistDetailscon" style="border: 1px solid red;">
+
+  <div class="container ps-md-0 enlistDetailscon" style="border: 1px solid blue;">
     <section class="enlistDetails">
       <!-- <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
         <img class="img-fluid" src="images/hero-img.png">
       </div> -->
-      <!-- <divd class="col-md-8 col-lg-6 " style="border: 1px solid red;">
-        <divd class="login d-flex mt-5 ms-md-3 py-5 align-items-center"> -->
-          <!-- <divs class="container"> -->
-
-            <div class="row">
-              <div class="col-md-11 col-lg-10 mx-auto">
-                <h3 class="login-heading mb-4">Welcome back!</h3>
-  
-                  <!-- Enlist Form -->
-                  <div class="row mt-3">
-                    <h2>Property Details</h2>
-                  </div>
-
-                  <div class="row g-2">
-                    <div class="col-12 col-sm-6">
-                      <div class="form-floating">
-                        <input type="text" class="form-control" id="floatingPropertyName" placeholder="propertyname" required>
-                        <label for="floatingPropertyName" class="form-label">Property Name</label>
-                      </div>
-                    </div>
-                    <div class="col-12 col-sm-6">
-                      <div class="form-floating">
-                        <select class="form-select" id="floatingSelectType">
-                          <option selected>Select property type</option>
-                          <option value="1">Apartelle</option>
-                          <option value="2">Apartment</option>
-                          <option value="3">Dormitory</option>
-                        </select>
-                        <label for="floatingSelectType">Property Type</label>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row mt-4">
-                    <h2>Property Location</h2>
-                  </div>
-            
-                  <div class="row g-2">
-                    <div class="col-12 col-md-4">
-                      <div class="form-floating">
-                      <input type="text" class="form-control" id="houseNumber" placeholder="housenumber" required>
-                      <label for="houseNumber" class="form-label">Bldg/House No.</label>
-                      </div>
-                    </div>
-            
-                    <div class="col-12 col-md-4">
-                      <div class="form-floating">
-                        <input type="text" class="form-control" id="propertyStreet" placeholder="housenumber" required>
-                        <label for="propertyStreet" class="form-label">Street</label>
-                      </div>
-                    </div>
-            
-                    <div class="col-12 col-md-4">
-                      <div class="form-floating">
-                        <select class="form-select" id="floatingSelectType" required>
-                          <option selected> - Select Barangay - </option>
-                          <option value="1">Claro M. Recto</option>
-                          <option value="2">Lourdes Sur East</option>
-                          <option value="3">Salapungan</option>
-                        </select>
-                        <label for="floatingSelectBrgy">Barangay</label>
-                      </div>
-                    </div>
-            
-                  </div>
-
-                  <div class="row mt-4">
-                    <h2>Property Owner Details</h2>
-                  </div>
-            
-                  <div class="row g-2">
-                    <div class="col-12 col-md-4">
-                      <div class="form-floating">
-                        <input type="text" class="form-control" id="ownerFname" placeholder="fname" required>
-                        <label for="ownerFname" class="form-label">First Name</label>
-                      </div>
-                    </div>
-            
-                    <div class="col-12 col-md-4">
-                      <div class="form-floating">
-                        <input type="text" class="form-control" id="ownerLname" placeholder="lname" required>
-                        <label for="ownerLname" class="form-label">Last Name</label>
-                      </div>
-                    </div>
-            
-                  </div>
-            
-                  <div class="row g-2 mt-3">
-            
-                    <div class="col-12 col-md-5">
-                      <div class="form-floating">
-                        <input type="email" class="form-control" id="ownerEmail" placeholder="email" required>
-                        <label for="ownerEmail" class="form-label">Email</label>
-                      </div>
-                    </div>
-            
-                    <div class="col-12 col-md-3">
-                      <div class="form-floating">
-                        <input type="number" class="form-control" id="ownerNumber" max="9" placeholder="phonenumber" required>
-                        <label for="ownerNumber" class="form-label">Phone number</label>
-                      </div>
-                    </div>
-            
-                  </div>
-
-                  
-
-                  <div class="row g-2 mt-4">                  
-                    <div class="row">
-                      <h5>*I guarantee that all details provided are accurate and true.</h5>
-                    </div>
-                    <div class="col-6 col-md-5 ms-md-2 ms-sm-2">
-                      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                        <input type="radio" class="btn-check" name="btnradioAgreement" id="btnTrue" autocomplete="off" checked>
-                        <label class="btn btn-outline-primary" for="btnTrue">Yes</label>
-                        
-                        <input type="radio" class="btn-check" name="btnradioAgreement" id="btnFalse" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btnFalse">No</label>
-
-                      </div>
-                    </div>
-            
-                  </div>
-
-                  <div class="row g-2 mt-3">
-            
-                    <div class="col-12 col-md-5">
-                      <button type="button" class="btn btn-primary btn-sm">Next Button</button>
-                    </div>
-            
-                  </div>
-
-
+      <!-- <divd class="col-md-8 col-lg-6 " style="border: 1px solid red;"> -->
+        <div class="w-100 d-none d-md-block"><div class="row m-2"></div></div>
+          <div class="multisteps-form">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-8 ml-auto mr-auto">
+                <div class="multisteps-form__progress">
+                  <button class="multisteps-form__progress-btn js-active" type="button" title="BasicDetails">Basic Details</button>
+                  <button class="multisteps-form__progress-btn" type="button" title="PropertyDetails">Property Details</button>
+                  <button class="multisteps-form__progress-btn" type="button" title="House Rules">House Rules</button>
+                  <button class="multisteps-form__progress-btn" type="button" title="Message">Message        </button>
+                </div>
               </div>
             </div>
-          <!-- </divs> -->
+            <div class="container multisteps-form__form mt-sm-0 mt-lg-5">
 
-        <div class="login d-flex mt-5 ms-md-3 py-5 align-items-center">
-          <div class="container">
-            <div class="row">
-              <!-- <div class="col">
-                <img class="img-fluid align-items-center" src="images/logo.png">
-              </div> -->
-            </div>
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-md-11 col-lg-8">
+                      <form>
+                      <div class="multisteps-form__panel shadow p-4 rounded bg-white js-active" data-animation="scaleIn">
+                        <h3 class="login-heading mb-4 multisteps-form__title">Welcome back!</h3>
+                        <div class="multisteps-form__content">
 
-            <div class="row">
-              <div class="col-md-11 col-lg-10 mx-auto">
-                <h3 class="login-heading mb-4">Welcome back!</h3>
-  
-                  <!-- Enlist Form -->
-                  <div class="row mt-3">
-                    <h2>Property Details</h2>
-                  </div>
+        
+                        <!-- Enlist Form -->
+                        <div class="row mt-3">
+                          <h2>Property Details</h2>
+                        </div>
 
-                  <div class="row g-2">
-                    <div class="col-12">
-                      <div class="propertyDescrip">
-                        <label for="exampleFormControlTextarea1" class="form-label">Property Description</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Prudencio is a cozy, semi-furnished dorm for rent near AUF, ideal for roomies who want to experience the freedom of their own unit while coliving. Located in Angeles City near schools."></textarea>
-                      </div>
-                    </div>
-                  </div>
-            
-                  <div class="row g-2 mt-2">
-                    <div class="col-12 col-md-4">
-                      <div class="form2">
-                        <label for="totalFloors" class="form-label h5">How many floors?</label>
-                        <input type="number" class="form-control" id="totalFloors" max="9" placeholder="No. of floors" required>
-                      </div>
-                    </div>
-            
-                    <div class="col-12 col-md-4">
-                      <div class="form2">
-                        <label for="totalFloors" class="form-label h5">How many rooms?</label>
-                        <input type="number" class="form-control" id="totalFloors" max="9" placeholder="No. of rooms" required>
-                      </div>
-                    </div>
-            
-                    <div class="col-12 col-md-4">
-                      <div class="form2">
-                        <label for="totalFloors" class="form-label h5">How many beds?</label>
-                        <input type="number" class="form-control" id="totalFloors" max="9" placeholder="No. of beds" required>
-                      </div>
-                    </div>
-            
-                  </div>
-
-                  <div class="row mt-4">
-                    <h2>Room Details</h2>
-                  </div>
-            
-                  <div class="row g-2">
-                    <div class="col-12 col-md-4">
-                      <div class="selectRoomType">
-                        <label for="roomType" class="form-label h5">Room Type</label>
-                        <select class="form-select" id="floatingSelectType" required>
-                          <option selected> - Select Type of Room - </option>
-                          <option value="1">Room for 1</option>
-                          <option value="2">Room for 2</option>
-                          <option value="3">Room for 3</option>
-                          <option value="4">Room for 4</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div class="col-12 col-md-4">
-                      <div class="selectRoomType">
-                        <label for="roomType" class="form-label h5">Rate per room</label>
-                        <select class="form-select" id="floatingSelectType" required>
-                          <option selected> - Select Type of Furnish - </option>
-                          <option value="1">Bare</option>
-                          <option value="2">Semi-furnished</option>
-                          <option value="3">Fully-furnished</option>
-                        </select>
-                      </div>
-                    </div>
-            
-                    <div class="col-12 col-md-4">
-                      <div class="form2">
-                        <label for="roomRate" class="form-label h5">Rate per room</label>
-                        <input type="number" class="form-control" id="roomRate" max="9" placeholder="₱ 0.00" required>
-                      </div>
-                    </div>
-
-                  </div>
-            
-                  <div class="row g-2 mt-2">
-
-                    <div class="col-12 col-md-4">
-                      <div class>
-                        <label for="roomRate" class="form-label h5">Rate per room</label>
-                      </div>
-                    </div>
-
-                      <div class="row">
-                        <div class="col-12 col-md-4 col-sm-6 d-flex justify-content-center mt-2">
-                          <div class="check-amenities">
-                            <input type="checkbox" class="btn-check" id="btn-check-1" autocomplete="off">
-                            <label class="btnA" for="btn-check-1">Refrigerator</label>
+                        <div class="row g-2">
+                          <div class="col-12 col-sm-6">
+                            <div class="form-floating">
+                              <input type="text" class="form-control" id="floatingPropertyName" placeholder="propertyname" required>
+                              <label for="floatingPropertyName" class="form-label">Property Name</label>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="form-floating">
+                              <select class="form-select" id="floatingSelectType">
+                                <option selected>Select property type</option>
+                                <option value="1">Apartelle</option>
+                                <option value="2">Apartment</option>
+                                <option value="3">Dormitory</option>
+                              </select>
+                              <label for="floatingSelectType">Property Type</label>
+                            </div>
                           </div>
                         </div>
 
-                        <div class="col-12 col-md-4 col-sm-6 d-flex justify-content-center mt-2">
-                          <div class="check-amenities">
-                            <input type="checkbox" class="btn-check" id="btn-check-2" autocomplete="off">
-                            <label class="btnA" for="btn-check-2">Drinking Water</label>
-                          </div>
+                        <div class="row mt-4">
+                          <h2>Property Location</h2>
                         </div>
-
-                        <div class="col-12 col-md-4 col-sm-6 d-flex justify-content-center mt-2">
-                          <div class="check-amenities">
-                            <input type="checkbox" class="btn-check" id="btn-check-3" autocomplete="off">
-                            <label class="btnA" for="btn-check-3">Sink</label>
-                          </div>
-                        </div>
-
-                        <div class="col-12 col-md-4 col-sm-6 d-flex justify-content-center mt-2">
-                          <div class="check-amenities">
-                            <input type="checkbox" class="btn-check" id="btn-check-4" autocomplete="off">
-                            <label class="btnA" for="btn-check-4">Parking</label>
-                          </div>
-                        </div>
-
-                        <div class="col-12 col-md-4 col-sm-6 d-flex justify-content-center mt-2">
-                          <div class="check-amenities">
-                            <input type="checkbox" class="btn-check" id="btn-check-5" autocomplete="off">
-                            <label class="btnA" for="btn-check-5">TV</label>
-                          </div>
-                        </div>
-
-                        <div class="col-12 col-md-4 col-sm-6 d-flex justify-content-center mt-2">
-                          <div class="check-amenities">
-                            <input type="checkbox" class="btn-check" id="btn-check-6" autocomplete="off">
-                            <label class="btnA" for="btn-check-6">Study Area</label>
-                          </div>
-                        </div>
-
-                        <div class="col-12 col-md-4 col-sm-6 d-flex justify-content-center mt-2">
-                          <div class="check-amenities">
-                            <input type="checkbox" class="btn-check" id="btn-check-7" autocomplete="off">
-                            <label class="btnA" for="btn-check-7">Lounge Area</label>
-                          </div>
-                        </div>
-
-                        <div class="col-12 col-md-4 col-sm-6 d-flex justify-content-center mt-2">
-                          <div class="check-amenities">
-                            <input type="checkbox" class="btn-check" id="btn-check-8" autocomplete="off">
-                            <label class="btnA" for="btn-check-8">Roof Deck</label>
-                          </div>
-                        </div>
-
-                        <div class="col-12 col-md-4 col-sm-6 d-flex justify-content-center mt-2">
-                          <div class="check-amenities">
-                            <input type="checkbox" class="btn-check" id="btn-check-9" autocomplete="off">
-                            <label class="btnA" for="btn-check-9">Reception Area</label>
-                          </div>
-                        </div>
-
-                        <div class="col-12 col-md-4 col-sm-6 d-flex justify-content-center mt-2">
-                          <div class="check-amenities">
-                            <input type="checkbox" class="btn-check" id="btn-check-10" autocomplete="off">
-                            <label class="btnA" for="btn-check-10">Electric Fan</label>
-                          </div>
-                        </div>
-
-                      </div>
-            
-                    
-            
-                  </div>
-
-                  <div class="row g-2 mt-2">
-                    <div class="col-12 col-md-4">
-                      <div class="form2">
-                        <label for="totalbillWater" class="form-label h5">Average water bill?</label>
-                        <input type="number" class="form-control" id="totalbillWater" max="9" placeholder="₱ 0.00" required>
-                      </div>
-                    </div>
-            
-                    <div class="col-12 col-md-4">
-                      <div class="form2">
-                        <label for="totalbillElectric" class="form-label h5">Average electric bill?</label>
-                        <input type="number" class="form-control" id="totalbillElectric" max="9" placeholder="₱ 0.00" required>
-                      </div>
-                    </div>
-            
-                    <div class="col-12 col-md-4">
-                      <div class="form2">
-                        <label for="totalFloors" class="form-label h5">How many beds?</label>
-                        <input type="number" class="form-control" id="totalFloors" max="9" placeholder="₱ 0.00" required>
-                      </div>
-                    </div>
-            
-                  </div>
-
-                  <div class="row g-2 mt-4">                  
-                    <div class="row">
-                      <h5>Do you have Wi-Fi connection?</h5>
-                    </div>
-                    <div class="col-4 col-md-2 ms-md-2 ms-sm-2">
-                      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                        <input type="radio"  onclick="javascript:yesnoCheck();" class="btn-check wifiCheck" name="btnWifiradio" id="wifiCheck1" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="wifiCheck1">Yes</label>
-                        
-                        <input type="radio"  onclick="javascript:yesnoCheck();" class="btn-check wifiCheck" name="btnWifiradio" id="wifiCheck2" autocomplete="off" checked>
-                        <label class="btn btn-outline-primary" for="wifiCheck2">No</label>
-
-                      </div>
-
-                    </div>
-
-                    <div id="ifYes" style="visibility:hidden;" class="col-6 col-lg-4 ms-md-2 ms-sm-2">
-                      <input type="number" class="form-control" id="wifiSpeed" max="9" placeholder="Wi-Fi speed" required>
-                    </div>
-                  </div>
                   
-                  <!-- <div class="row mt-3">
-
-                      <div id="ifYes1" style="visibility:hidden;" class="col-5 col-lg-4 ms-md-2 ms-sm-2 selectRoomType">
-                        <select class="form-select" id="floatingSelectType" required>
-                          <option selected> - Select Type of Room - </option>
-                          <option value="1">Room for 1</option>
-                          <option value="2">Room for 2</option>
-                          <option value="3">Room for 3</option>
-                          <option value="4">Room for 4</option>
-                        </select>
-                    </div>
-
-                  </div> -->
-
-                  <div class="row g-2 mt-3">
-            
-                    <div class="col-12 col-md-5">
-                      <button type="button" class="btn btn-secondary btn-sm">Previous Button</button>
-                      <button type="button" class="btn btn-primary btn-sm">Next Button</button>
-                    </div>
-            
-                  </div>
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="login d-flex mt-5 ms-md-3 py-5 align-items-center">
-          <div class="container d-flex justify-content-center">
-
-            <div class="row">
-              <div class="col-md-11 col-lg-10 justify-content-center">
-                <h3 class="login-heading mb-4">Welcome back!</h3>
-  
-                  <!-- Enlist Form -->
-                  <div class="row g-2 mt-4">                  
-                    <div class="row">
-                      <h5>Do you have Curfew?</h5>
-                    </div>
-                    <div class="col-4 col-md-2 ms-md-2 ms-sm-2">
-                      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                        <input type="radio"  onclick="javascript:yesnoCheck1();" class="btn-check curfewCheck" name="btnCurfewradio" id="curfewCheck1" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="curfewCheck1">Yes</label>
-                        
-                        <input type="radio"  onclick="javascript:yesnoCheck1();" class="btn-check curfewCheck" name="btnCurfewradio" id="curfewCheck2" autocomplete="off" checked>
-                        <label class="btn btn-outline-primary" for="curfewCheck2">No</label>
-
-                      </div>
-
-                    </div>
-                    
-                    <div class="row g-2 mt-2" id="ifYes1" style="display:none;" >
-                      <div class="col-8 col-md-6 ms-md-2 ms-sm-2 selectRoomType">
-                        <select class="form-select" id="floatingSelectType" required>
-                          <option selected> - Select Curfew Hours - </option>
-                          <option value="1">12PM to 5AM</option>
-                          <option value="2">12PM to 4AM</option>
-                          <option value="3">11PM to 5AM</option>
-                          <option value="4">11PM to 4AM</option>
-                          <option value="5">10PM to 5AM</option>
-                          <option value="6">10PM to 4AM</option>
-                          <option value="7">09PM to 5AM</option>
-                          <option value="8">09PM to 4AM</option>
-                          <option value="9">08PM to 5AM</option>
-                          <option value="10">08PM to 4AM</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
+                        <div class="row g-2">
+                          <div class="col-12 col-md-4">
+                            <div class="form-floating">
+                            <input type="text" class="form-control" id="houseNumber" placeholder="housenumber" required>
+                            <label for="houseNumber" class="form-label">Bldg/House No.</label>
+                            </div>
+                          </div>
                   
-                  <div class="row g-2 mt-4">                  
-                      <div class="row">
-                        <h5>Are pets allowed?</h5>
-                      </div>
-                    <div class="col-6 col-md-5 ms-md-2 ms-sm-2 mt-2">
-                      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                        <input type="radio" class="btn-check" name="btnradioPets" id="btnPetsY" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btnPetsY">Yes</label>
-                        
-                        <input type="radio" class="btn-check" name="btnradioPets" id="btnPetsN" autocomplete="off" checked>
-                        <label class="btn btn-outline-primary" for="btnPetsN">No</label>
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row g-2 mt-4">                  
-                    <div class="row">
-                      <h5>Are working tenants allowed?</h5>
-                    </div>
-                    <div class="col-6 col-md-5 ms-md-2 ms-sm-2 mt-2">
-                      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                        <input type="radio" class="btn-check" name="btnradioWtenants" id="btnWtenantsY" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btnWtenantsY">Yes</label>
-                        
-                        <input type="radio" class="btn-check" name="btnradioWtenants" id="btnWtenantsN" autocomplete="off" checked>
-                        <label class="btn btn-outline-primary" for="btnWtenantsN">No</label>
-
-                      </div>
-                    </div>
-                  </div>
-
+                          <div class="col-12 col-md-4">
+                            <div class="form-floating">
+                              <input type="text" class="form-control" id="propertyStreet" placeholder="housenumber" required>
+                              <label for="propertyStreet" class="form-label">Street</label>
+                            </div>
+                          </div>
                   
-                  <div class="row g-2 mt-4">                  
-                    <div class="row">
-                      <h5>Are guests allowed?</h5>
-                    </div>
-                    <div class="col-4 col-md-4 ms-md-2 ms-sm-2">
-                      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                        <input type="radio"  onclick="javascript:yesnoCheck2();" class="btn-check guestCheck" name="btnGuestradio" id="guestCheck1" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="guestCheck1">Yes</label>
+                          <div class="col-12 col-md-4">
+                            <div class="form-floating">
+                              <select class="form-select" id="floatingSelectType" required>
+                                <option selected> - Select Barangay - </option>
+                                <option value="1">Claro M. Recto</option>
+                                <option value="2">Lourdes Sur East</option>
+                                <option value="3">Salapungan</option>
+                              </select>
+                              <label for="floatingSelectBrgy">Barangay</label>
+                            </div>
+                          </div>
+                  
+                        </div>
+
+                        <div class="row mt-4">
+                          <h2>Property Owner Details</h2>
+                        </div>
+                  
+                        <div class="row g-2">
+                          <div class="col-12 col-md-4">
+                            <div class="form-floating">
+                              <input type="text" class="form-control" id="ownerFname" placeholder="fname" required>
+                              <label for="ownerFname" class="form-label">First Name</label>
+                            </div>
+                          </div>
+                  
+                          <div class="col-12 col-md-4">
+                            <div class="form-floating">
+                              <input type="text" class="form-control" id="ownerLname" placeholder="lname" required>
+                              <label for="ownerLname" class="form-label">Last Name</label>
+                            </div>
+                          </div>
+                  
+                        </div>
+                  
+                        <div class="row g-2 mt-3">
+                  
+                          <div class="col-12 col-md-5">
+                            <div class="form-floating">
+                              <input type="email" class="form-control" id="ownerEmail" placeholder="email" required>
+                              <label for="ownerEmail" class="form-label">Email</label>
+                            </div>
+                          </div>
+                  
+                          <div class="col-12 col-md-3">
+                            <div class="form-floating">
+                              <input type="number" class="form-control" id="ownerNumber" max="9" placeholder="phonenumber" required>
+                              <label for="ownerNumber" class="form-label">Phone number</label>
+                            </div>
+                          </div>
+                  
+                        </div>
+
                         
-                        <input type="radio"  onclick="javascript:yesnoCheck2();" class="btn-check guestCheck" name="btnGuestradio" id="guestCheck2" autocomplete="off" checked>
-                        <label class="btn btn-outline-primary" for="guestCheck2">No</label>
 
-                      </div>
+                        <div class="row g-2 mt-4">                  
+                          <div class="row">
+                            <h5>*I guarantee that all details provided are accurate and true.</h5>
+                          </div>
+                          <div class="col-6 col-md-5 ms-md-2 ms-sm-2">
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                              <input type="radio" class="btn-check" name="btnradioAgreement" id="btnTrue" autocomplete="off" checked>
+                              <label class="btn btn-outline-primary" for="btnTrue">Yes</label>
+                              
+                              <input type="radio" class="btn-check" name="btnradioAgreement" id="btnFalse" autocomplete="off">
+                              <label class="btn btn-outline-primary" for="btnFalse">No</label>
 
-                    </div>
+                            </div>
+                          </div>
+                  
+                        </div>
 
-                    <div class="row g-2 mt-4"  id="ifYes2" style="display:none;" >                  
+                        <!-- <div class="row g-2 mt-3">
+                  
+                          <div class="col-12 col-md-5">
+                            <button type="button" class="btn btn-primary btn-sm">Next Button</button>
+                          </div>
+                  
+                        </div> -->
+
                         <div class="row">
-                          <h5>Can they stay overnight?</h5>
+                          <div class="button-row d-flex mt-4 col-12">
+                            <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Nextass</button>
+                          </div>
                         </div>
-                      <div class="col-6 col-lg-4 ms-md-2 ms-sm-2 btn-group">
 
-                        <input type="radio" class="btn-check" name="btnradioWguests" id="btnWguestsY" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btnWguestsY">Yes</label>
-                        
-                        <input type="radio" class="btn-check" name="btnradioWguests" id="btnWguestsN" autocomplete="off" checked>
-                        <label class="btn btn-outline-primary" for="btnWguestsN">No</label>
-                      </div>
+                        </div>
                     </div>
-
-
+                
                   </div>
-
-
-                  <div class="row g-2 mt-4">                  
-                    <div class="row">
-                      <h5>Is cooking allowed?</h5>
-                    </div>
-                    <div class="col-6 col-md-5 ms-md-2 ms-sm-2 mt-2">
-                      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                        <input type="radio" class="btn-check" name="btnradioCooking" id="btnCookY" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btnCookY">Yes</label>
-                        
-                        <input type="radio" class="btn-check" name="btnradioCooking" id="btnCookN" autocomplete="off" checked>
-                        <label class="btn btn-outline-primary" for="btnCookN">No</label>
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row g-2 mt-4">                  
-                    <div class="row">
-                      <h5>Is parking available?</h5>
-                    </div>
-                    <div class="col-6 col-md-5 ms-md-2 ms-sm-2 mt-2">
-                      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                        <input type="radio" class="btn-check" name="btnradioParking" id="btnParkY" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btnParkY">Yes</label>
-                        
-                        <input type="radio" class="btn-check" name="btnradioParking" id="btnParkN" autocomplete="off" checked>
-                        <label class="btn btn-outline-primary" for="btnParkN">No</label>
-
-                      </div>
-                    </div>
-                  </div>
-
-
-
-                  <div class="row g-2 mt-3">
-            
-                    <div class="col-12 col-md-5">
-                      <button type="button" class="btn btn-secondary btn-sm">Previous Button</button>
-                      <button type="button" class="btn btn-primary btn-sm">Next Button</button>
-                    </div>
-            
-                  </div>
-
-
+                </div>
               </div>
+
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-md-11 col-lg-8 mx-auto justify-content-center">
+                    <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                    <h3 class="login-heading mb-4 multisteps-form__title">Welcome back!</h3>
+                    <div class="multisteps-form__content">
+      
+                      <!-- Enlist Form -->
+                      <div class="row mt-3">
+                        <h2>Property Room Details</h2>
+                      </div>
+
+                      <div class="row g-2">
+                        <div class="col-12">
+                          <div class="propertyDescrip">
+                            <label for="exampleFormControlTextarea1" class="form-label">Property Description</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Prudencio is a cozy, semi-furnished dorm for rent near AUF, ideal for roomies who want to experience the freedom of their own unit while coliving. Located in Angeles City near schools."></textarea>
+                          </div>
+                        </div>
+                      </div>
+                
+                      <div class="row g-2 mt-2">
+                        <div class="col-12 col-md-4">
+                          <div class="form2">
+                            <label for="totalFloors" class="form-label h5">How many floors?</label>
+                            <input type="number" class="form-control" id="totalFloors" max="9" placeholder="No. of floors" required>
+                          </div>
+                        </div>
+                
+                        <div class="col-12 col-md-4">
+                          <div class="form2">
+                            <label for="totalFloors" class="form-label h5">How many rooms?</label>
+                            <input type="number" class="form-control" id="totalFloors" max="9" placeholder="No. of rooms" required>
+                          </div>
+                        </div>
+                
+                        <div class="col-12 col-md-4">
+                          <div class="form2">
+                            <label for="totalFloors" class="form-label h5">How many beds?</label>
+                            <input type="number" class="form-control" id="totalFloors" max="9" placeholder="No. of beds" required>
+                          </div>
+                        </div>
+                
+                      </div>
+
+                      <div class="row mt-4">
+                        <h2>Room Details</h2>
+                      </div>
+                
+                      <div class="row g-2">
+                        <div class="col-12 col-md-4">
+                          <div class="selectRoomType">
+                            <label for="roomType" class="form-label h5">Room Type</label>
+                            <select class="form-select" id="floatingSelectType" required>
+                              <option selected> - Select Type of Room - </option>
+                              <option value="1">Room for 1</option>
+                              <option value="2">Room for 2</option>
+                              <option value="3">Room for 3</option>
+                              <option value="4">Room for 4</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                          <div class="selectRoomType">
+                            <label for="roomType" class="form-label h5">Rate per room</label>
+                            <select class="form-select" id="floatingSelectType" required>
+                              <option selected> - Select Type of Furnish - </option>
+                              <option value="1">Bare</option>
+                              <option value="2">Semi-furnished</option>
+                              <option value="3">Fully-furnished</option>
+                            </select>
+                          </div>
+                        </div>
+                
+                        <div class="col-12 col-md-4">
+                          <div class="form2">
+                            <label for="roomRate" class="form-label h5">Rate per room</label>
+                            <input type="number" class="form-control" id="roomRate" max="9" placeholder="₱ 0.00" required>
+                          </div>
+                        </div>
+
+                      </div>
+                
+                      <div class="row g-2 mt-2">
+
+                        <div class="col-12 col-md-4">
+                          <div>
+                            <label for="roomRate" class="form-label h5">Amenities per room <span class="h6"> *please click all that applies</span></label>
+                          </div>
+                        </div>
+
+                          <div class="row">
+                            <div class="col col-md-4 d-flex justify-content-center mt-2">
+                              <div class="check-amenities">
+                                <input type="checkbox" class="btn-check" id="btn-check-1" autocomplete="off">
+                                <label class="btnA" for="btn-check-1">Refrigerator</label>
+                              </div>
+                            </div>
+
+                            <div class=" col-md-4 d-flex justify-content-center mt-2">
+                              <div class="check-amenities">
+                                <input type="checkbox" class="btn-check" id="btn-check-2" autocomplete="off">
+                                <label class="btnA" for="btn-check-2">Drinking Water</label>
+                              </div>
+                            </div>
+
+                            <div class=" col-md-4 d-flex justify-content-center mt-2">
+                              <div class="check-amenities">
+                                <input type="checkbox" class="btn-check" id="btn-check-3" autocomplete="off">
+                                <label class="btnA" for="btn-check-3">Sink</label>
+                              </div>
+                            </div>
+
+                            <div class=" col-md-4 d-flex justify-content-center mt-2">
+                              <div class="check-amenities">
+                                <input type="checkbox" class="btn-check" id="btn-check-4" autocomplete="off">
+                                <label class="btnA" for="btn-check-4">Parking</label>
+                              </div>
+                            </div>
+
+                            <div class=" col-md-4 d-flex justify-content-center mt-2">
+                              <div class="check-amenities">
+                                <input type="checkbox" class="btn-check" id="btn-check-5" autocomplete="off">
+                                <label class="btnA" for="btn-check-5">TV</label>
+                              </div>
+                            </div>
+
+                            <div class=" col-md-4 d-flex justify-content-center mt-2">
+                              <div class="check-amenities">
+                                <input type="checkbox" class="btn-check" id="btn-check-6" autocomplete="off">
+                                <label class="btnA" for="btn-check-6">Study Area</label>
+                              </div>
+                            </div>
+
+                            <div class=" col-md-4 d-flex justify-content-center mt-2">
+                              <div class="check-amenities">
+                                <input type="checkbox" class="btn-check" id="btn-check-7" autocomplete="off">
+                                <label class="btnA" for="btn-check-7">Lounge Area</label>
+                              </div>
+                            </div>
+
+                            <div class=" col-md-4 d-flex justify-content-center mt-2">
+                              <div class="check-amenities">
+                                <input type="checkbox" class="btn-check" id="btn-check-8" autocomplete="off">
+                                <label class="btnA" for="btn-check-8">Roof Deck</label>
+                              </div>
+                            </div>
+
+                            <div class=" col-md-4 d-flex justify-content-center mt-2">
+                              <div class="check-amenities">
+                                <input type="checkbox" class="btn-check" id="btn-check-9" autocomplete="off">
+                                <label class="btnA" for="btn-check-9">Reception Area</label>
+                              </div>
+                            </div>
+
+                            <div class=" col-md-4 d-flex justify-content-center mt-2">
+                              <div class="check-amenities">
+                                <input type="checkbox" class="btn-check" id="btn-check-10" autocomplete="off">
+                                <label class="btnA" for="btn-check-10">Electric Fan</label>
+                              </div>
+                            </div>
+
+                          </div>
+                
+                        
+                
+                      </div>
+
+                      <div class="row g-2 mt-2">
+                        <div class="col-12 col-md-4">
+                          <div class="form2">
+                            <label for="totalbillWater" class="form-label h5">Average water bill?</label>
+                            <input type="number" class="form-control" id="totalbillWater" max="9" placeholder="₱ 0.00" required>
+                          </div>
+                        </div>
+                
+                        <div class="col-12 col-md-4">
+                          <div class="form2">
+                            <label for="totalbillElectric" class="form-label h5">Average electric bill?</label>
+                            <input type="number" class="form-control" id="totalbillElectric" max="9" placeholder="₱ 0.00" required>
+                          </div>
+                        </div>
+                
+                        <div class="col-12 col-md-4">
+                          <div class="form2">
+                            <label for="totalFloors" class="form-label h5">How many beds?</label>
+                            <input type="number" class="form-control" id="totalFloors" max="9" placeholder="₱ 0.00" required>
+                          </div>
+                        </div>
+                
+                      </div>
+
+                      <div class="row g-2 mt-4">                  
+                        <div class="row">
+                          <h5>Do you have Wi-Fi connection?</h5>
+                        </div>
+                        <div class="col-4 col-md-2 ms-md-2 ms-sm-2">
+                          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio"  onclick="javascript:yesnoCheck();" class="btn-check wifiCheck" name="btnWifiradio" id="wifiCheck1" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="wifiCheck1">Yes</label>
+                            
+                            <input type="radio"  onclick="javascript:yesnoCheck();" class="btn-check wifiCheck" name="btnWifiradio" id="wifiCheck2" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="wifiCheck2">No</label>
+
+                          </div>
+
+                        </div>
+
+                        <div id="ifYes" style="visibility:hidden;" class="col-6 col-lg-4 ms-md-2 ms-sm-2">
+                          <input type="number" class="form-control" id="wifiSpeed" max="9" placeholder="Wi-Fi speed" required>
+                        </div>
+                      </div>
+
+                      <!-- <div class="row g-2 mt-3">
+                
+                        <div class="col-12 col-md-5">
+                          <button type="button" class="btn btn-secondary btn-sm">Previous Button</button>
+                          <button type="button" class="btn btn-primary btn-sm">Next Button</button>
+                        </div>
+                
+                      </div> -->
+
+                      <div class="row">
+                        <div class="button-row d-flex mt-4 col-12">
+                          <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Prev</button>
+                          <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
+                        </div>
+                      </div>
+                    
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+
+              
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-11 col-lg-8 mx-auto justify-content-center">
+                    <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                    <h3 class="login-heading mb-4 multisteps-form__title">Welcome back!</h3>
+                    <div class="multisteps-form__content">
+      
+                      <!-- Enlist Form -->
+                      <div class="row g-2 mt-4">                  
+                        <div class="row">
+                          <h5>Do you have Curfew?</h5>
+                        </div>
+                        <div class="col-4 col-md-2 ms-md-2 ms-sm-2">
+                          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio"  onclick="javascript:yesnoCheck1();" class="btn-check curfewCheck" name="btnCurfewradio" id="curfewCheck1" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="curfewCheck1">Yes</label>
+                            
+                            <input type="radio"  onclick="javascript:yesnoCheck1();" class="btn-check curfewCheck" name="btnCurfewradio" id="curfewCheck2" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="curfewCheck2">No</label>
+    
+                          </div>
+    
+                        </div>
+                        
+                        <div class="row g-2 mt-2" id="ifYes1" style="display:none;" >
+                          <div class="col-8 col-md-6 ms-md-2 ms-sm-2 selectRoomType">
+                            <select class="form-select" id="floatingSelectType" required>
+                              <option selected> - Select Curfew Hours - </option>
+                              <option value="1">12PM to 5AM</option>
+                              <option value="2">12PM to 4AM</option>
+                              <option value="3">11PM to 5AM</option>
+                              <option value="4">11PM to 4AM</option>
+                              <option value="5">10PM to 5AM</option>
+                              <option value="6">10PM to 4AM</option>
+                              <option value="7">09PM to 5AM</option>
+                              <option value="8">09PM to 4AM</option>
+                              <option value="9">08PM to 5AM</option>
+                              <option value="10">08PM to 4AM</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="row g-2 mt-4">                  
+                          <div class="row">
+                            <h5>Are pets allowed?</h5>
+                          </div>
+                        <div class="col-6 col-md-5 ms-md-2 ms-sm-2 mt-2">
+                          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradioPets" id="btnPetsY" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btnPetsY">Yes</label>
+                            
+                            <input type="radio" class="btn-check" name="btnradioPets" id="btnPetsN" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="btnPetsN">No</label>
+    
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div class="row g-2 mt-4">                  
+                        <div class="row">
+                          <h5>Are working tenants allowed?</h5>
+                        </div>
+                        <div class="col-6 col-md-5 ms-md-2 ms-sm-2 mt-2">
+                          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradioWtenants" id="btnWtenantsY" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btnWtenantsY">Yes</label>
+                            
+                            <input type="radio" class="btn-check" name="btnradioWtenants" id="btnWtenantsN" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="btnWtenantsN">No</label>
+    
+                          </div>
+                        </div>
+                      </div>
+    
+                      
+                      <div class="row g-2 mt-4">                  
+                        <div class="row">
+                          <h5>Are guests allowed?</h5>
+                        </div>
+                        <div class="col-4 col-md-4 ms-md-2 ms-sm-2">
+                          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio"  onclick="javascript:yesnoCheck2();" class="btn-check guestCheck" name="btnGuestradio" id="guestCheck1" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="guestCheck1">Yes</label>
+                            
+                            <input type="radio"  onclick="javascript:yesnoCheck2();" class="btn-check guestCheck" name="btnGuestradio" id="guestCheck2" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="guestCheck2">No</label>
+    
+                          </div>
+    
+                        </div>
+    
+                        <div class="row g-2 mt-4"  id="ifYes2" style="display:none;" >                  
+                            <div class="row">
+                              <h5>Can they stay overnight?</h5>
+                            </div>
+                          <div class="col-6 col-lg-4 ms-md-2 ms-sm-2 btn-group">
+    
+                            <input type="radio" class="btn-check" name="btnradioWguests" id="btnWguestsY" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btnWguestsY">Yes</label>
+                            
+                            <input type="radio" class="btn-check" name="btnradioWguests" id="btnWguestsN" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="btnWguestsN">No</label>
+                          </div>
+                        </div>
+    
+    
+                      </div>
+    
+    
+                      <div class="row g-2 mt-4">                  
+                        <div class="row">
+                          <h5>Is cooking allowed?</h5>
+                        </div>
+                        <div class="col-6 col-md-5 ms-md-2 ms-sm-2 mt-2">
+                          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradioCooking" id="btnCookY" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btnCookY">Yes</label>
+                            
+                            <input type="radio" class="btn-check" name="btnradioCooking" id="btnCookN" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="btnCookN">No</label>
+    
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div class="row g-2 mt-4">                  
+                        <div class="row">
+                          <h5>Is parking available?</h5>
+                        </div>
+                        <div class="col-6 col-md-5 ms-md-2 ms-sm-2 mt-2">
+                          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradioParking" id="btnParkY" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btnParkY">Yes</label>
+                            
+                            <input type="radio" class="btn-check" name="btnradioParking" id="btnParkN" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="btnParkN">No</label>
+    
+                          </div>
+                        </div>
+                      </div>
+ 
+                      <div class="row g-2 mt-3">
+                        <div class="button-row d-flex mt-4 col-12">
+                          <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Prev</button>
+                          <button class="btn btn-primary ml-auto" type="button" title="Next">Submit</button>
+                        </div>
+                      </div>
+    
+    
+                  </div>
+                
+                  </div>
+                </div>
+                </div>
+              </div>
+              
+              
+              </form>
             </div>
           </div>
-        </div>
-
-
-
-
-  </section>
+        
+          <!-- <div class="w-100 mb-5"><div class="row m-2"></div></div> -->
+    </section>
+   
   </div>
+
+
     
     
     
