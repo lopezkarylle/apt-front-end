@@ -72,13 +72,13 @@ section {
 
 }
 
-.d-flex .btn {
+.signOutbtn .btn {
    background-color: #232A3D;
    color: #FFF;
    font-size: 1.5rem;
 }
 
-.d-flex .btn:hover {
+.signOutbtn .btn:hover {
    background-color: #E4E9F7;
    color: #232A3D;
 }
@@ -860,16 +860,17 @@ section {
 } */
 
 .accommodationTitle{
-   font-size: 80px;
+   font-size: 40px;
    font-weight: 900;
 }
+
 
 .wrapper .h3{
    font-weight: 900;
 }
 
 .wrapper .h2{
-   font-size: 25px;
+   font-size: 20px;
    font-weight: 900;
 }
 

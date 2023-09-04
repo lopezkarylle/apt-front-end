@@ -182,10 +182,7 @@ section {
 
 /* Featured Section */
 
-.listings {
-   padding-left: 70px;
-   padding-right: 70px;
-}
+
 
 .featureHeading {
    text-align: left;
@@ -437,10 +434,6 @@ section {
 
 /* Offers boxes */
 
-.offers{
-   padding-left: 70px;
-   padding-right: 70px;
-}
 
 .offersHeading {
    text-align: left;
@@ -450,7 +443,6 @@ section {
 }
 
 .offers .box-container {
-   gap: 1rem;
    justify-content: center;
    align-items: center;
 }
@@ -695,7 +687,6 @@ section {
 
 
 .accommodations .box-container {
-   gap: 4rem;
    justify-content: center;
    align-items: flex-start;
 }
@@ -703,7 +694,6 @@ section {
 .accommodations .box-container .box {
    background-color: #E4E9F7;
    box-shadow: var(--box-shadow);
-   padding: 3rem;
    overflow-x: hidden;
    margin-top: 2.2rem;
 }
