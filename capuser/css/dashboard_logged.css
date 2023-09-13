@@ -68,34 +68,30 @@ section {
 
 /* Navbar */
 
-.navbarNav .nav-link {
-   background-color: #232A3D;
-   color: #FFF;
-   border-radius: 5px;
-}
 
-.navbar-nav .nav-item {
-   font-size: 1.5rem;
+
+#navbarNav li {
+   font-size: 1.6rem;
    font-weight: 600;
    padding: 1rem;
    border-radius: 5px;
 }
 
 
-.nav-item .nav-link:hover, .nav-item .nav-link:focus{
+#navbarNav li a:hover, #navbarNav li a:focus{
    background-color: #232A3D;
    color: #FFF;
    border-radius: 5px;
 
 }
 
-.signInbtn .btn {
+.signOutbtn .btn {
    background-color: var(--prussian-blue);
    color: #FFF;
    font-size: 1.5rem;
 }
 
-.signInbtn .btn:hover {
+.signOutbtn .btn:hover {
    background-color: var(--orange-soda);
    color: #E4E9F7;
 }
@@ -247,7 +243,7 @@ section {
    box-shadow: var(--box-shadow);
    padding: 3rem;
    overflow-x: hidden;
-   border-radius: 20px;
+   border-radius: 15px;
 }
 
 .listings .box-container .box .admin {
@@ -350,6 +346,7 @@ section {
    font-size: 1.6rem;
 }
 
+
 .listings .box-container .box .thumb .save {
    position: absolute;
    top: 1rem;
@@ -358,21 +355,25 @@ section {
 }
 
 .listings .box-container .box .thumb .save button {
-      background: transparent;
-      border: none;
-      outline: none;
-      color: var(--orange-pale);
-   }
-
-
-.listings .box-container .box .thumb .save button:hover {
    background: transparent;
    border: none;
    outline: none;
-   color: var(--orange-soda) !important;
+   color: var(--orange-pale);
 }
 
 
+.listings .box-container .box .thumb .save button:hover {
+background: transparent;
+border: none;
+outline: none;
+color: var(--orange-soda) !important;
+}
+
+
+
+.listings .box-container .box .thumb .save button:hover {
+   background-color: var(--main-color);
+}
 
 .listings .box-container .box .name {
    font-size: 2rem;
@@ -1142,45 +1143,77 @@ section {
 }
 
 
+/* Dropdown Notif */
 
+li.nav-item.dropdown-center {
+   list-style-type: none; /* This will remove the list marker */
+ }
 
-/* 
-
-
-.header-bottom-actions {
-  background: var(--white);
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  padding-block: 15px 10px;
-  box-shadow: -2px 0 30px hsla(237, 71%, 52%, 0.2);
-  z-index: 3;
-}
-
-.header-bottom-actions-btn i{
-  color: hsl(0, 0%, 10%);
-  font-size: 20px;
-  margin-inline: auto;
-  margin-bottom: 5px;
-  --ionicon-stroke-width: 40px;
-  transition: var(--transition);
-}
-
-.header-bottom-actions-btn:is(:hover, :focus) i { color: var(--orange-soda); }
-
-.header-bottom-actions-btn span {
-  color: var(--cadet);
-  font-family: var(--ff-poppins);
-  font-size: var(--fs-7);
-  font-weight: var(--fw-500);
+button.nav-link.dropdown-toggle::after {
+   content: none;
+ }
+ 
+.btnNotif{
+   border: none;
 }
 
 
+/* Off Canvas Messages */
 
- */
+#offcanvasRight .canvasTitleHeader{
+   background-color: var(--prussian-blue);
+   color: var(--white);
+}
+
+#offcanvasRight .offcanvas-title{
+   font-size: 20px;
+   font-weight: 600;
+}
+
+.offcanvas-body .btn {
+   color: var(--orange-soda);
+   border-color: var(--orange-soda);
+}
+
+.offcanvas-body .btn:hover {
+   color: var(--white);
+   background-color: var(--orange-soda);
+}
+
+.offcanvas-body .row.borderChat{
+   border-top: 1px solid rgb(190, 190, 190);
+   border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+.offcanvas-body .row.borderChat:hover{
+   background-color: hsl(12, 100%, 83%);
+}
+
+.offcanvas-body .row.borderChat .nameChat{
+   font-weight: 600;
+   font-size: 20px;
+   color: var(--prussian-blue);
+}
+
+.offcanvas-body .row.borderChat .messageChat{
+   font-size: 15px;
+   color: grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

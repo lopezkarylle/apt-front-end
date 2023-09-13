@@ -52,7 +52,7 @@
             </li>
           </ul>
           <form class="d-flex signOutbtn" role="search">
-              <button class="btn btn-outline-secondary me-2" type="button">
+              <button class="btn me-2" type="button">
               Sign Out &nbsp;<i class="fa-solid fa-right-from-bracket"></i> 
               </button>
             </form>
@@ -68,129 +68,18 @@
       <h1 class="text-center fw-bold display-1 mt-5">ACCOMMODATIONS</h1>
       <section class="accommodations">
 
-
-          <!-- <div class="row ms-lg-5">
-            <div class="wrapper">
-              
-              <div class="row justify-content-center mb-3">
-                <div class="col-12 col-md-8 col-lg-6"><input class="form-control" type="text" placeholder="Search.." aria-label="Search"></div>
-            </div>
-              <div class="d-none d-md-block">
-                <div class="d-md-flex align-items-md-center">
-                    <div class="h2"><i class="fa-solid fa-filter-list"></i> Customize</div>
-                </div>
-              </div>
-
-              
-                <hr class="d-block d-md-none">
-
-              
-                
-            <div class="row">
-
-              <div class="col-12 col-lg-6 col-xl-5 col-xxl-5 d-block d-md-none d-lg-block">
-                <label class="filterTitle">Location:</label>
-                <div class="form-inline d-flex justify-content-lg-start justify-content-md-center align-items-center my-2 checkbox bg-light border mx-lg-2"> 
-                  <div class="row">
-                    <div class="col-12 col-md-0 col-lg-auto">
-                      <label class="tick">Salapungan <input type="checkbox"> 
-                          <span class="check"></span> 
-                      </label> 
-                    </div>
-                    <div class="col-12 col-md-0 col-lg-auto">
-                      <label class="tick">Lourdes Sur East <input type="checkbox"> 
-                        <span class="check"></span> 
-                      </label> 
-                    </div>
-                    <div class="col-12 col-md-0 col-lg-auto">
-                      <label class="tick">Claro M. Recto <input type="checkbox"> 
-                        <span class="check"></span> 
-                      </label> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-md-6 col-lg-3">
-                <label class="filterTitle">Price:</label>
-                <div class="form-inline d-flex align-items-center my-2 radio bg-light border"> 
-                  <label class="options">Popular <input type="radio" name="radio"> 
-                      <span class="checkmark"></span> 
-                  </label> <label class="options">Cheapest <input type="radio" name="radio" checked> 
-                      <span class="checkmark"></span> </label> 
-                </div>
-              </div>
-
-              <div class="col-12 col-md-6 col-lg-3">
-                <label class="filterTitle">Type:</label>
-                <div class="form-inline d-flex align-items-center my-2 checkbox bg-light border mx-lg-2"> 
-                  <label class="tick">Apartment <input type="checkbox" checked="checked"> 
-                      <span class="check"></span> 
-                  </label> 
-
-                  <label class="tick">Dormitory <input type="checkbox"> 
-                    <span class="check"></span> 
-                </label> 
-                </div>
-              </div>
-
-            </div>
-            <div class="row">
-              <div class="col-6 d-none d-lg-block pt-lg-2">
-                <button type="button" class="btn btn-dark filterBtn"><i class="fa-solid fa-filter-list" style="padding: 3px"></i>Filter</button>
-              </div>
-            </div>
-
-            </div>
-          </div>
-
-          <div class="row" style="border: 1px solid blue">
-
-            <div class="col-12 d-none d-md-block d-lg-none">
-              <label>Location:</label>
-              <div class="form-inline align-items-center my-2 checkbox1 bg-light border mx-lg-2" style="border-radius: 12px;"> 
-                <div class="row">
-                  <div class="col-12 col-md-4">
-                    <label class="tick">Salapungan <input type="checkbox"> 
-                        <span class="check"></span> 
-                    </label> 
-                  </div>
-                  <div class="col-12  col-md-4">
-                    <label class="tick">Lourdes Sur East <input type="checkbox"> 
-                      <span class="check"></span> 
-                    </label> 
-                  </div>
-                  <div class="col-12 col-md-4">
-                    <label class="tick">Claro M. Recto <input type="checkbox"> 
-                      <span class="check"></span> 
-                    </label> 
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="row mb-5">
-            <div class="d-block d-lg-none wrapper pt-3">
-              <button type="button" class="btn btn-dark filterBtn"><i class="fa-solid fa-filter-list" style="padding: 3px"></i>Filter</button>
-              </div>
-          </div> -->
-
-          <!-- <div class="row">
-            <div class="d-sm-flex align-items-sm-center pt-2 clear wrapper">
-                <div class="text-muted filter-label">Applied Filters:</div>
-                <div class="green-label font-weight-bold p-0 px-1 mx-sm-1 mx-0 my-sm-0 my-2">Selected Filter <span class=" px-1 close">×</span> </div>
-                <div class="green-label font-weight-bold p-0 px-1 mx-sm-1 mx-0">Selected Filter <span class=" px-1 close">×</span> </div>
-            </div>
-          </div> -->
         <div class="container-md">
 
           <div class="row">
             <div class="wrapper">
               
               <div class="row justify-content-center mb-3">
-                <div class="col-12 col-md-8 col-lg-6"><input class="form-control" type="text" placeholder="Search.." aria-label="Search"></div>
+                <div class="col-12 col-md-8 col-lg-6">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for your home" aria-label="search-loc" aria-describedby="button-addon2">
+                    <button class="btn" type="button" id="button-addon2"><i class="fa-regular fa-magnifying-glass-location fa-2x"></i></button>
+                  </div>
+                </div>
             </div>
               <div class="d-none d-md-block">
                 <div class="d-md-flex align-items-md-center" >
@@ -290,7 +179,7 @@
             <div class="row gx-5 mb-3">
               <div class="col-md-6">
                 <div class="box">
-                    <div class="row">
+                    <div class="row justify-content-between ">
                         <div class="col-10">
                             <h3 class="name">Batac Dormitory</h3>
                             <div class="row">
@@ -303,19 +192,19 @@
                             </div>
                         </div>
 
-                            <div class="col-2 ps-4 justify-content-end">
-                              <Button onclick="Toggle1()" id="btnBm" class="btn btnBookmark"><i class="fa-solid fa-bookmark fa-3x"></i></Button>
-                            </div>
+                          <div class="col-1 justify-content-end">
+                            <Button onclick="Toggle1()" id="btnBm" class="btnBookmark"><i class="fa-solid fa-bookmark fa-3x"></i></Button>
+                          </div>
 
                     </div>
 
                   <div class="thumb">
-                    <p class="total-images">
-                      <i class="far fa-image"></i><span>4</span>
+                    <p class="total-rooms-left">
+                      <i class="fa-solid fa-bed-front"></i><span> 5 rooms left</span>
                     </p>
                     <p class="type"><span>Apartment</span></p>
 
-                    <img src="images/house-img-2.webp" alt="" />
+                    <img class="w-100" src="images/house-img-2.webp" alt="" />
                   </div>
                   <div class="row">
                     
@@ -338,108 +227,9 @@
               </div>
               <div class="col-md-6">
                 <div class="box">
-                    <div class="row">
+                    <div class="row justify-content-between ">
                         <div class="col-10">
-                            <h3 class="name">Tess' Apartment</h3>
-                            <div class="row">
-                                <div class="h4 mt-3 col-sm-8">
-                                    <div>
-                                    <i class="fas fa-map-marker-alt"></i> Brgy. Salapungan
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                            <div class="col-2 ps-4 justify-content-end">
-                              <Button onclick="Toggle1()" id="btnBm" class="btn btnBookmark"><i class="fa-solid fa-bookmark fa-3x"></i></Button>
-                            </div>
-
-                    </div>
-
-                  <div class="thumb">
-                    <p class="total-images">
-                      <i class="far fa-image"></i><span>4</span>
-                    </p>
-                    <p class="type"><span>Apartment</span></p>
-
-                    <img src="images/house-img-2.webp" alt="" />
-                  </div>
-                  <div class="row">
-                    
-                    <div class="col-sm-6 rentName">
-                      Rent starts at
-                      <div class="price">&#8369;3,500</div>
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="btnRating"><i class="fa-solid fa-star-half-stroke starRating"></i> 4.8 (73 reviews)</p>
-                      </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col-sm">
-                      <a href="view_property.html" class="btnView">View property</a>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-
-
-            <div class="row gx-5 mb-3">
-              <div class="col-md-6">
-                <div class="box">
-                    <div class="row">
-                        <div class="col-10">
-                            <h3 class="name">Warren III Dormitory</h3>
-                            <div class="row">
-                                <div class="h4 mt-3 col-sm-8">
-                                    <div>
-                                    <i class="fas fa-map-marker-alt"></i> Brgy. Lourdes Sur East
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                            <div class="col-2 ps-4 justify-content-end">
-                              <Button onclick="Toggle1()" id="btnBm" class="btn btnBookmark"><i class="fa-solid fa-bookmark fa-3x"></i></Button>
-                            </div>
-
-                    </div>
-
-                  <div class="thumb">
-                    <p class="total-images">
-                      <i class="far fa-image"></i><span>4</span>
-                    </p>
-                    <p class="type"><span>Apartment</span></p>
-
-                    <img src="images/house-img-2.webp" alt="" />
-                  </div>
-                  <div class="row">
-                    
-                    <div class="col-sm-6 rentName">
-                      Rent starts at
-                      <div class="price">&#8369;4,000</div>
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="btnRating"><i class="fa-solid fa-star-half-stroke starRating"></i> 4.8 (73 reviews)</p>
-                      </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col-sm">
-                      <a href="view_property.html" class="btnView">View property</a>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="box">
-                    <div class="row">
-                        <div class="col-10">
-                            <h3 class="name">Sarmiento Dormitory</h3>
+                            <h3 class="name">Batac Dormitory</h3>
                             <div class="row">
                                 <div class="h4 mt-3 col-sm-8">
                                     <div>
@@ -450,25 +240,25 @@
                             </div>
                         </div>
 
-                            <div class="col-2 ps-4 justify-content-end">
-                              <Button onclick="Toggle1()" id="btnBm" class="btn btnBookmark"><i class="fa-solid fa-bookmark fa-3x"></i></Button>
-                            </div>
+                        <div class="col-1 justify-content-end">
+                          <Button onclick="Toggle1()" id="btnBm" class="btnBookmark"><i class="fa-solid fa-bookmark fa-3x"></i></Button>
+                        </div>
 
                     </div>
 
                   <div class="thumb">
-                    <p class="total-images">
-                      <i class="far fa-image"></i><span>4</span>
+                    <p class="total-rooms-left">
+                      <i class="fa-solid fa-bed-front"></i><span> 5 rooms left</span>
                     </p>
-                    <p class="type"><span>Apartment</span></p>
+                    <p class="type"><span>Dormitory</span></p>
 
-                    <img src="images/house-img-2.webp" alt="" />
+                    <img class="w-100" src="images/house-img-2.webp" alt="" />
                   </div>
                   <div class="row">
                     
                     <div class="col-sm-6 rentName">
                       Rent starts at
-                      <div class="price">&#8369;4,000</div>
+                      <div class="price">&#8369;3,000</div>
                     </div>
                     <div class="col-sm-6">
                         <p class="btnRating"><i class="fa-solid fa-star-half-stroke starRating"></i> 4.8 (73 reviews)</p>
@@ -487,210 +277,9 @@
 
 
 
-
-            <div class="row gx-5 mb-3">
-              <div class="col-md-6">
-                <div class="box">
-                    <div class="row">
-                        <div class="col-10">
-                            <h3 class="name">Warren III Dormitory</h3>
-                            <div class="row">
-                                <div class="h4 mt-3 col-sm-8">
-                                    <div>
-                                    <i class="fas fa-map-marker-alt"></i> Brgy. Lourdes Sur East
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                            <div class="col-2 ps-4 justify-content-end">
-                              <Button onclick="Toggle1()" id="btnBm" class="btn btnBookmark"><i class="fa-solid fa-bookmark fa-3x"></i></Button>
-                            </div>
-
-                    </div>
-
-                  <div class="thumb">
-                    <p class="total-images">
-                      <i class="far fa-image"></i><span>4</span>
-                    </p>
-                    <p class="type"><span>Apartment</span></p>
-
-                    <img src="images/house-img-2.webp" alt="" />
-                  </div>
-                  <div class="row">
-                    
-                    <div class="col-sm-6 rentName">
-                      Rent starts at
-                      <div class="price">&#8369;4,500</div>
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="btnRating"><i class="fa-solid fa-star-half-stroke starRating"></i> 4.8 (73 reviews)</p>
-                      </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col-sm">
-                      <a href="view_property.html" class="btnView">View property</a>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="box">
-                    <div class="row">
-                        <div class="col-10">
-                            <h3 class="name">Sarmiento Dormitory</h3>
-                            <div class="row">
-                                <div class="h4 mt-3 col-sm-8">
-                                    <div>
-                                    <i class="fas fa-map-marker-alt"></i> Brgy. Claro M.
-                                    Recto
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                            <div class="col-2 ps-4 justify-content-end">
-                              <Button onclick="Toggle1()" id="btnBm" class="btn btnBookmark"><i class="fa-solid fa-bookmark fa-3x"></i></Button>
-                            </div>
-
-                    </div>
-
-                  <div class="thumb">
-                    <p class="total-images">
-                      <i class="far fa-image"></i><span>4</span>
-                    </p>
-                    <p class="type"><span>Apartment</span></p>
-
-                    <img src="images/house-img-2.webp" alt="" />
-                  </div>
-                  <div class="row">
-                    
-                    <div class="col-sm-6 rentName">
-                      Rent starts at
-                      <div class="price">&#8369;5,000</div>
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="btnRating"><i class="fa-solid fa-star-half-stroke starRating"></i> 4.8 (73 reviews)</p>
-                      </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col-sm">
-                      <a href="view_property.html" class="btnView">View property</a>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
+            <div class="row mt-5 mb-5 justify-content-center">
+              <button href="accomodations.html" class="btn btnViewAll">View All</button>
             </div>
-
-
-
-            <div class="row gx-5 mb-3">
-              <div class="col-md-6">
-                <div class="box">
-                    <div class="row">
-                        <div class="col-10">
-                            <h3 class="name">Warren III Dormitory</h3>
-                            <div class="row">
-                                <div class="h4 mt-3 col-sm-8">
-                                    <div>
-                                    <i class="fas fa-map-marker-alt"></i> Brgy. Lourdes Sur East
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                            <div class="col-2 ps-4 justify-content-end">
-                              <Button onclick="Toggle1()" id="btnBm" class="btn btnBookmark"><i class="fa-solid fa-bookmark fa-3x"></i></Button>
-                            </div>
-
-                    </div>
-
-                  <div class="thumb">
-                    <p class="total-images">
-                      <i class="far fa-image"></i><span>4</span>
-                    </p>
-                    <p class="type"><span>Apartment</span></p>
-
-                    <img src="images/house-img-2.webp" alt="" />
-                  </div>
-                  <div class="row">
-                    
-                    <div class="col-sm-6 rentName">
-                      Rent starts at
-                      <div class="price">&#8369;5,500</div>
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="btnRating"><i class="fa-solid fa-star-half-stroke starRating"></i> 4.8 (73 reviews)</p>
-                      </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col-sm">
-                      <a href="view_property.html" class="btnView">View property</a>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="box">
-                    <div class="row">
-                        <div class="col-10">
-                            <h3 class="name">Sarmiento Dormitory</h3>
-                            <div class="row">
-                                <div class="h4 mt-3 col-sm-8">
-                                    <div>
-                                    <i class="fas fa-map-marker-alt"></i> Brgy. Claro M.
-                                    Recto
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                            <div class="col-2 ps-4 justify-content-end">
-                              <Button onclick="Toggle1()" id="btnBm" class="btn btnBookmark"><i class="fa-solid fa-bookmark fa-3x"></i></Button>
-                            </div>
-
-                    </div>
-
-                  <div class="thumb">
-                    <p class="total-images">
-                      <i class="far fa-image"></i><span>4</span>
-                    </p>
-                    <p class="type"><span>Apartment</span></p>
-
-                    <img src="images/house-img-2.webp" alt="" />
-                  </div>
-                  <div class="row">
-                    
-                    <div class="col-sm-6 rentName">
-                      Rent starts at
-                      <div class="price">&#8369;6,000</div>
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="btnRating"><i class="fa-solid fa-star-half-stroke starRating"></i> 4.8 (73 reviews)</p>
-                      </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col-sm">
-                      <a href="view_property.html" class="btnView">View property</a>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-
-
-              <div class="row mt-5 mb-5 justify-content-center">
-                <a href="accomodations.html" class="btnViewAll">View All</a>
-              </div>
 
 
               
