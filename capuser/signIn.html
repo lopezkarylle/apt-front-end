@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Apt. Iba Pa  - log in</title>
+    <link href="#" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="#"></script>
+    <style>
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: hsl(192, 24%, 96%);
+       
+      }
+      /*  background-image: linear-gradient(to right top, hsl(192, 24%, 96%), hsl(200, 69%, 14%)); */
+
+      .card {
+        height: 480px;
+        width: 350px;
+        background-color: hsl(0, 0%, 93%);
+        border-radius: 10px;
+        padding: 20px;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .heading {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+      }
+
+      .button {
+        margin-top: 20px;
+      }
+
+      .button button {
+        width: 100%;
+        height: 40px;
+        border-radius: 9px;
+        border: none;
+        background-color: hsl(200, 69%, 14%);
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.5s;
+      }
+
+      .button button:hover {
+        background-color: hsl(201, 76%, 8%);
+      }
+
+      .card hr {
+        margin-top: 30px;
+      }
+
+      .or {
+        display: flex;
+        justify-content: center;
+      }
+
+      .or p {
+        margin-top: -10px;
+        font-size: 13px;
+        background-color: hsl(0, 0%, 93%);
+        padding: 0 4px;
+      }
+
+      .input_text {
+        margin-top: 30px;
+        position: relative;
+      }
+
+      .passwo {
+        margin-top: 45px !important;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        height: 40px;
+        border-radius: 9px;
+        outline: 0;
+        border: none;
+        border: 1px solid #ccc;
+        background-color: hsl(192, 24%, 96%);
+        padding: 0 10px;
+      }
+
+      input[type="password"] {
+        width: 100%;
+        height: 40px;
+        border-radius: 9px;
+        outline: 0;
+        border: none;
+        border: 1px solid #ccc;
+        background-color: hsl(192, 24%, 96%);
+        padding: 0 10px;
+        padding-right: 30px !important;
+      }
+
+      .fa-eye-slash {
+        position: absolute;
+        top: 13px;
+        right: 8px;
+        cursor: pointer;
+      }
+
+      .fa-eye {
+        position: absolute;
+        top: 13px;
+        right: 8px;
+        cursor: pointer;
+      }
+
+      .input_text span {
+        position: absolute;
+        top: -18px;
+        left: 10px;
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      .input_text small {
+        position: absolute;
+        top: 45px;
+        left: 0;
+        color: red;
+      }
+
+      .last_btn {
+        margin-top: 30px;
+      }
+
+      .last_btn button {
+        width: 100%;
+        height: 40px;
+        border-radius: 9px;
+        border: none;
+        background-color: #0eaf52;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.5s;
+      }
+
+      .last_btn button:hover {
+        background-color: #027432;
+      }
+
+      .d-none {
+        display: none;
+      }
+
+      .warning {
+        border: 1px solid red !important;
+      }
+
+      .inputs {
+        margin-bottom: 10px;
+      }
+
+      .text-center {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+
+      .headings {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 25px;
+      }
+
+      .mb-5 {
+        margin-bottom: 30px;
+      }
+
+      .password-input {
+        position: relative;
+      }
+
+      .password-input i {
+        position: absolute;
+        top: 15px;
+        right: 17px;
+        cursor: pointer;
+        z-index: 10;
+        color: #aaaaaa;
+        transition: all 0.5s;
+      }
+
+      .password-input i:hover {
+        color: #000;
+      }
+
+      .login-form .inputs input {
+        height: 43px;
+        width: 335px;
+        padding-left: 10px;
+        border: 2px solid #eee;
+        border-radius: 5px;
+        transition: all 4s;
+      }
+
+      .green-color {
+        color: green !important;
+      }
+
+      .login-form .inputs input:focus {
+        border: 2px solid #890596;
+      }
+
+      .strength-list {
+        margin-top: 10px;
+        margin-left: 5px;
+        list-style: none;
+      }
+
+      .list-group i {
+        font-size: 12px;
+        color: #aaa;
+      }
+
+      .list-group span {
+        font-size: 13px;
+        color: #aaa;
+      }
+    </style>
+  </head>
+  <body className="snippet-body">
+    <div class="container">
+      <div class="card">
+        <div class="heading"><h3>Sign In</h3></div>
+        <div class="button"><button>Sign in using Gmail</button></div>
+        <hr />
+        <div class="or"><p>or sign in with your email</p></div>
+        <div class="input_text">
+          <input type="text" placeholder="john@email.com" name="email" />
+          <span>Email</span>
+          <small class="email_warn d-none"
+            ><i class="fa fa-warning"></i>Please enter a valid email
+            address.</small
+          >
+        </div>
+        <div class="input_text passwo">
+          <input
+            autocomplete="chrome-off"
+            class="input-group"
+            id="password_input"
+            type="password"
+            placeholder="Password"
+          />
+          <span>Password</span>
+          <i id="password_eye" class="fa fa-eye-slash"></i>
+        </div>
+        <ul class="strength-list">
+          <li>
+            <span class="loweruppercase list-group">
+              <i class="fa fa-circle"></i> <span>Lowercase uppercase</span>
+            </span>
+          </li>
+          <li>
+            <span class="list-group numbercase">
+              <i class="fa fa-circle"></i> <span>Number (0-9)</span>
+            </span>
+          </li>
+          <li>
+            <span class="list-group specialcase">
+              <i class="fa fa-circle"></i>
+              <span>Special Characters(!#@$%*)</span>
+            </span>
+          </li>
+          <li>
+            <span class="list-group numcharacter">
+              <i class="fa fa-circle"></i> <span>8 Characters</span>
+            </span>
+          </li>
+        </ul>
+        <div class="last_btn"><button class="sign_in">Sign in</button></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="#"></script>
+    <script type="text/javascript" src="#"></script>
+    <script type="text/javascript" src="#"></script>
+    <script type="text/javascript" src="#"></script>
+    <script type="text/javascript">
+      const password_input = document.querySelector("#password_input");
+      const password_eye = document.querySelector("#password_eye");
+      let loweruppercase = document.querySelector(".loweruppercase i");
+      let loweruppercasetext = document.querySelector(".loweruppercase span");
+
+      let numbercase = document.querySelector(".numbercase i");
+      let numbercasetext = document.querySelector(".numbercase span");
+      let specialcase = document.querySelector(".specialcase i");
+      let specialcasetext = document.querySelector(".specialcase span");
+
+      let numcharacter = document.querySelector(".numcharacter i");
+      let numcharactertext = document.querySelector(".numcharacter span");
+
+      var signin = document.querySelector(".sign_in");
+      var all_inputs = document.querySelectorAll(".input_text input");
+      var email_warn = document.querySelector(".email_warn");
+
+      signin.addEventListener("click", function () {
+        all_inputs.forEach((e) => {
+          e.classList.remove("warning");
+          if (e.value.length < 1) {
+            if (e.name == "email") {
+              email_warn.classList.remove("d-none");
+            }
+            e.classList.add("warning");
+          }
+        });
+      });
+      all_inputs.forEach((e) => {
+        e.addEventListener("keyup", function () {
+          if (e.name == "email") {
+            if (!validEmail(e.value)) {
+              email_warn.classList.remove("d-none");
+            } else {
+              email_warn.classList.add("d-none");
+            }
+          }
+          if (e.value.length < 1) {
+            e.classList.add("warning");
+          } else {
+            e.classList.remove("warning");
+          }
+        });
+      });
+
+      function validEmail(email) {
+        const regex = /^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/;
+        return regex.test(email);
+      }
+
+      password_eye.addEventListener("click", () => {
+        if (password_input.type == "password") {
+          password_input.type = "text";
+          password_eye.classList.add("fa-eye");
+          password_eye.classList.remove("fa-eye-slash");
+        } else if (password_input.type == "text") {
+          password_input.type = "password";
+          password_eye.classList.add("fa-eye-slash");
+          password_eye.classList.remove("fa-eye");
+        }
+      });
+
+      password_input.addEventListener("keyup", function () {
+        let pass = document.getElementById("password_input").value;
+        passStrength(pass);
+      });
+
+      function passStrength(pass) {
+        if (pass.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) {
+          loweruppercase.classList.remove("fa-circle");
+          loweruppercase.classList.add("fa-check");
+          loweruppercase.classList.add("green-color");
+          loweruppercasetext.classList.add("green-color");
+        } else {
+          loweruppercase.classList.remove("fa-check");
+          loweruppercase.classList.add("fa-circle");
+          loweruppercase.classList.remove("green-color");
+          loweruppercasetext.classList.remove("green-color");
+        }
+
+        if (pass.match(".*\\d.*")) {
+          numbercase.classList.remove("fa-circle");
+          numbercase.classList.add("fa-check");
+          numbercase.classList.add("green-color");
+          numbercasetext.classList.add("green-color");
+        } else {
+          numbercase.classList.remove("fa-check");
+          numbercase.classList.add("fa-circle");
+          numbercase.classList.remove("green-color");
+          numbercasetext.classList.remove("green-color");
+        }
+
+        if (pass.match(/[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/)) {
+          specialcase.classList.remove("fa-circle");
+          specialcase.classList.add("fa-check");
+          specialcase.classList.add("green-color");
+          specialcasetext.classList.add("green-color");
+        } else {
+          specialcase.classList.remove("fa-check");
+          specialcase.classList.add("fa-circle");
+          specialcase.classList.remove("green-color");
+          specialcasetext.classList.remove("green-color");
+        }
+
+        if (pass.length > 7) {
+          numcharacter.classList.remove("fa-circle");
+          numcharacter.classList.add("fa-check");
+          numcharacter.classList.add("green-color");
+          numcharactertext.classList.add("green-color");
+        } else {
+          numcharacter.classList.remove("fa-check");
+          numcharacter.classList.add("fa-circle");
+          numcharacter.classList.remove("green-color");
+          numcharactertext.classList.remove("green-color");
+        }
+      }
+    </script>
+    <script type="text/javascript">
+      var myLink = document.querySelector('a[href="#"]');
+      myLink.addEventListener("click", function (e) {
+        e.preventDefault();
+      });
+    </script>
+  </body>
+</html>

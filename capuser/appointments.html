@@ -12,6 +12,15 @@
       crossorigin="anonymous"
     />
 
+    <!--  -->
+
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' rel='stylesheet'>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <!--  -->
+
+
     <link
       href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
       rel="stylesheet"
@@ -169,6 +178,29 @@
     
             <div class="box-container">
                 <div class="row gx-5 mb-3 d-flex justify-content-center">
+
+                <div class="col-12 col-sm-6 col-xl-8">
+                  <div class="box">
+                      <div class="row justify-content-between">
+                          <div class="col pt-3 ms-md-4">
+                              <p class="type"><span>Apartment</span></p>
+                              <h3 class="name"><i class="fa-solid fa-location-dot"></i> Batac</h3>
+                              <h3 class="address">Blk 59, West Side Brooklyn, AUF Area</h3>
+                              <h6 class="roomStatus">Single Room</h6>
+                          </div>
+                      
+  
+                      <div class="col-6 col-md-4 d-flex justify-content-center">
+                          <div class="col-10 mt-4 mt-md-3 pt-3 pt-md-5">
+                            <button type="button" class="btn w-100 btnConfirmApptGo" data-bs-toggle="modal" data-bs-target="#reservationConfirmDetails">Confirm Reservation</button>
+                              </p>
+                          </div>
+                      </div>
+  
+                      </div>
+  
+                  </div>
+                </div>
     
                 <div class="col-12 col-sm-6 col-xl-8">
                     <div class="box">
@@ -182,10 +214,9 @@
                     
     
                         <div class="col-6 col-md-4">
-                        <div class="col mt-4 mt-md-3 pt-3 pt-md-4">
+                        <div class="col mt-4 mt-md-3 pt-3 pt-md-5">
                             <p class="statusR text-center"><span>Reserved</span></p>
                             <h3 class="date text-center">06 Sep 23</h3>
-                            <h3 class="time text-center">10:00AM to 10:30AM</h3>
                         </div>
                         </div>
     
@@ -206,19 +237,18 @@
                         
     
                         <div class="col-6 col-md-4">
-                            <div class="col mt-4 mt-md-3 pt-3 pt-md-4">
+                            <div class="col mt-4 mt-md-3 pt-3 pt-md-5">
                                 <p class="statusP text-center">
                                 <span>Pending</span>
                                 </p>
                                 <h3 class="date text-center">07 Sep 23</h3>
-                                <h3 class="time text-center">04:00PM to 04:30PM</h3>
                             </div>
                         </div>
     
                         </div>
     
                     </div>
-                    </div>
+                </div>
     
                 </div>
             </div>
@@ -254,32 +284,260 @@
         </div>
       </div>
 
-            <!-- Modals -->
-            <div class="modal fade modalSection" id="modalDecline" tabindex="-1">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Decline the reservation</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <!-- Modals -->
+      <div class="modal fade modalSection" id="modalDecline" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Decline the reservation</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="h6">Decline room reservation and send an email?</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button id="declineButton" type="button" class="btn btn-success" data-bs-dismiss="modal">Yes</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+
+  <!-- Reserve confirmed from landlord = flashes Reservation details -->
+
+  <div class="modal fade" id="reservationConfirmDetails" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="reservationConfirmDetailsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-3" id="reservationConfirmDetailsLabel">Confirm Reservation Details</h1>
+        </div>
+        <div class="modal-body overflow-x-hidden modalReservationConfirm">
+
+          <div class="container">
+
+            <form>
+              <!-- Form start -->
+              <div class="container pt-5 pb-4 bgReservationConfirm reservationConfirmSlots">
+
+                <div class="row">
+                  <div class="col-md-5 pb-3">
+                    <img class="rounded img-fluid d-block mx-auto" src="images/hall-img-1.webp" width="200">
+                    </h2>
                   </div>
-                  <div class="modal-body">
-                      <div class="container-fluid">
-                          <div class="row">
-                              <div class="h6">Decline room reservation and send an email?</div>
-                          </div>
-                      </div>
+                  <div class="col-md">
+                    <h2 class="ms-3 pt-2 mt-3 reserveConfirmDormName">Batac Dormitory</h2>
+                    <h2 class="ms-3 mt-3 reserveConfirmDormAddress"><i class="fa-regular fa-location-dot"></i> 452 Cuatro de Julio Street Barangay Salapungan</h2>
+                    <h2 class="ms-3 pt-2 mt-3 reserveConfirmDormType"> Single Room 
+                      <span class="ms-3 pt-2 mt-3 reserveConfirmDormSlash"> | </span>
+                      <span class="ms-3 pt-2 mt-3 reserveConfirmDormPrice">₱5,000</span>
+                    </h2>
                   </div>
-                  <div class="modal-footer">
-                    <button id="declineButton" type="button" class="btn btn-success" data-bs-dismiss="modal">Yes</button>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                </div>
+
+                <div class="row ps-md-4 h3 mt-2">
+                  <hr>
+                  <h2 class="reserveConfirmationTitle pt-4">
+                    <i class="fa-regular fa-user fa-3"></i>
+                    Contact Person
+                  </h2>
+                  <h2 class="reserveConfirmationSubtitle">Serena Van Der Woodsen</h2>
+                </div>
+
+                <div class="row ps-md-4 h3 mt-2">
+                  <h2 class="reserveConfirmationTitle pt-4">
+                    <i class="fa-regular fa-phone fa-3"></i>
+                    Contact Number
+                  </h2>
+                  <h2 class="reserveConfirmationSubtitle">+63 935 612 8143</h2>
+                </div>
+
+                <div class="row ps-md-4 h3 mt-4">
+                  <h2 class="reserveConfirmationTitle">
+                    <i class="fa-regular fa-at fa-3"></i>
+                    Email
+                  </h2>
+                  <h2 class="reserveConfirmationSubtitle"> serena.vanderwoodsen@apt.ph</h2>
+                </div>
+
+              </div>
+          </form>
+          <!-- form end -->
+
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#paymentDetails">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Payment confirmed from landlord = proceeds to flash Successfully reserved a room -->
+
+  <div class="modal fade" id="payConfirmed" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="payConfirmedLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-3" id="payConfirmedLabel">Payment Successfully</h1>
+        </div>
+        <div class="modal-body modalPayConfirmed">
+
+          <div class="container">
+
+            <form>
+
+              <img class="rounded img-fluid d-block mx-auto mt-5" src="images/payment-confirmation.webp" width="250">
+
+
+              <div class="container pb-5 bgPayConfirmed confirmPayConfirmed">
+
+                <div class="row">
+                  <div class="col mb-4">
+                    <h2 class="apptGreetings">Reservation completed successfully</h2>
+                    <h2 class="apptGreetingsSub">Congratulations! We can't wait to see you.</h2>
+                  </div>
+                </div>
+
+
+                <div class="row h3 mt-5 mb-3">
+                  <h2 class="confirmDetailsTitle text-center">
+                   An email will be sent to you shortly with your<br>room details and date of moving-in!
+                  </h2>
+                </div>
+
+                <div class="row h3 d-flex justify-content-center mt-2">
+                  <div class="col-10 col-md-9 d-flex justify-content-center">
+                    <button type="button" class="btn w-100 btnConfirmApptGC">Back to Dashboard</button>
                   </div>
                 </div>
               </div>
+          </form>
+
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reserve confirmed from landlord = proceeds to flash Payment details -->
+
+  <div class="modal fade" id="paymentDetails" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="paymentDetailsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-3" id="paymentDetailsLabel">Confirm Reservation Payment</h1>
+        </div>
+        <div class="modal-body overflow-x-hidden modalPaymentDetails">
+
+          <div class="container bgPaymentDetails py-5">
+
+            <div class="row">
+              <div class="col-md-5 mb-5 d-flex justify-content-end ">
+                <img class="rounded img-fluid d-block mx-auto" src="images/prof1.png" width="150">
+                </h2>
+              </div>
+              <div class="col-md">
+                <h2 class="ms-3 pt-2 mt-3 paymentDetailsDormName">Rogie Quiazon</h2>
+                <h2 class="ms-3 paymentDetailsDormAddress"><i class="fa-regular fa-at"></i> rogie@apt.ph</h2>
+                <h2 class="ms-3 pt-2 mt-3 paymentDetailsDormNumber"> +63 956 458 8572
+                </h2>
+              </div>
             </div>
- 
+
+            <div class="row">
+                <div class="col-lg-6 mx-auto mt-5">
+                    <div class="card ">
+                        <div class="card-header">
+                            <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2 qr">
+                                <!-- Credit card form tabs -->
+                                <ul role="tablist" class="nav bg-light nav-pills rounded nav-fill mb-3">
+                                  <li class="nav-item"> <a data-toggle="pill" href="#paypal" class="nav-link active "> <i class="fa-solid fa-wallet me-2"></i> GCash </a> </li>
+                                    <li class="nav-item"> <a data-toggle="pill" href="#credit-card" class="nav-link "> <i class="fas fa-credit-card mr-2"></i> Credit Card </a> </li>
+
+                                </ul>
+                            </div> <!-- End -->
+                            <!-- Credit card form content -->
+                            <div class="tab-content">
+                                <!-- credit card info-->
+                                <div id="credit-card" class="tab-pane fade pt-3">
+                                    <form role="form" onsubmit="event.preventDefault()">
+                                        <div class="form-group"> <label for="username">
+                                                <h6>Card Owner</h6>
+                                            </label> <input type="text" name="username" placeholder="Card Owner Name" required class="form-control "> </div>
+                                        <div class="form-group"> <label for="cardNumber">
+                                                <h6>Card number</h6>
+                                            </label>
+                                            <div class="input-group"> <input type="text" name="cardNumber" placeholder="Valid card number" class="form-control " required>
+                                                <div class="input-group-append"> <span class="input-group-text text-muted"> <i class="fab fa-cc-visa mx-1"></i> <i class="fab fa-cc-mastercard mx-1"></i> <i class="fab fa-cc-amex mx-1"></i> </span> </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-8">
+                                                <div class="form-group"> <label><span class="hidden-xs">
+                                                            <h6>Expiration Date</h6>
+                                                        </span></label>
+                                                    <div class="input-group"> <input type="number" placeholder="MM" name="" class="form-control" required> <input type="number" placeholder="YY" name="" class="form-control" required> </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group mb-4"> <label data-toggle="tooltip" title="Three digit CV code on the back of your card">
+                                                        <h6>CVV <i class="fa fa-question-circle d-inline"></i></h6>
+                                                    </label> <input type="text" required class="form-control"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer"> <button type="button" class="subscribe btn btn-primary btn-block shadow-sm"> Confirm Payment </button>
+                                    </form>
+                                </div>
+                            </div> <!-- End -->
+                            <!-- Paypal info -->
+                            <div id="paypal" class="tab-pane fade show active pt-3">
+                                <h6 class="pb-2 qr">Scan the QR Code here: </h6>
+                                
+
+                                <img class="rounded img-fluid d-block mx-auto mt-3 mb-3" src="images/qr-code.jpg" width="200">
+                                
+                                <!-- <p> <button type="button" class="btn btn-primary "><i class="fab fa-paypal mr-2"></i> Log into my Paypal</button> </p> -->
+                                <p class="text-muted"> Note: After scanning the qr code, you will be directed to a secure gateway for payment. After completing the payment process, you will be redirected back to the website to view details of your reservation. </p>
+                            </div> <!-- End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reservationConfirmDetails">Previous</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#payConfirmed">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  
+
+
+
+
+
+
 
     <!-- Footer -->
-
     
       <footer class="site-footer">
         <div class="container-fluid">
@@ -357,7 +615,7 @@
 
 
     
-
+      <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'></script>
 
   </body>
 
