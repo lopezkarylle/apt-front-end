@@ -304,8 +304,7 @@ section {
 
 .accommodations .box-container .box .thumb img {
    height: 100%;
-   width: 100%;
-   transition: .2s linear;
+   object-fit: cover;
 }
 
 .accommodations .box-container .box:hover .thumb img {
